@@ -82,7 +82,7 @@ function getUserStatus($userMd5){
 
             $stmt->execute();
             $topics = $stmt->fetchAll(PDO::FETCH_OBJ);
-            var_dump($topics);die();
+            //var_dump($topics);die();
 
             $response[] = array(
                             'subject_name' => $subject->subject_name,
@@ -92,6 +92,7 @@ function getUserStatus($userMd5){
 
         }
 
+        var_dump($response);die();
 
         $db = null;
 
