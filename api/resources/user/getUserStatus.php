@@ -92,7 +92,7 @@ function getUserStatus($userMd5){
 
         }
 
-        var_dump($response);die();
+        //var_dump($response);die();
 
         $db = null;
 
@@ -101,8 +101,8 @@ function getUserStatus($userMd5){
 
 
 
-    } catch (PDOException $e) {
+    } catch (Exception $e) {
         //error_log($e->getMessage(), 3, '/var/tmp/php.log');
-        echo '{"error":{"text":' . $e->getMessage() . '}}';
+        echo '{"error":{"text":"' . $e->getMessage() . '"}}';
     }
 }
