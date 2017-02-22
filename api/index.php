@@ -5,10 +5,13 @@ require_once "header.php";
 include 'db.php';
 require 'Slim/Slim.php';
 
+require_once "resources/auth/postUserAuth.php";
+require_once "resources/user/getUserStatus.php";
+require_once "resources/user/test/getTestQuestionNo.php";
+require_once "resources/user/test/getTestResult.php";
+require_once "resources/user/test/saveTestQuestionAnswer.php";
+require_once "resources/user/test/startTopicTest.php";
 
-//files resource
-require_once "resources/files/saveFile.php";
-require_once "resources/files/getFile.php";
 
 //app
 require_once "app.php";
