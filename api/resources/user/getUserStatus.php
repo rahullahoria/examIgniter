@@ -84,8 +84,12 @@ function getUserStatus($userMd5){
             $topics = $stmt->fetchAll(PDO::FETCH_OBJ);
             //var_dump($topics);die();
 
+            foreach($topics as $topic){
+                $topics->topic_name = htmlspecialchars($topics->topic_name);
+            }
+
             $response1[] = array(
-                            'subject_name' => $subject->subject_name,
+                            'subject_name' => htmlspecialchars($subject->subject_name),
                             'subject_id' => $subject->subject_id,
                             "topics" => $topics
                         );
