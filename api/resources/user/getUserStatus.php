@@ -60,7 +60,7 @@ function getUserStatus($userMd5){
 
 
     try {
-        $response = null;
+        $response1 = array();
 
         $db = getDB();
         $stmt = $db->prepare($sql);
@@ -84,7 +84,7 @@ function getUserStatus($userMd5){
             $topics = $stmt->fetchAll(PDO::FETCH_OBJ);
             //var_dump($topics);die();
 
-            $response[] = array(
+            $response1[] = array(
                             'subject_name' => $subject->subject_name,
                             'subject_id' => $subject->subject_id,
                             "topics" => $topics
@@ -97,7 +97,7 @@ function getUserStatus($userMd5){
 
         $db = null;
 
-        echo '{"subjectssaf": ' . json_encode($response) . '}';
+        echo '{"subjectssaf": ' . json_encode($response1) . '}';
 
 
 
