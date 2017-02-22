@@ -75,7 +75,7 @@ function getUserStatus($userMd5){
             $stmt = $db->prepare($sqlGetTopics);
 
             $stmt->bindParam("exam_id", $subject->exam_id);
-            $stmt->bindParam("user_md5", $subject->subject_id);
+            $stmt->bindParam("subject_id", $subject->subject_id);
 
 
 
