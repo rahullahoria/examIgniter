@@ -43,18 +43,17 @@
             vm.dataLoading = true;
             AuthenticationService.Login(vm.user, function (resp) {
                 console.log("resp",resp);
-                $location.path('/member');
-                /*if (resp.success) {
+
+                if (resp.auth) {
                     AuthenticationService.SetCredentials(vm.user.username, vm.user.password);
                     vm.inUser = UserService.GetInUser();
-                    if(vm.inUser.type == 'manager' )
-                        $location.path('/manager');
-                    else
-                        $location.path('/employee/'+vm.inUser.md5_id);
+
+                        $location.path('/member');
+
                 } else {
                     FlashService.Error(resp.message);
                     vm.dataLoading = false;
-                }*/
+                }
             });
         };
     }

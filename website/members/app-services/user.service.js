@@ -28,7 +28,7 @@
 
         function Auth(user) {
 
-            return $http.post('http://api.bulldog.shatkonlabs.com/auth', user).then(handleSuccess, handleError('Error creating user'));
+            return $http.post('http://api.examhans.com/auth', user).then(handleSuccess, handleError('Error creating user'));
         }
 
         // private functions

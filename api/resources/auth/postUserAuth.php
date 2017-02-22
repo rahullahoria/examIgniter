@@ -38,7 +38,7 @@ function userAuth(){
         $db = null;
 
         if(count($users) == 1)
-            echo '{"user": ' . json_encode($users[0]) . '}';
+            echo '{"user": ' . json_encode($users[0]) . ',"auth": "true"}';
         else
             echo '{"auth": "false"}';
 
