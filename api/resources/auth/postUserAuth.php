@@ -29,7 +29,7 @@ function userAuth(){
         $stmt->bindParam("username", $user->username);
         $stmt->bindParam("password", $user->password);
 
-        var_dump($user);die();
+       // var_dump($user);die();
 
         $stmt->execute();
         $users = $stmt->fetchAll(PDO::FETCH_OBJ);

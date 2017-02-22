@@ -103,9 +103,9 @@
         <entry file="file://$PROJECT_DIR$/api/resources/auth/postUserAuth.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.53475934">
-              <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+              <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
               <folding>
-                <marker date="1487760233992" expanded="true" signature="232:463" placeholder="SELECT a.`us... users" />
+                <marker date="1487760320316" expanded="true" signature="232:463" placeholder="SELECT a.`us... users" />
               </folding>
             </state>
           </provider>
@@ -377,7 +377,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487759547400</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="auth">
+      <created>1487760244898</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1487760244898</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -736,9 +742,9 @@
     <entry file="file://$PROJECT_DIR$/api/resources/auth/postUserAuth.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.53475934">
-          <caret line="31" column="30" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+          <caret line="31" column="9" selection-start-line="31" selection-start-column="9" selection-end-line="31" selection-end-column="9" />
           <folding>
-            <marker date="1487760233992" expanded="true" signature="232:463" placeholder="SELECT a.`us... users" />
+            <marker date="1487760320316" expanded="true" signature="232:463" placeholder="SELECT a.`us... users" />
           </folding>
         </state>
       </provider>
