@@ -85,7 +85,7 @@ function getUserStatus($userMd5){
             //var_dump($topics);die();
 
             foreach($topics as $topic){
-                $topics->topic_name = htmlspecialchars($topics->topic_name);
+                $topic->topic_name = htmlspecialchars($topic->topic_name);
             }
 
             $response1[] = array(
