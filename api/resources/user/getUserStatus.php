@@ -69,6 +69,7 @@ function getUserStatus($userMd5){
 
         $stmt->execute();
         $subjects = $stmt->fetchAll(PDO::FETCH_OBJ);
+        var_dump($subjects);die();
 
         foreach($subjects as $subject){
 
