@@ -57,9 +57,11 @@ function getUserStatus($userMd5){
                             and b.subject_id = :subject_id
                             and c.topic_id = b.id";
 
-    $response = array();
+
 
     try {
+        $response = null;
+
         $db = getDB();
         $stmt = $db->prepare($sql);
 
