@@ -15,7 +15,11 @@ function userAuth(){
 
 
     $sql = "SELECT a.`username`, a.`md5`, b.name
-                FROM users as a inner join exams as b WHERE a.exam_id = b.id and a.username =:username and a.password=:password ";
+                FROM users as a
+                inner join exams as b
+                 WHERE a.exam_id = b.id
+                 and a.username =:username
+                 and a.password=:password ;";
 
 
     try {
@@ -25,6 +29,7 @@ function userAuth(){
         $stmt->bindParam("username", $user->username);
         $stmt->bindParam("password", $user->password);
 
+        var_dump($user);die();
 
         $stmt->execute();
         $users = $stmt->fetchAll(PDO::FETCH_OBJ);
