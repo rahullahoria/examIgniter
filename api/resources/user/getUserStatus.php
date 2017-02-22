@@ -78,8 +78,6 @@ function getUserStatus($userMd5){
             $stmt->bindParam("exam_id", $subject->exam_id);
             $stmt->bindParam("subject_id", $subject->subject_id);
 
-
-
             $stmt->execute();
             $topics = $stmt->fetchAll(PDO::FETCH_OBJ);
             //var_dump($topics);die();
@@ -89,6 +87,7 @@ function getUserStatus($userMd5){
                             'subject_id' => $subject->subject_id,
                             "topics" => $topics
                         );
+            $topics = null;
 
         }
 
