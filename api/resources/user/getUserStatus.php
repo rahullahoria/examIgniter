@@ -93,7 +93,7 @@ function getUserStatus($userMd5){
 
         }
 
-        //var_dump($response);die();
+        var_dump($response1);die();
 
         $db = null;
 
