@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/resources/auth/postUserAuth.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/resources/user/test/startTopicTest.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.html" afterPath="$PROJECT_DIR$/website/main-web/index.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,11 +24,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.27380952">
+              <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -62,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9465241">
+            <state vertical-scroll-proportion="-22.125">
               <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
               <folding>
                 <marker date="1487751287400" expanded="true" signature="1061:1068" placeholder="SELECT a.`us... users" />
@@ -145,7 +139,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/website/index.html" />
-        <option value="$PROJECT_DIR$/website/main-web/index.html" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/website/members/member/member.controller.js" />
@@ -162,6 +155,7 @@
         <option value="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/startTopicTest.php" />
         <option value="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
+        <option value="$PROJECT_DIR$/website/main-web/index.html" />
       </list>
     </option>
   </component>
@@ -671,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="83" column="18" selection-start-line="83" selection-start-column="18" selection-end-line="83" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-23.083334">
@@ -747,13 +733,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9465241">
+        <state vertical-scroll-proportion="-22.125">
           <caret line="69" column="25" selection-start-line="69" selection-start-column="25" selection-end-line="69" selection-end-column="25" />
           <folding>
             <marker date="1487751287400" expanded="true" signature="1061:1068" placeholder="SELECT a.`us... users" />
             <marker date="1487751287400" expanded="true" signature="1061:1449" placeholder="SELECT disti... users" />
             <marker date="1487751287400" expanded="true" signature="1475:2027" placeholder="SELECT b.id topic_exam_mappings" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27380952">
+          <caret line="43" column="42" selection-start-line="43" selection-start-column="42" selection-end-line="43" selection-end-column="42" />
+          <folding />
         </state>
       </provider>
     </entry>
