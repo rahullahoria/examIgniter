@@ -182,7 +182,7 @@
                         </div>-->
                     </div>
                     <!-- /.panel-heading -->
-                    <div class="panel-body">
+                    <div class="panel-body" ng-repeat="subject in vm.subjects">
                         <div class="table-responsive">
 
                         <table datatable="ng"  class="table table-bordered table-hover table-striped" style="max-width: 99%;">
@@ -197,17 +197,15 @@
                             </thead>
                             <tbody>
 
-                            <tr ng-repeat="toCallCandidate in vm.toCallCandidates" ng-show="vm.{{ vm.getColor( toCallCandidate.time) }}Filter" class="{{ vm.getColor( toCallCandidate.time) }}">
+                            <tr ng-repeat="topic in subject.topics" class="{{ (topic.amount==null)?'warning':'success' }}">
 
                                 <td>
-                                    <i class="fa fa-user fa-fw {{ toCallCandidate.status?'text-success':''}}"></i>
-                                    <a href="#/employee/{{ toCallCandidate.md5_id }}"> {{ toCallCandidate.name }}</a>
+                                    {{ topic.topic_name }}
                                 </td>
-                                <td>{{ toCallCandidate.time/60/60 | number: 0 }} </td>
+                                <td>{{ topic.no_of_questions }} </td>
 
-                                <td>{{ vm.getFun(toCallCandidate.time)| number: 0  }}</td>
-                                <td>{{ vm.date1*6.85 | number: 0}} </td>
-                                <td>{{ (toCallCandidate.time/60/60/(vm.date1*6.85))*100 | number: 2}}% </td>
+                                <td>{{ (topic.amount==null)?'Not Done':topic.amount }}</td>
+                                <td>{{ (topic.amount==null)?'Start Test':'Done' }} </td>
 
 
                             </tr>

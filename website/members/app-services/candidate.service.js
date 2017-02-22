@@ -26,6 +26,7 @@
         service.UpdateInstance = UpdateInstance;
         service.GetUserLast10Instance = GetUserLast10Instance;
         service.GetTodayUsage = GetTodayUsage;
+        service.GetStatus = GetStatus;
 
         return service;
 
@@ -33,6 +34,12 @@
             return $http
                         .get('http://api.bulldog.shatkonlabs.com/companies/'+company+'/managers/'+manager+'/employees'+ "?month=" +month)
                         .then(handleSuccess, handleError('Error getting all users'));
+        }
+
+        function GetStatus(userMD5) {
+            return $http
+                .get('http://api.examhans.com/user/'+userMD5+'/status')
+                .then(handleSuccess, handleError('Error getting all users'));
         }
 
         function GetUserInstance(professionId,uType,month) {

@@ -174,26 +174,11 @@
         function loadToCallCandidates(){
             vm.dataLoading = true;
 
-            CandidateService.GetAll(vm.inUser.company_name,vm.inUser.md5_id,(vm.whichMonth.num+1))
+            CandidateService.GetStatus(vm.inUser.md5)
                 .then(function (response) {
-                    vm.toCallCandidates = response.employees;
+                    vm.subjects = response.subjects;
 
-                    vm.date1 = new Date(2016, vm.whichMonth.num+1, 0).getDate();
-                    if(vm.currentMonthIndex == 0)
-                        vm.date1 = new Date().getDate();
-
-
-
-                    for(var i=0;i < vm.toCallCandidates.length ; i++){
-
-                        vm.champs += (vm.getColor(vm.toCallCandidates[i].time) == "primary")?1:0;
-                        vm.good += (vm.getColor(vm.toCallCandidates[i].time) == "success")?1:0;
-                        vm.improve += (vm.getColor(vm.toCallCandidates[i].time) == "warning")?1:0;
-                        vm.bad += (vm.getColor(vm.toCallCandidates[i].time) == "danger")?1:0;
-                    }
-                    vm.dataLoading = false;
-
-                    console.log(vm.toCallCandidates[1].name);
+                    console.log(vm.subjects);
                 });
 
         }

@@ -101,7 +101,7 @@ function getUserStatus($userMd5){
 
         $db = null;
 
-        echo '{"subjectssaf": ' . json_encode($response1) . '}';
+        echo '{"subjects": ' . json_encode($response1) . '}';
 
 
 
