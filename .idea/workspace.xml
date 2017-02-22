@@ -98,12 +98,12 @@
       <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5080214">
-              <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.69518715">
+              <caret line="97" column="55" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
               <folding>
-                <marker date="1487765483768" expanded="true" signature="1061:1068" placeholder="SELECT a.`us... users" />
-                <marker date="1487765483768" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
-                <marker date="1487765483768" expanded="true" signature="1450:2002" placeholder="SELECT b.id topic_exam_mappings" />
+                <marker date="1487765525828" expanded="true" signature="1061:1068" placeholder="SELECT a.`us... users" />
+                <marker date="1487765525828" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
+                <marker date="1487765525828" expanded="true" signature="1450:2002" placeholder="SELECT b.id topic_exam_mappings" />
               </folding>
             </state>
           </provider>
@@ -535,7 +535,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487765377762</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="auth">
+      <created>1487765493544</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1487765493544</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -915,12 +921,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5080214">
-          <caret line="78" column="65" selection-start-line="78" selection-start-column="65" selection-end-line="78" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.69518715">
+          <caret line="97" column="55" selection-start-line="97" selection-start-column="55" selection-end-line="97" selection-end-column="55" />
           <folding>
-            <marker date="1487765483768" expanded="true" signature="1061:1068" placeholder="SELECT a.`us... users" />
-            <marker date="1487765483768" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
-            <marker date="1487765483768" expanded="true" signature="1450:2002" placeholder="SELECT b.id topic_exam_mappings" />
+            <marker date="1487765525828" expanded="true" signature="1061:1068" placeholder="SELECT a.`us... users" />
+            <marker date="1487765525828" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
+            <marker date="1487765525828" expanded="true" signature="1450:2002" placeholder="SELECT b.id topic_exam_mappings" />
           </folding>
         </state>
       </provider>
