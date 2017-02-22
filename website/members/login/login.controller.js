@@ -44,10 +44,11 @@
             AuthenticationService.Login(vm.user, function (resp) {
                 console.log("resp",resp);
 
-                if (resp.auth) {
+                if (resp.success) {
                     AuthenticationService.SetCredentials(vm.user.username, vm.user.password);
                     vm.inUser = UserService.GetInUser();
 
+                    console.log("auth success");
                         $location.path('/member');
 
                 } else {

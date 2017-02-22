@@ -30,7 +30,7 @@
                         var resp = null;
                         if (response.auth == "true") {
                             resp = { success: true };
-                            $cookieStore.put('inUser', JSON.stringify(response.user[0]));
+                            $cookieStore.put('inUser', JSON.stringify(response.user));
                         } else {
                             resp = { success: false, message: 'Username or password is incorrect' };
                         }

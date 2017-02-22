@@ -41,7 +41,7 @@ function getUserStatus($userMd5){
             inner join topic_exam_mappings as b
             inner join topics as c
             inner join subjects as d
-            WHERE a.md5 = 'ccc679199c45aca8ea3596b5dd9bf9f4'
+            WHERE a.md5 = :user_md5
             and a.exam_id = b.exam_id
             and b.topic_id = c.id
             and c.subject_id = d.id ";
@@ -57,26 +57,45 @@ function getUserStatus($userMd5){
                             and b.subject_id = :subject_id
                             and c.topic_id = b.id";
 
-    $response = null;
+    $response = array();
 
     try {
         $db = getDB();
         $stmt = $db->prepare($sql);
 
-        $stmt->bindParam("username", $user->username);
-        $stmt->bindParam("password", $user->password);
+        $stmt->bindParam("user_md5", $userMd5);
+
 
 
         $stmt->execute();
-        $users = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $subjects = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+        foreach($subjects as $subject){
+
+            $stmt = $db->prepare($sqlGetTopics);
+
+            $stmt->bindParam("exam_id", $subject->exam_id);
+            $stmt->bindParam("user_md5", $subject->subject_id);
+
+
+
+            $stmt->execute();
+            $topics = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+            $response[] = array(
+                            'subject_name' => $subject->subject_name,
+                            'subject_id' => $subject->subject_id,
+                            "topics" => $topics
+                        );
+
+        }
 
 
         $db = null;
 
-        if(count($users) == 1)
-            echo '{"user": ' . json_encode($users[0]) . '}';
-        else
-            echo '{"auth": "false"}';
+
+            echo '{"subjects": ' . json_encode($response) . '}';
+
 
 
     } catch (PDOException $e) {
