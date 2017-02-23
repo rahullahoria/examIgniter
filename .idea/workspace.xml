@@ -4,9 +4,6 @@
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" afterPath="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.controller.js" afterPath="$PROJECT_DIR$/website/members/test/test.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.view.html" afterPath="$PROJECT_DIR$/website/members/test/test.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -135,11 +132,11 @@
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestResult.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.4117647">
-              <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+              <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
               <folding>
-                <marker date="1487862942532" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
-                <marker date="1487862942532" expanded="true" signature="614:666" placeholder="update respo... " />
-                <marker date="1487862942532" expanded="true" signature="691:826" placeholder="update tests... " />
+                <marker date="1487863064800" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
+                <marker date="1487863064800" expanded="true" signature="614:666" placeholder="update respo... " />
+                <marker date="1487863064800" expanded="true" signature="691:826" placeholder="update tests... " />
               </folding>
             </state>
           </provider>
@@ -707,7 +704,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487859972915</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="auth">
+      <created>1487862948195</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1487862948195</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1144,11 +1147,11 @@
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestResult.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4117647">
-          <caret line="82" column="54" selection-start-line="82" selection-start-column="54" selection-end-line="82" selection-end-column="54" />
+          <caret line="82" column="38" selection-start-line="82" selection-start-column="38" selection-end-line="82" selection-end-column="38" />
           <folding>
-            <marker date="1487862942532" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
-            <marker date="1487862942532" expanded="true" signature="614:666" placeholder="update respo... " />
-            <marker date="1487862942532" expanded="true" signature="691:826" placeholder="update tests... " />
+            <marker date="1487863064800" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
+            <marker date="1487863064800" expanded="true" signature="614:666" placeholder="update respo... " />
+            <marker date="1487863064800" expanded="true" signature="691:826" placeholder="update tests... " />
           </folding>
         </state>
       </provider>

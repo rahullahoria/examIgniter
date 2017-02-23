@@ -80,7 +80,7 @@ set amount_made = :amount,total_questions =:total_questions,answered=:answered,c
         $stmt->bindParam("answered", $response1['answered']);
         $stmt->bindParam("correct", $response1['correct']);
         $stmt->bindParam("wrong", $response1['wrong']);
-        $stmt->bindParam("id", $response1['$testId']);
+        $stmt->bindParam("id", $testId);
 
         $stmt->execute();
 
