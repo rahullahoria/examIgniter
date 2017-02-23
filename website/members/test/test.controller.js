@@ -5,8 +5,8 @@
         .module('app')
         .controller('TestController', TestController);
 
-    TestController.$inject = ['UserService', '$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
-    function TestController(UserService, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
+    TestController.$inject = ['UserService', '$timeout','$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
+    function TestController(UserService, $timeout, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
         var vm = this;
 
         vm.user = null;
@@ -59,6 +59,11 @@
         function loadTest(){
             vm.tests = JSON.parse($cookieStore.get('tests'));
 
+            vm.testStartTime = new Date(vm.tests.test_start_time.replace(/-/g,"/"));
+            var currentdate = new Date();
+            vm.timeRemaing = parseInt(60*vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime())/1000);
+            console.log('time remaing',vm.timeRemaing);
+
             loadQuestion(0);
 
 
@@ -89,6 +94,10 @@
                 .then(function (response) {
                     vm.currentQuestion = response.questions[0];
 
+                   /* $timeout(function() {
+                        vm.showResults();
+                    }, vm.testStartTime*1000);*/
+
 
                     console.log(vm.currentQuestion.id);
                 });
@@ -108,9 +117,7 @@
 
         }
 
-        $timeout(function() {
-            vm.showResults();
-        }, 3000);
+
 
         vm.showResults = function(){
             CandidateService.ShowResults(vm.inUser.md5, vm.tests.test_id)

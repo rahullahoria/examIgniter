@@ -42,7 +42,7 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
         $stmt->execute();
         $questions = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-
+        $questions[0]->question_fetch_time =  date("Y-m-d H:i:s");
         //var_dump($response1);die();
 
         $db = null;
