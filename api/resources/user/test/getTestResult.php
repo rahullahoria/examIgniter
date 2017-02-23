@@ -28,11 +28,30 @@ function getTestResult($userMd5,$testId){
     $sqlUpdateTest = 'update tests
 set amount_made = :amount,total_questions =:total_questions,answered=:answered,correct=:correct,wrong=:wrong where id =:id';
 
+    $sqlLoadTestResult = 'select * from tests where id = :id';
+
 
     try {
+        $db = getDB();
+
+        $stmt = $db->prepare($sqlLoadTestResult);
+
+        $stmt->bindParam("id", $testId);
+
+
+        $stmt->execute();
+        $tests = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+        if($tests[0]->total_questions != 0){
+            echo '{"results": ' . json_encode($tests[0]) . '}';
+            $db = null;
+            die();
+
+        }
+
         $response1 = array();
 
-        $db = getDB();
+
         $stmt = $db->prepare($sql);
 
         $stmt->bindParam("test_id", $testId);
@@ -45,14 +64,14 @@ set amount_made = :amount,total_questions =:total_questions,answered=:answered,c
         $response1['answered'] = 0;
         $response1['correct'] = 0;
         $response1['wrong'] = 0;
-        $response1['earned'] = 0;
+        $response1['amount_made'] = 0;
         //var_dump($subjects);die();
 
         foreach($responses as $response){
             $status = "";
             if($response->answer == $response->response){
                 $response1['correct'] += 1 ;
-                $response1['earned'] += 5 ;
+                $response1['amount_made'] += 5 ;
                 $response1['answered'] += 1;
                 $status = 'correct';
             }
@@ -75,7 +94,7 @@ set amount_made = :amount,total_questions =:total_questions,answered=:answered,c
 
         $stmt = $db->prepare($sqlUpdateTest);
 
-        $stmt->bindParam("amount", $response1['earned']);
+        $stmt->bindParam("amount", $response1['amount_made']);
         $stmt->bindParam("total_questions", $response1['total_questions']);
         $stmt->bindParam("answered", $response1['answered']);
         $stmt->bindParam("correct", $response1['correct']);
@@ -88,7 +107,7 @@ set amount_made = :amount,total_questions =:total_questions,answered=:answered,c
 
         $db = null;
 
-        echo '{"subjects": ' . json_encode($response1) . '}';
+        echo '{"results": ' . json_encode($response1) . '}';
 
 
 
