@@ -56,7 +56,7 @@ function startTopicTest($userMd5){
 
         $stmt->execute();
         $questions = $stmt->fetchAll(PDO::FETCH_OBJ);
-        var_dump($questions);die();
+       // var_dump($questions);die();
 
         //getting userId
         $stmt = $db->prepare($sqlGettingUserId);

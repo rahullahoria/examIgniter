@@ -41,13 +41,13 @@
       <file leaf-file-name="startTopicTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/startTopicTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18716578">
-              <caret line="30" column="119" selection-start-line="30" selection-start-column="119" selection-end-line="30" selection-end-column="119" />
+            <state vertical-scroll-proportion="0.77540106">
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
-                <marker date="1487827133908" expanded="true" signature="476:665" placeholder="SELECT a.id,... questions" />
-                <marker date="1487827133908" expanded="true" signature="717:759" placeholder="Select id fr... users" />
-                <marker date="1487827133908" expanded="true" signature="785:882" placeholder="INSERT INTO `tests`... " />
-                <marker date="1487827133908" expanded="true" signature="910:1021" placeholder="INSERT INTO `responses`... " />
+                <marker date="1487827176864" expanded="true" signature="476:665" placeholder="SELECT a.id,... questions" />
+                <marker date="1487827176864" expanded="true" signature="717:759" placeholder="Select id fr... users" />
+                <marker date="1487827176864" expanded="true" signature="785:882" placeholder="INSERT INTO `tests`... " />
+                <marker date="1487827176864" expanded="true" signature="910:1021" placeholder="INSERT INTO `responses`... " />
               </folding>
             </state>
           </provider>
@@ -659,7 +659,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487826941425</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="auth">
+      <created>1487827149718</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1487827149718</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1061,13 +1067,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/startTopicTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18716578">
-          <caret line="30" column="119" selection-start-line="30" selection-start-column="119" selection-end-line="30" selection-end-column="119" />
+        <state vertical-scroll-proportion="0.77540106">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
-            <marker date="1487827133908" expanded="true" signature="476:665" placeholder="SELECT a.id,... questions" />
-            <marker date="1487827133908" expanded="true" signature="717:759" placeholder="Select id fr... users" />
-            <marker date="1487827133908" expanded="true" signature="785:882" placeholder="INSERT INTO `tests`... " />
-            <marker date="1487827133908" expanded="true" signature="910:1021" placeholder="INSERT INTO `responses`... " />
+            <marker date="1487827176864" expanded="true" signature="476:665" placeholder="SELECT a.id,... questions" />
+            <marker date="1487827176864" expanded="true" signature="717:759" placeholder="Select id fr... users" />
+            <marker date="1487827176864" expanded="true" signature="785:882" placeholder="INSERT INTO `tests`... " />
+            <marker date="1487827176864" expanded="true" signature="910:1021" placeholder="INSERT INTO `responses`... " />
           </folding>
         </state>
       </provider>
