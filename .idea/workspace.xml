@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app.php" afterPath="$PROJECT_DIR$/api/app.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" afterPath="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" afterPath="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" afterPath="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/member/member.controller.js" afterPath="$PROJECT_DIR$/website/members/member/member.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.controller.js" afterPath="$PROJECT_DIR$/website/members/test/test.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.view.html" afterPath="$PROJECT_DIR$/website/members/test/test.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +33,7 @@
         <entry file="file://$PROJECT_DIR$/website/members/member/member.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
+              <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -52,6 +50,16 @@
                 <marker date="1487839450199" expanded="true" signature="703:800" placeholder="INSERT INTO `tests`... " />
                 <marker date="1487839450199" expanded="true" signature="828:939" placeholder="INSERT INTO `responses`... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/members/test/test.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-17.125">
+              <caret line="188" column="138" selection-start-line="188" selection-start-column="138" selection-end-line="188" selection-end-column="179" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,8 +81,8 @@
       <file leaf-file-name="candidate.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/app-services/candidate.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
+            <state vertical-scroll-proportion="-12.068966">
+              <caret line="120" column="109" selection-start-line="120" selection-start-column="109" selection-end-line="120" selection-end-column="109" />
               <folding />
             </state>
           </provider>
@@ -84,17 +92,7 @@
         <entry file="file://$PROJECT_DIR$/website/members/test/test.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="40" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.service.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/app-services/user.service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="30" />
+              <caret line="69" column="42" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -103,20 +101,20 @@
       <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/app.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.5">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+            <state vertical-scroll-proportion="-15.0">
+              <caret line="29" column="60" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getTestQuestionNo.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getTestQuestionNo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.458333">
-              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="51" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.4688057">
+              <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
               <folding>
-                <marker date="1487844232278" expanded="true" signature="481:621" placeholder="SELECT a.id,... questions" />
+                <marker date="1487859851424" expanded="true" signature="481:786" placeholder="SELECT a.id,... questions" />
               </folding>
             </state>
           </provider>
@@ -134,10 +132,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getTestResult.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getTestResult.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestResult.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.60035527">
+            <state vertical-scroll-proportion="-14.083333">
               <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
               <folding>
                 <marker date="1487852918119" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
@@ -169,15 +167,15 @@
         <option value="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
         <option value="$PROJECT_DIR$/website/members/app.js" />
         <option value="$PROJECT_DIR$/website/members/member/member.view.html" />
-        <option value="$PROJECT_DIR$/website/members/test/test.view.html" />
         <option value="$PROJECT_DIR$/api/resources/user/test/startTopicTest.php" />
-        <option value="$PROJECT_DIR$/website/members/member/member.controller.js" />
-        <option value="$PROJECT_DIR$/website/members/test/test.controller.js" />
-        <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
-        <option value="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
+        <option value="$PROJECT_DIR$/website/members/member/member.controller.js" />
+        <option value="$PROJECT_DIR$/website/members/test/test.view.html" />
+        <option value="$PROJECT_DIR$/website/members/test/test.controller.js" />
+        <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
+        <option value="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
       </list>
     </option>
   </component>
@@ -691,7 +689,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487839464780</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="auth">
+      <created>1487853559396</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1487853559396</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -700,6 +704,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27272728" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -707,7 +712,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1032,71 +1036,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/test/test.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="200" column="110" selection-start-line="200" selection-start-column="110" selection-end-line="200" selection-end-column="110" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/app-services/user.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="30" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/member/member.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="43" selection-start-line="108" selection-start-column="43" selection-end-line="108" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/test/test.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="40" selection-start-line="82" selection-start-column="29" selection-end-line="82" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/app-services/candidate.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="41" selection-start-line="91" selection-start-column="41" selection-end-line="91" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.458333">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="51" selection-end-column="5" />
-          <folding>
-            <marker date="1487844232278" expanded="true" signature="481:621" placeholder="SELECT a.id,... questions" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.5">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="48" />
-          <folding>
-            <marker date="1487844776030" expanded="true" signature="313:403" placeholder="UPDATE `resp... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1127,11 +1071,71 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestResult.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.60035527">
+        <state vertical-scroll-proportion="-14.083333">
           <caret line="64" column="51" selection-start-line="64" selection-start-column="51" selection-end-line="64" selection-end-column="51" />
           <folding>
             <marker date="1487852918119" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
             <marker date="1487852918119" expanded="true" signature="614:666" placeholder="update respo... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/member/member.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="30" selection-start-line="104" selection-start-column="30" selection-end-line="104" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/test/test.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.125">
+          <caret line="188" column="138" selection-start-line="188" selection-start-column="138" selection-end-line="188" selection-end-column="179" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/test/test.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="69" column="42" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.0">
+          <caret line="29" column="60" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/app-services/candidate.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.068966">
+          <caret line="120" column="109" selection-start-line="120" selection-start-column="109" selection-end-line="120" selection-end-column="109" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="48" />
+          <folding>
+            <marker date="1487844776030" expanded="true" signature="313:403" placeholder="UPDATE `resp... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4688057">
+          <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
+          <folding>
+            <marker date="1487859851424" expanded="true" signature="481:786" placeholder="SELECT a.id,... questions" />
           </folding>
         </state>
       </provider>

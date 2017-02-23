@@ -108,12 +108,11 @@
 
                     $cookieStore.put('tests', JSON.stringify(vm.subjects));
 
-
-
+                    $location.path('/test');
                 });
 
 
-            $location.path('/test');
+
 
         }
 

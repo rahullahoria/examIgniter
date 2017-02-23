@@ -15,15 +15,7 @@
         vm.deleteUser = deleteUser;
         vm.loadUser = loadUser;
 
-        vm.champs = 0;
-        vm.good = 0;
-        vm.improve = 0;
-        vm.bad = 0;
 
-        vm.successFilter = true;
-        vm.dangerFilter = true;
-        vm.warningFilter = true;
-        vm.primaryFilter = true;
 
         vm.threeMonths = [];
         vm.whichMonth = {};
@@ -44,15 +36,7 @@
 
         }
 
-        vm.setCurrentMon = function(){
-            //console.log("i am in setCurrentMonth",vm.currentMonthIndex);
 
-            vm.whichMonth.name = vm.threeMonths[vm.currentMonthIndex].name;
-            vm.whichMonth.num = vm.threeMonths[vm.currentMonthIndex].num;
-            console.log("i am in setCurrentMonth",vm.whichMonth);
-            loadToCallCandidates();
-
-        }
 
 
 
@@ -71,19 +55,51 @@
 
         }
 
-        vm.loadQuestion = 0;
+        vm.currentQuestionNo = 0;
         function loadTest(){
             vm.tests = JSON.parse($cookieStore.get('tests'));
+
+            loadQuestion(0);
+
 
             console.log('test controller',vm.tests);
         }
 
-        vm.loadQuestion = function(index){
-
-            CandidateService.GetQuestion(vm.inUser.md5, vm.tests.questions[index].id)
+        vm.submitResponse = function(){
+            console.log('response',vm.response, vm.tests.questions[vm.currentQuestionNo].response_id);
+            CandidateService.SubmitRespnse(
+                vm.inUser.md5,
+                vm.tests.test_id,
+                vm.tests.questions[vm.currentQuestionNo].response_id,
+                {response:vm.response})
                 .then(function (response) {
+                    vm.loadQuestion(vm.currentQuestionNo + 1);
+                });
 
-                    console.log(response);
+        }
+
+        //vm.currentQuestion = {};
+        function loadQuestion(index){
+            vm.response = 0;
+
+            CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
+                .then(function (response) {
+                    vm.currentQuestion = response.questions[0];
+
+                    console.log(vm.currentQuestion.id);
+                });
+
+        }
+
+        vm.loadQuestion = function (index){
+            vm.response = 0;
+            console.log(index);
+            CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
+                .then(function (response) {
+                    vm.currentQuestion = response.questions[0];
+                    vm.currentQuestionNo = index;
+
+                    console.log(vm.currentQuestion.id);
                 });
 
         }

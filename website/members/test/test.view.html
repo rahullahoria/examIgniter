@@ -160,27 +160,41 @@
             <div class="col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> {{ vm.test.questions[vm.loadQuestion].question }}
+                        <i class="fa fa-bar-chart-o fa-fw"></i>
 
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
 
-                            <h2>Q1. what is capital of India in 1932?</h2>
+                            <h2>Q{{ vm.currentQuestionNo + 1 }}. {{ vm.currentQuestion.question }}</h2>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_1 }}   </div>
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_2 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="1" name="response" > {{ vm.currentQuestion.option_1 }}   </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="2" name="response" > {{ vm.currentQuestion.option_2 }}</div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_3 }}</div>
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_4 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="3" name="response" > {{ vm.currentQuestion.option_3 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="4" name="response" > {{ vm.currentQuestion.option_4 }}</div>
                         </div>
                         <br>
                         <br>
 
                         <div class="row">
-                            <div class="col-lg-6"><button class="btn btn-danger"> Previous</button> <button class="btn btn-warning">Submit</button> <button class="btn btn-danger">Next></button> </div>
-                            <div class="col-lg-6"></div>
+                            <div class="col-lg-6">
+                                <button class="btn btn-danger" ng-show="vm.currentQuestionNo != 0" ng-click="vm.loadQuestion(vm.currentQuestionNo-1)">
+                                     Previous
+                                </button>
+                                <button ng-click="vm.submitResponse()" class="btn btn-warning">
+                                    Submit & Next >
+                                </button>
+                                <button ng-hide="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.loadQuestion(vm.currentQuestionNo + 1)">
+                                    Next>
+                                </button>
+                            </div>
+                            <div class="col-lg-6">
+                                <button ng-show="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.loadQuestion(vm.currentQuestionNo + 1)">
+                                    Finish
+                                </button>
+                            </div>
                         </div>
 
                     </div>
@@ -198,7 +212,7 @@
                     <div class="panel-body">
 
                        <ul>
-                           <li ng-repeat="question in vm.test.questions" ><a ng-click="vm.loadQuestion = index "> question {{ index}}</a></li>
+                           <li ng-repeat="question in vm.tests.questions" ><a ng-click="vm.loadQuestion($index)"> question {{ $index + 1}}</a></li>
 
                        </ul>
 

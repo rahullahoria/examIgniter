@@ -28,6 +28,8 @@
         service.GetTodayUsage = GetTodayUsage;
         service.GetStatus = GetStatus;
         service.StartTest = StartTest;
+        service.GetQuestion = GetQuestion;
+        service.SubmitRespnse = SubmitRespnse;
 
         return service;
 
@@ -88,8 +90,8 @@
             return $http.get('/api/users/' + id).then(handleSuccess, handleError('Error getting user by id'));
         }
 
-        function GetQuestion(id) {
-            return $http.get('/api/users/' + id).then(handleSuccess, handleError('Error getting user by id'));
+        function GetQuestion(userMd5,testId,id) {
+            return $http.get('http://api.examhans.com/user/'+userMd5+'/test/'+testId+'/goto/' + id).then(handleSuccess, handleError('Error getting user by id'));
         }
 
         function GetByManagerEmployeeId(id,month) {
@@ -112,6 +114,11 @@
 
         function UpdateInstance(instance) {
             return $http.post('http://api.bulldog.shatkonlabs.com/instance', instance).then(handleSuccess, handleError('Error updating user'));
+        }
+
+        function SubmitRespnse(userMd5,testId,responseId,instance) {
+            ///user/:userMd5/test/:testId/question/:responseId
+            return $http.post('http://api.examhans.com/user/'+userMd5+'/test/'+testId+'/question/'+responseId, instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function StartTest(userMd5, instance) {

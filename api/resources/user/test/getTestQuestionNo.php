@@ -21,8 +21,12 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
 
     $user = json_decode($request->getBody());
 
-    $sql = "SELECT a.id, a.question, a.img_id, a.option_1, a.option_2, a.option_3, a.option_4
-                  FROM `questions` as a  WHERE  a.id = :id";
+    $sql = "SELECT a.id, a.question, a.img_id, a.option_1, a.option_2, a.option_3, a.option_4, b.response
+                  FROM `questions` as a INNER JOIN responses as b
+                  WHERE
+                    b.test_id = :test_id
+                    and b.question_id = a.id
+                    and  a.id = :id";
 
 
 
