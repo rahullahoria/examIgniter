@@ -36,6 +36,7 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
         $db = getDB();
         $stmt = $db->prepare($sql);
 
+        $stmt->bindParam("test_id", $testId);
         $stmt->bindParam("id", $questionNo);
 
         $stmt->execute();

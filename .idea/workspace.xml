@@ -4,10 +4,6 @@
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" afterPath="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/member/member.controller.js" afterPath="$PROJECT_DIR$/website/members/member/member.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.controller.js" afterPath="$PROJECT_DIR$/website/members/test/test.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.view.html" afterPath="$PROJECT_DIR$/website/members/test/test.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -111,10 +107,10 @@
       <file leaf-file-name="getTestQuestionNo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4688057">
-              <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
+            <state vertical-scroll-proportion="0.88235295">
+              <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
               <folding>
-                <marker date="1487859851424" expanded="true" signature="481:786" placeholder="SELECT a.id,... questions" />
+                <marker date="1487859962792" expanded="true" signature="481:786" placeholder="SELECT a.id,... questions" />
               </folding>
             </state>
           </provider>
@@ -695,7 +691,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487853559396</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="auth">
+      <created>1487859865114</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1487859865114</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1132,10 +1134,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4688057">
-          <caret line="23" column="105" selection-start-line="23" selection-start-column="105" selection-end-line="23" selection-end-column="105" />
+        <state vertical-scroll-proportion="0.88235295">
+          <caret line="38" column="43" selection-start-line="38" selection-start-column="43" selection-end-line="38" selection-end-column="43" />
           <folding>
-            <marker date="1487859851424" expanded="true" signature="481:786" placeholder="SELECT a.id,... questions" />
+            <marker date="1487859962792" expanded="true" signature="481:786" placeholder="SELECT a.id,... questions" />
           </folding>
         </state>
       </provider>
