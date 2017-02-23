@@ -207,16 +207,14 @@
             <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Index
+                        <i class="fa fa-bar-chart-o fa-fw"></i> Questions Index
 
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
+                        <div class="row"><div class="col-md-1 {{ (vm.tests.questions[$index].done)?'bg-success':'bg-warning'}}" ng-repeat="question in vm.tests.questions" ><a ng-click="vm.loadQuestion($index)"> {{ $index + 1}}</a></div> </div>
 
-                       <ul>
-                           <li ng-repeat="question in vm.tests.questions" ><a ng-click="vm.loadQuestion($index)"> question {{ $index + 1}}</a></li>
 
-                       </ul>
 
                     </div>
                     <!-- /.panel-body -->

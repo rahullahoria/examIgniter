@@ -5,8 +5,8 @@
         .module('app')
         .controller('TestController', TestController);
 
-    TestController.$inject = ['UserService', '$timeout','$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
-    function TestController(UserService, $timeout, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
+    TestController.$inject = ['$scope','UserService', '$timeout','$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
+    function TestController($scope,UserService, $timeout, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
         var vm = this;
 
         vm.user = null;
@@ -60,9 +60,7 @@
             vm.tests = JSON.parse($cookieStore.get('tests'));
 
             vm.testStartTime = new Date(vm.tests.test_start_time.replace(/-/g,"/"));
-            var currentdate = new Date();
-            vm.timeRemaing = parseInt(60*vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime())/1000);
-            console.log('time remaing',vm.timeRemaing);
+            vm.timeRemaing = 10;
 
             loadQuestion(0);
 
@@ -76,6 +74,11 @@
 
         vm.submitResponse = function(){
             console.log('response',vm.response, vm.tests.questions[vm.currentQuestionNo].response_id);
+            if(vm.currentQuestion.response != 0)
+            vm.tests.questions[vm.currentQuestionNo].done = true;
+            else
+            vm.tests.questions[vm.currentQuestionNo].done = false;
+            //$cookieStore.put('tests', JSON.stringify(vm.responseStatus));
             CandidateService.SubmitRespnse(
                 vm.inUser.md5,
                 vm.tests.test_id,
@@ -94,12 +97,23 @@
                 .then(function (response) {
                     vm.currentQuestion = response.questions[0];
 
-                   /* $timeout(function() {
+                    var currentdate = new Date(vm.currentQuestion.question_fetch_time .replace(/-/g,"/"));
+                    vm.timeRemaing = parseInt(60*vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime())/1000);
+                    console.log('time remaing',vm.timeRemaing);
+                    $scope.$broadcast('timer-add-cd-seconds', vm.timeRemaing);
+                    if(vm.timeRemaing <= 0) {
+                        console.log('i am nagative');
                         vm.showResults();
-                    }, vm.testStartTime*1000);*/
+                    }
 
+                    /*$timeout(function() {
+                        console.log('senting timeout for',vm.timeRemaing);
+                        $timeout(function() {
+                             vm.showResults();
+                         }, vm.testStartTime*1000);
+                    }, 5000);*/
 
-                    console.log(vm.currentQuestion.id);
+                    console.log('question id',vm.currentQuestion.id);
                 });
 
         }
@@ -111,6 +125,14 @@
                 .then(function (response) {
                     vm.currentQuestion = response.questions[0];
                     vm.currentQuestionNo = index;
+
+                    var currentdate = new Date(vm.currentQuestion.question_fetch_time .replace(/-/g,"/"));
+                    vm.timeRemaing = parseInt(60*vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime())/1000);
+                    console.log('time remaing',vm.timeRemaing);
+                    if(vm.timeRemaing <= 0) {
+                        console.log('i am nagative');
+                        vm.showResults();
+                    }
 
                     console.log(vm.currentQuestion.id);
                 });
