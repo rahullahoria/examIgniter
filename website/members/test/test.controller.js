@@ -64,6 +64,10 @@
 
             console.log('test controller',vm.tests);
         }
+        vm.uncheck = function (event) {
+            if (vm.currentQuestion.response == event.target.value)
+                vm.currentQuestion.response = false
+        }
 
         vm.submitResponse = function(){
             console.log('response',vm.response, vm.tests.questions[vm.currentQuestionNo].response_id);
@@ -71,7 +75,7 @@
                 vm.inUser.md5,
                 vm.tests.test_id,
                 vm.tests.questions[vm.currentQuestionNo].response_id,
-                {response:vm.response})
+                {response:vm.currentQuestion.response})
                 .then(function (response) {
                     vm.loadQuestion(vm.currentQuestionNo + 1);
                 });
@@ -80,11 +84,11 @@
 
         //vm.currentQuestion = {};
         function loadQuestion(index){
-            vm.response = 0;
 
             CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
                 .then(function (response) {
                     vm.currentQuestion = response.questions[0];
+
 
                     console.log(vm.currentQuestion.id);
                 });
@@ -92,7 +96,7 @@
         }
 
         vm.loadQuestion = function (index){
-            vm.response = 0;
+
             console.log(index);
             CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
                 .then(function (response) {
@@ -100,6 +104,15 @@
                     vm.currentQuestionNo = index;
 
                     console.log(vm.currentQuestion.id);
+                });
+
+        }
+        vm.showResults = function(){
+            CandidateService.ShowResults(vm.inUser.md5, vm.tests.test_id)
+                .then(function (response) {
+
+
+                    console.log(response);
                 });
 
         }

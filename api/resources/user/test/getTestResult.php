@@ -25,6 +25,8 @@ function getTestResult($userMd5,$testId){
                   FROM `responses` as a INNER JOIN questions as b WHERE a.question_id = b.id and `test_id` = :test_id";
 
     $sqlUpdateResponse = "update responses set status = :status where id = :id";
+    $sqlUpdateTest = 'update tests
+set amount_made = :amount,total_questions =:total_questions,answered=:answered,correct=:correct,wrong=:wrong where id =:id';
 
 
     try {
@@ -54,7 +56,7 @@ function getTestResult($userMd5,$testId){
                 $response1['answered'] += 1;
                 $status = 'correct';
             }
-            else if($response->answer != 0) {
+            else if($response->response != 0) {
                 $response1['answered'] += 1;
                 $response1['wrong'] += 1;
             }
@@ -70,6 +72,17 @@ function getTestResult($userMd5,$testId){
             $stmt->execute();
 
         }
+
+        $stmt = $db->prepare($sqlUpdateTest);
+
+        $stmt->bindParam("amount", $response1['earned']);
+        $stmt->bindParam("total_questions", $response1['total_questions']);
+        $stmt->bindParam("answered", $response1['answered']);
+        $stmt->bindParam("correct", $response1['correct']);
+        $stmt->bindParam("wrong", $response1['wrong']);
+        $stmt->bindParam("id", $response1['$testId']);
+
+        $stmt->execute();
 
         //var_dump($response1);die();
 

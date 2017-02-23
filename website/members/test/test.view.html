@@ -168,12 +168,12 @@
 
                             <h2>Q{{ vm.currentQuestionNo + 1 }}. {{ vm.currentQuestion.question }}</h2>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="1" name="response" > {{ vm.currentQuestion.option_1 }}   </div>
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="2" name="response" > {{ vm.currentQuestion.option_2 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="1" name="response" > {{ vm.currentQuestion.option_1 }}   </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="2" name="response" > {{ vm.currentQuestion.option_2 }}</div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="3" name="response" > {{ vm.currentQuestion.option_3 }}</div>
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.response" value="4" name="response" > {{ vm.currentQuestion.option_4 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="3" name="response" > {{ vm.currentQuestion.option_3 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="4" name="response" > {{ vm.currentQuestion.option_4 }}</div>
                         </div>
                         <br>
                         <br>
@@ -191,7 +191,7 @@
                                 </button>
                             </div>
                             <div class="col-lg-6">
-                                <button ng-show="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.loadQuestion(vm.currentQuestionNo + 1)">
+                                <button ng-show="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.showResults()">
                                     Finish
                                 </button>
                             </div>

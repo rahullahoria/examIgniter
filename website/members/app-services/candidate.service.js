@@ -30,6 +30,7 @@
         service.StartTest = StartTest;
         service.GetQuestion = GetQuestion;
         service.SubmitRespnse = SubmitRespnse;
+        service.ShowResults = ShowResults;
 
         return service;
 
@@ -42,6 +43,12 @@
         function GetStatus(userMD5) {
             return $http
                 .get('http://api.examhans.com/user/'+userMD5+'/status')
+                .then(handleSuccess, handleError('Error getting all users'));
+        }
+
+        function ShowResults(userMD5,testId) {
+            return $http
+                .get('http://api.examhans.com/user/'+userMD5+'/test/'+testId+'/result')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
