@@ -26,7 +26,7 @@ function getTestResult($userMd5,$testId){
 
     $sqlUpdateResponse = "update responses set status = :status where id = :id";
     $sqlUpdateTest = 'update tests
-set amount_made = :amount,total_questions =:total_questions,answered=:answered,correct=:correct,wrong=:wrong where id =:id';
+set amount_made = :amount,total_questions =:total_questions,answered=:answered,correct=:correct,wrong=:wrong,completion_time=:completion_time where id =:id';
 
     $sqlLoadTestResult = 'select * from tests where id = :id';
 
@@ -99,6 +99,7 @@ set amount_made = :amount,total_questions =:total_questions,answered=:answered,c
         $stmt->bindParam("answered", $response1['answered']);
         $stmt->bindParam("correct", $response1['correct']);
         $stmt->bindParam("wrong", $response1['wrong']);
+        $stmt->bindParam("completion_time",  date("Y-m-d H:i:s"));
         $stmt->bindParam("id", $testId);
 
         $stmt->execute();
