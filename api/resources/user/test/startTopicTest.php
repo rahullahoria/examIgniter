@@ -28,7 +28,7 @@ function startTopicTest($userMd5){
 
 
     $sql = "SELECT a.id, a.`question`, a.`img_id`, a.`option_1`, a.`option_2`, a.`option_3`, a.`option_4`
-                  FROM `questions` as a  WHERE  a.topic_id = :topic_id ORDER BY RAND() limit 0,:no_of_question";
+                  FROM `questions` as a  WHERE  a.topic_id = :topic_id ORDER BY RAND() limit 0,".$topic->no_of_question;
 
     $sqlGettingUserId = "Select id from users where md5 = :user_md5";
 
@@ -51,7 +51,7 @@ function startTopicTest($userMd5){
         $stmt = $db->prepare($sql);
 
         $stmt->bindParam("topic_id", $topic->topic_id);
-        $stmt->bindParam("no_of_question", $topic->no_of_question);
+        //$stmt->bindParam("no_of_question", $topic->no_of_question);
 
 
         $stmt->execute();
