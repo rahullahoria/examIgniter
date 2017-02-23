@@ -111,8 +111,10 @@
             CandidateService.ShowResults(vm.inUser.md5, vm.tests.test_id)
                 .then(function (response) {
 
+                    $cookieStore.put('tests', '');
 
                     console.log(response);
+                    $location.path('/test/'+vm.tests.test_id+'/result');
                 });
 
         }

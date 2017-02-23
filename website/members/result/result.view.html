@@ -155,131 +155,9 @@
             </div>
             <a ng-click="vm.filterIt('all')">See All</a>
         </div>-->
-        <!-- /.row -->
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Gernal Knowledge
-                        <!--<div class="pull-right">
-                            <div class="btn-group">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    {{ vm.whichMonth.name }}
-                                    <img ng-if="vm.dataLoading" src="data:image/gif;base64,R0lGODlhEAAQAPIAAP///wAAAMLCwkJCQgAAAGJiYoKCgpKSkiH/C05FVFNDQVBFMi4wAwEAAAAh/hpDcmVhdGVkIHdpdGggYWpheGxvYWQuaW5mbwAh+QQJCgAAACwAAAAAEAAQAAADMwi63P4wyklrE2MIOggZnAdOmGYJRbExwroUmcG2LmDEwnHQLVsYOd2mBzkYDAdKa+dIAAAh+QQJCgAAACwAAAAAEAAQAAADNAi63P5OjCEgG4QMu7DmikRxQlFUYDEZIGBMRVsaqHwctXXf7WEYB4Ag1xjihkMZsiUkKhIAIfkECQoAAAAsAAAAABAAEAAAAzYIujIjK8pByJDMlFYvBoVjHA70GU7xSUJhmKtwHPAKzLO9HMaoKwJZ7Rf8AYPDDzKpZBqfvwQAIfkECQoAAAAsAAAAABAAEAAAAzMIumIlK8oyhpHsnFZfhYumCYUhDAQxRIdhHBGqRoKw0R8DYlJd8z0fMDgsGo/IpHI5TAAAIfkECQoAAAAsAAAAABAAEAAAAzIIunInK0rnZBTwGPNMgQwmdsNgXGJUlIWEuR5oWUIpz8pAEAMe6TwfwyYsGo/IpFKSAAAh+QQJCgAAACwAAAAAEAAQAAADMwi6IMKQORfjdOe82p4wGccc4CEuQradylesojEMBgsUc2G7sDX3lQGBMLAJibufbSlKAAAh+QQJCgAAACwAAAAAEAAQAAADMgi63P7wCRHZnFVdmgHu2nFwlWCI3WGc3TSWhUFGxTAUkGCbtgENBMJAEJsxgMLWzpEAACH5BAkKAAAALAAAAAAQABAAAAMyCLrc/jDKSatlQtScKdceCAjDII7HcQ4EMTCpyrCuUBjCYRgHVtqlAiB1YhiCnlsRkAAAOwAAAAAAAAAAAA==" />
-
-                                    <span class="caret"></span>
-                                </button>
-                                <ul class="dropdown-menu pull-right" role="menu">
-                                    <li ng-repeat="month in vm.threeMonths" >
-                                        <a ng-click="vm.currentMonthIndex=$index;vm.setCurrentMon()">{{ month.name }}</a>
-                                    </li>
-
-                                    <li class="divider"></li>
-                                    <li><a href="">Currently for {{ vm.whichMonth.name }}</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>-->
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-                        <div class="table-responsive">
-
-                        <table datatable="ng"  class="table table-bordered table-hover table-striped" style="max-width: 99%;">
-                            <thead>
-                            <tr>
-                                <th>Topic</th>
-                                <th>#Question</th>
-                                <th>Earned</th>
-                                <th>Status</th>
-
-                            </tr>
-                            </thead>
-                            <tbody>
-
-                            <tr ng-repeat="toCallCandidate in vm.toCallCandidates" ng-show="vm.{{ vm.getColor( toCallCandidate.time) }}Filter" class="{{ vm.getColor( toCallCandidate.time) }}">
-
-                                <td>
-                                    <i class="fa fa-user fa-fw {{ toCallCandidate.status?'text-success':''}}"></i>
-                                    <a href="#/employee/{{ toCallCandidate.md5_id }}"> {{ toCallCandidate.name }}</a>
-                                </td>
-                                <td>{{ toCallCandidate.time/60/60 | number: 0 }} </td>
-
-                                <td>{{ vm.getFun(toCallCandidate.time)| number: 0  }}</td>
-                                <td>{{ vm.date1*6.85 | number: 0}} </td>
-                                <td>{{ (toCallCandidate.time/60/60/(vm.date1*6.85))*100 | number: 2}}% </td>
 
 
-                            </tr>
 
-                            </tbody>
-                        </table>
-                            </div>
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-                <!-- /.panel -->
-
-
-            </div>
-            <!-- /.col-lg-8 -->
-
-        </div>
-        <!-- /.row -->
-
-        <div class="row">
-            <div class="col-lg-8">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Gernal Knowledge, Test_id : 21, Topic: History
-
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-
-                            <h2>Q1. what is capital of India in 1932?</h2>
-                        <div class="row">
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > Delhi   </div>
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > Kolkata</div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > Bangolore</div>
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > New Delhi</div>
-                        </div>
-                        <br>
-                        <br>
-
-                        <div class="row">
-                            <div class="col-lg-6"><button class="btn btn-danger"> Previous</button> <button class="btn btn-warning">Submit</button> <button class="btn btn-danger">Next></button> </div>
-                            <div class="col-lg-6"></div>
-                        </div>
-
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-
-            </div>
-            <div class="col-lg-4">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Index
-
-                    </div>
-                    <!-- /.panel-heading -->
-                    <div class="panel-body">
-
-                       <ul>
-                           <li><a href="#"> question 1</a></li>
-                           <li><a href="#">question 2</a></li>
-                           <li><a href="#">question 3</a></li>
-                       </ul>
-
-                    </div>
-                    <!-- /.panel-body -->
-                </div>
-
-            </div>
-        </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="table-responsive">
@@ -300,7 +178,7 @@
 
 
                             <td><b>Answered</b></td>
-                            <td>40</td>
+                            <td>{{vm.results.answered}}</td>
 
 
                         </tr>
@@ -309,7 +187,7 @@
 
 
                             <td><b>Correct</b></td>
-                            <td>28</td>
+                            <td>{{vm.results.correct}}</td>
 
 
                         </tr>
@@ -317,7 +195,7 @@
 
 
                             <td><b>Wrong</b></td>
-                            <td>12</td>
+                            <td>{{vm.results.wrong}}</td>
 
 
                         </tr>
@@ -325,7 +203,7 @@
 
 
                             <td><b>Earned</b></td>
-                            <td>430 Rs</td>
+                            <td>{{vm.results.amount_made}} Rs</td>
 
 
                         </tr>
