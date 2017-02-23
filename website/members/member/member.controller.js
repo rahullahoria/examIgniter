@@ -5,8 +5,8 @@
         .module('app')
         .controller('MemberController', MemberController);
 
-    MemberController.$inject = ['UserService',  'CandidateService', '$rootScope', 'FlashService','$location'];
-    function MemberController(UserService, CandidateService,  $rootScope, FlashService,$location) {
+    MemberController.$inject = ['UserService', '$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
+    function MemberController(UserService, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
         var vm = this;
 
         vm.user = null;
@@ -38,7 +38,7 @@
           //  loadCurrentUser();
            // loadAllUsers();
 
-            loadMonths();
+            //loadMonths();
             loadUser();
             loadToCallCandidates();
 
@@ -92,20 +92,30 @@
 
 
         }
-        vm.startTest = function(topicId){
+        vm.startTest = function(topicId,noOfQuestion){
             console.log(topicId);
 
-            CandidateService.StartTest(vm.inUser.md5)
+            CandidateService.StartTest(vm.inUser.md5,
+                    {
+                    "topic_id":topicId,
+                    "no_of_question":noOfQuestion
+                     }
+                )
                 .then(function (response) {
-                    vm.subjects = response.subjects;
+                    vm.subjects = response.response;
 
-                    $cookieStore.put('test_questions', JSON.stringify(vm.subjects));
+                    console.log('member',vm.subjects);
+
+                    $cookieStore.put('test_id', JSON.stringify(vm.subjects.test_id));
+                    $cookieStore.put('no_of_questions', JSON.stringify(noOfQuestion));
+                    for(var i=0; i < noOfQuestion;i++ )
+                        $cookieStore.put('question_'+i, JSON.stringify(vm.subjects.questions[i]));
 
 
                 });
 
 
-            $location.path('/test/'+topicId);
+            $location.path('/test');
 
         }
 

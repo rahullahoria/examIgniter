@@ -5,8 +5,8 @@
         .module('app')
         .controller('TestController', TestController);
 
-    TestController.$inject = ['UserService',  'CandidateService', '$rootScope', 'FlashService','$location'];
-    function TestController(UserService, CandidateService,  $rootScope, FlashService,$location) {
+    TestController.$inject = ['UserService', '$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
+    function TestController(UserService, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
         var vm = this;
 
         vm.user = null;
@@ -37,9 +37,10 @@
           //  loadCurrentUser();
            // loadAllUsers();
 
-            loadMonths();
+            //loadMonths();
             loadUser();
-            loadToCallCandidates();
+            //loadToCallCandidates();
+            loadTest();
 
         }
 
@@ -53,29 +54,7 @@
 
         }
 
-        function loadMonths(){
-            var months = new Array(12);
-            months[0] = "January";
-            months[1] = "February";
-            months[2] = "March";
-            months[3] = "April";
-            months[4] = "May";
-            months[5] = "June";
-            months[6] = "July";
-            months[7] = "August";
-            months[8] = "September";
-            months[9] = "October";
-            months[10] = "November";
-            months[11] = "December";
 
-            var myDate = new Date();
-            vm.whichMonth.name = months[myDate.getMonth()];
-            vm.whichMonth.num = myDate.getMonth();
-            vm.threeMonths[0] = {"name":months[myDate.getMonth()],"num":myDate.getMonth()};
-            vm.threeMonths[1] = {"name":months[myDate.getMonth()-1], "num":myDate.getMonth()-1};
-            vm.threeMonths[2] = {"name":months[myDate.getMonth()-2],"num":myDate.getMonth()-2};
-            console.log(vm.threeMonths);
-        }
 
         vm.logout = function(){
             vm.inUser = null;
@@ -92,14 +71,17 @@
 
         }
 
+        vm.loadQuestion = 0;
+        function loadTest(){
+            vm.test_id = $cookieStore.get('test_id');
+            vm.responses = $cookieStore.get('responses');
 
+
+            console.log('test controller',vm.questions,vm.test_id,vm.responses);
+        }
 
         vm.loadToCallCandidates = loadToCallCandidates;
 
-        vm.date1 = new Date().getDate();
-        vm.getFun = function(work){
-           return Math.floor((Math.random() * (work/60/60)) + (work/60/60/4));
-        };
 
 
 

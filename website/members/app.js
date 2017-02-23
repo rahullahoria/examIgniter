@@ -38,7 +38,7 @@
 
             })
 
-            .when('/test/:test', {
+            .when('/test', {
                 controller: 'TestController',
                 templateUrl: 'test/test.view.html',
                 controllerAs: 'vm'

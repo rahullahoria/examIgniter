@@ -27,7 +27,7 @@ function startTopicTest($userMd5){
 
 
 
-    $sql = "SELECT a.id, a.`question`, a.`img_id`, a.`option_1`, a.`option_2`, a.`option_3`, a.`option_4`
+    $sql = "SELECT a.id
                   FROM `questions` as a  WHERE  a.topic_id = :topic_id ORDER BY RAND() limit 0,".$topic->no_of_question;
 
     $sqlGettingUserId = "Select id from users where md5 = :user_md5";
@@ -74,11 +74,11 @@ function startTopicTest($userMd5){
         //saving questions
         foreach($questions as $question){
 
-            $question->question = htmlspecialchars($question->question);
+           /* $question->question = htmlspecialchars($question->question);
             $question->option_1 = htmlspecialchars($question->option_1);
             $question->option_2 = htmlspecialchars($question->option_2);
             $question->option_3 = htmlspecialchars($question->option_3);
-            $question->option_4 = htmlspecialchars($question->option_4);
+            $question->option_4 = htmlspecialchars($question->option_4);*/
 
             $stmt = $db->prepare($sqlSaveQuestion);
 

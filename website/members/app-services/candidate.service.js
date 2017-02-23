@@ -27,6 +27,7 @@
         service.GetUserLast10Instance = GetUserLast10Instance;
         service.GetTodayUsage = GetTodayUsage;
         service.GetStatus = GetStatus;
+        service.StartTest = StartTest;
 
         return service;
 
@@ -107,6 +108,10 @@
 
         function UpdateInstance(instance) {
             return $http.post('http://api.bulldog.shatkonlabs.com/instance', instance).then(handleSuccess, handleError('Error updating user'));
+        }
+
+        function StartTest(userMd5, instance) {
+            return $http.post('http://api.examhans.com/user/'+userMd5+'/test/', instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function Delete(id) {

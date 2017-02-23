@@ -160,7 +160,7 @@
             <div class="col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Gernal Knowledge, Test_id : 21, Topic: History
+                        <i class="fa fa-bar-chart-o fa-fw"></i> {{ vm.test.questions[vm.loadQuestion].question }}
 
                     </div>
                     <!-- /.panel-heading -->
@@ -168,12 +168,12 @@
 
                             <h2>Q1. what is capital of India in 1932?</h2>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > Delhi   </div>
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > Kolkata</div>
+                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_1 }}   </div>
+                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_2 }}</div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > Bangolore</div>
-                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > New Delhi</div>
+                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_3 }}</div>
+                            <div class="col-lg-6"><input type="radio" value="opt" name="response" > {{ vm.test.questions[vm.loadQuestion].option_4 }}</div>
                         </div>
                         <br>
                         <br>
@@ -198,9 +198,8 @@
                     <div class="panel-body">
 
                        <ul>
-                           <li><a href="#"> question 1</a></li>
-                           <li><a href="#">question 2</a></li>
-                           <li><a href="#">question 3</a></li>
+                           <li ng-repeat="question in vm.test.questions" ><a ng-click="vm.loadQuestion = index "> question {{ index}}</a></li>
+
                        </ul>
 
                     </div>
