@@ -27,7 +27,7 @@ $app->post('/user/:userMd5/test/', 'startTopicTest');
 
 //next question
 $app->get('/user/:userMd5/test/:testId/goto/:questionNo', 'getTestQuestionNo');
-$app->post('/user/:userMd5/test/:testId/question/:questionNo', 'saveTestQuestionAnswer');
+$app->post('/user/:userMd5/test/:testId/question/:responseId', 'saveTestQuestionAnswer');
 
 //result
 $app->get('/user/:userMd5/test/:testId/result', 'getTestResult');

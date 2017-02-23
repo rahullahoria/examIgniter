@@ -17,4 +17,37 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
         *  option 4: 'sdfa'
         * }
         * */
+    $request = \Slim\Slim::getInstance()->request();
+
+    $user = json_decode($request->getBody());
+
+    $sql = "SELECT a.id, a.question, a.img_id, a.option_1, a.option_2, a.option_3, a.option_4
+                  FROM `questions` as a  WHERE  a.id = :id";
+
+
+
+
+    try {
+
+        $db = getDB();
+        $stmt = $db->prepare($sql);
+
+        $stmt->bindParam("id", $questionNo);
+
+        $stmt->execute();
+        $questions = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+
+        //var_dump($response1);die();
+
+        $db = null;
+
+        echo '{"questions": ' . json_encode($questions) . '}';
+
+
+
+    } catch (Exception $e) {
+        //error_log($e->getMessage(), 3, '/var/tmp/php.log');
+        echo '{"error":{"text":"' . $e->getMessage() . '"}}';
+    }
 }

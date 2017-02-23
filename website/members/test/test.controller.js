@@ -73,11 +73,19 @@
 
         vm.loadQuestion = 0;
         function loadTest(){
-            vm.test_id = $cookieStore.get('test_id');
-            vm.responses = $cookieStore.get('responses');
+            vm.tests = JSON.parse($cookieStore.get('tests'));
 
+            console.log('test controller',vm.tests);
+        }
 
-            console.log('test controller',vm.questions,vm.test_id,vm.responses);
+        vm.loadQuestion = function(index){
+
+            CandidateService.GetQuestion(vm.inUser.md5, vm.tests.questions[index].id)
+                .then(function (response) {
+
+                    console.log(response);
+                });
+
         }
 
         vm.loadToCallCandidates = loadToCallCandidates;

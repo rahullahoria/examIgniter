@@ -106,10 +106,8 @@
 
                     console.log('member',vm.subjects);
 
-                    $cookieStore.put('test_id', JSON.stringify(vm.subjects.test_id));
-                    $cookieStore.put('no_of_questions', JSON.stringify(noOfQuestion));
-                    for(var i=0; i < noOfQuestion;i++ )
-                        $cookieStore.put('question_'+i, JSON.stringify(vm.subjects.questions[i]));
+                    $cookieStore.put('tests', JSON.stringify(vm.subjects));
+
 
 
                 });
