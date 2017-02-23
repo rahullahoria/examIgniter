@@ -30,6 +30,7 @@
         vm.loadUser = loadUser;
         vm.currentMonthIndex = 0;
         vm.dataLoading = false;
+        vm.subjectTotalQ = 0;
 
         initController();
 
@@ -85,63 +86,29 @@
 
         function loadUser(){
             vm.inUser = UserService.GetInUser();
-            /*if(!vm.inUser.name)
+            if(!vm.inUser.name)
                 $location.path('/login');
-            */console.log("in user",vm.inUser);
+            console.log("in user",vm.inUser);
 
 
         }
+        vm.startTest = function(topicId){
+            console.log(topicId);
 
-        vm.filterIt = function(status){
+            CandidateService.StartTest(vm.inUser.md5)
+                .then(function (response) {
+                    vm.subjects = response.subjects;
 
-            if(status == "all")  {
 
-                vm.successFilter = true;
-                vm.dangerFilter = true;
-                vm.warningFilter = true;
-                vm.primaryFilter = true;
-                return;
 
-            }
+                });
 
-            if(status == "success")  {
 
-                vm.successFilter = true;
-                vm.dangerFilter = false;
-                vm.warningFilter = false;
-                vm.primaryFilter = false;
-                return;
+            $location.path('/test/'+topicId);
 
-            }
-            if(status == "danger")  {
+        }
 
-                vm.successFilter = false;
-                vm.dangerFilter = true;
-                vm.warningFilter = false;
-                vm.primaryFilter = false;
-                return;
 
-            }
-            if(status == "warning")  {
-
-                vm.successFilter = false;
-                vm.dangerFilter = false;
-                vm.warningFilter = true;
-                vm.primaryFilter = false;
-                return;
-
-            }
-            if(status == "primary")  {
-
-                vm.successFilter = false;
-                vm.dangerFilter = false;
-                vm.warningFilter = false;
-                vm.primaryFilter = true;
-                return;
-
-            }
-
-        };
 
         vm.loadToCallCandidates = loadToCallCandidates;
 
@@ -178,7 +145,18 @@
                 .then(function (response) {
                     vm.subjects = response.subjects;
 
-                    console.log(vm.subjects);
+
+                    for(var i = 0; i < vm.subjects.length; i++){
+                        var temp = 0;
+                        for(var j = 0; j< vm.subjects[i].topics.length; j++){
+                            temp += vm.subjects[i].topics[j].no_of_question*1;
+
+
+                        }
+                        vm.subjects[i].subjectTotalQ = temp;
+                    }
+
+                    console.log('inside controller',vm.subjects);
                 });
 
         }

@@ -157,10 +157,10 @@
         </div>-->
         <!-- /.row -->
         <div class="row">
-            <div class="col-lg-12">
+            <div class="col-lg-12"  ng-repeat="subject in vm.subjects">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Gernal Knowledge
+                        <i class="fa fa-bar-chart-o fa-fw"></i> {{ subject.subject_name }} | Total Question : {{subject.subjectTotalQ}}
                         <!--<div class="pull-right">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -182,7 +182,7 @@
                         </div>-->
                     </div>
                     <!-- /.panel-heading -->
-                    <div class="panel-body" ng-repeat="subject in vm.subjects">
+                    <div class="panel-body" >
                         <div class="table-responsive">
 
                         <table datatable="ng"  class="table table-bordered table-hover table-striped" style="max-width: 99%;">
@@ -197,15 +197,18 @@
                             </thead>
                             <tbody>
 
-                            <tr ng-repeat="topic in subject.topics" class="{{ (topic.amount==null)?'warning':'success' }}">
+                            <tr ng-repeat="topic in subject.topics"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
 
                                 <td>
-                                    {{ topic.topic_name }}
+                                    <a ng-click="vm.startTest(topic.topic_id)">{{ topic.topic_name }}</a>
                                 </td>
-                                <td>{{ topic.no_of_questions }} </td>
+                                <td>
+                                    {{ topic.no_of_question }}
 
-                                <td>{{ (topic.amount==null)?'Not Done':topic.amount }}</td>
-                                <td>{{ (topic.amount==null)?'Start Test':'Done' }} </td>
+                                </td>
+
+                                <td>{{ (topic.amount_made==null)?'Not Done':topic.amount_made }}</td>
+                                <td>{{ (topic.amount_made==null)?'Start Test':'Done' }} </td>
 
 
                             </tr>
