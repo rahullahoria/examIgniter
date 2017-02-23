@@ -99,6 +99,7 @@
                 .then(function (response) {
                     vm.subjects = response.subjects;
 
+                    $cookieStore.put('test_questions', JSON.stringify(vm.subjects));
 
 
                 });

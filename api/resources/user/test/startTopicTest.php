@@ -39,12 +39,9 @@ function startTopicTest($userMd5){
                               VALUES (:test_id, :question_id)";
 
 
-
-
-
-
-
     try {
+
+        $response = array();
 
         $db = getDB();
         //Getting Questions
@@ -72,6 +69,7 @@ function startTopicTest($userMd5){
 
         $stmt->execute();
         $testId = $db->lastInsertId();
+        $response['test_id'] = $testId;
 
         //saving questions
         foreach($questions as $question){
@@ -91,10 +89,11 @@ function startTopicTest($userMd5){
             $question->response_id = $db->lastInsertId();
         }
 
+        $response['questions'] = $questions;
 
         $db = null;
 
-        echo '{"questions": ' . json_encode($questions) . '}';
+        echo '{"response": ' . json_encode($response) . '}';
 
     } catch (Exception $e) {
         //error_log($e->getMessage(), 3, '/var/tmp/php.log');

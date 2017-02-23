@@ -92,56 +92,7 @@
 
         }
 
-        vm.filterIt = function(status){
 
-            if(status == "all")  {
-
-                vm.successFilter = true;
-                vm.dangerFilter = true;
-                vm.warningFilter = true;
-                vm.primaryFilter = true;
-                return;
-
-            }
-
-            if(status == "success")  {
-
-                vm.successFilter = true;
-                vm.dangerFilter = false;
-                vm.warningFilter = false;
-                vm.primaryFilter = false;
-                return;
-
-            }
-            if(status == "danger")  {
-
-                vm.successFilter = false;
-                vm.dangerFilter = true;
-                vm.warningFilter = false;
-                vm.primaryFilter = false;
-                return;
-
-            }
-            if(status == "warning")  {
-
-                vm.successFilter = false;
-                vm.dangerFilter = false;
-                vm.warningFilter = true;
-                vm.primaryFilter = false;
-                return;
-
-            }
-            if(status == "primary")  {
-
-                vm.successFilter = false;
-                vm.dangerFilter = false;
-                vm.warningFilter = false;
-                vm.primaryFilter = true;
-                return;
-
-            }
-
-        };
 
         vm.loadToCallCandidates = loadToCallCandidates;
 
@@ -150,26 +101,7 @@
            return Math.floor((Math.random() * (work/60/60)) + (work/60/60/4));
         };
 
-        vm.getColor = function(eff){
 
-            eff = (eff/60/60/(vm.date1*6.85))*100;
-
-            //return "danger";
-
-            if(eff <= 30){
-                return "danger";
-            }
-            if(eff <= 60){
-                return "warning";
-            }
-            if(eff <= 80){
-                return "success";
-            }
-            if(eff >= 80){
-                return "primary";
-            }
-
-        };
 
         function loadToCallCandidates(){
             vm.dataLoading = true;
