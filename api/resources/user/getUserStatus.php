@@ -46,7 +46,7 @@ function getUserStatus($userMd5){
             and b.topic_id = c.id
             and c.subject_id = d.id ";
 
-    $sqlGetTopics = "SELECT b.id as topic_id, b.name as topic_name, c.no_of_question, d.amount_made, d.total_questions,d.id as test_id
+    $sqlGetTopics = "SELECT b.id as topic_id, b.name as topic_name, c.no_of_question, d.amount_made, d.id as test_id
                             FROM topic_exam_mappings as a
                             inner join topics as b
                             inner join patterns as c

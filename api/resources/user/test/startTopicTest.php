@@ -70,6 +70,7 @@ function startTopicTest($userMd5){
         $stmt->execute();
         $testId = $db->lastInsertId();
         $response['test_id'] = $testId;
+        $response['test_start_time'] =  date("Y-m-d H:i:s");
 
         //saving questions
         foreach($questions as $question){

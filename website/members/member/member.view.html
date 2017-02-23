@@ -200,7 +200,7 @@
                             <tr ng-repeat="topic in subject.topics"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
 
                                 <td>
-                                    <a ng-click="vm.startTest(topic.topic_id,topic.no_of_question)">{{ topic.topic_name }}</a>
+                                    <a ng-click="vm.startTest(topic.topic_id,topic.no_of_question, topic.test_id)">{{ topic.topic_name }}</a>
                                 </td>
                                 <td>
                                     {{ topic.no_of_question }}

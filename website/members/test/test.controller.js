@@ -107,6 +107,11 @@
                 });
 
         }
+
+        $timeout(function() {
+            vm.showResults();
+        }, 3000);
+
         vm.showResults = function(){
             CandidateService.ShowResults(vm.inUser.md5, vm.tests.test_id)
                 .then(function (response) {

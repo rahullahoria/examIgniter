@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', ['ngRoute', 'ngCookies', 'datatables','base64','ui.bootstrap.datetimepicker'])
+        .module('app', ['ngRoute', 'ngCookies', 'datatables','timer','base64','ui.bootstrap.datetimepicker'])
         .config(config)
         .run(run);
 

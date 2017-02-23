@@ -92,24 +92,26 @@
 
 
         }
-        vm.startTest = function(topicId,noOfQuestion){
+        vm.startTest = function(topicId,noOfQuestion,testId){
             console.log(topicId);
+            if(testId)
+                $location.path('/test/'+testId+'/result');
+            else
+                CandidateService.StartTest(vm.inUser.md5,
+                        {
+                        "topic_id":topicId,
+                        "no_of_question":noOfQuestion
+                         }
+                    )
+                    .then(function (response) {
+                        vm.subjects = response.response;
 
-            CandidateService.StartTest(vm.inUser.md5,
-                    {
-                    "topic_id":topicId,
-                    "no_of_question":noOfQuestion
-                     }
-                )
-                .then(function (response) {
-                    vm.subjects = response.response;
+                        console.log('member',vm.subjects);
 
-                    console.log('member',vm.subjects);
+                        $cookieStore.put('tests', JSON.stringify(vm.subjects));
 
-                    $cookieStore.put('tests', JSON.stringify(vm.subjects));
-
-                    $location.path('/test');
-                });
+                        $location.path('/test');
+                    });
 
 
 
