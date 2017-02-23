@@ -45,7 +45,7 @@ set amount_made = :amount,total_questions =:total_questions,answered=:answered,c
         if($tests[0]->total_questions != 0){
             echo '{"results": ' . json_encode($tests[0]) . '}';
             $db = null;
-            die();
+            return;
 
         }
 

@@ -116,14 +116,14 @@
       <file leaf-file-name="getTestResult.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestResult.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7462406">
-              <caret line="101" column="64" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
+            <state vertical-scroll-proportion="0.40789473">
+              <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1487863702668" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
-                <marker date="1487863702668" expanded="true" signature="614:666" placeholder="update respo... " />
-                <marker date="1487863702668" expanded="true" signature="691:859" placeholder="update tests... " />
-                <marker date="1487863702668" expanded="true" signature="889:923" placeholder="select * fro... tests" />
+                <marker date="1487863851920" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
+                <marker date="1487863851920" expanded="true" signature="614:666" placeholder="update respo... " />
+                <marker date="1487863851920" expanded="true" signature="691:859" placeholder="update tests... " />
+                <marker date="1487863851920" expanded="true" signature="889:923" placeholder="select * fro... tests" />
               </folding>
             </state>
           </provider>
@@ -721,7 +721,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487863540127</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="auth">
+      <created>1487863756012</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1487863756012</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1160,14 +1166,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestResult.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7462406">
-          <caret line="101" column="64" selection-start-line="101" selection-start-column="64" selection-end-line="101" selection-end-column="64" />
+        <state vertical-scroll-proportion="0.40789473">
+          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1487863702668" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
-            <marker date="1487863702668" expanded="true" signature="614:666" placeholder="update respo... " />
-            <marker date="1487863702668" expanded="true" signature="691:859" placeholder="update tests... " />
-            <marker date="1487863702668" expanded="true" signature="889:923" placeholder="select * fro... tests" />
+            <marker date="1487863851920" expanded="true" signature="399:584" placeholder="SELECT a.`id... responses" />
+            <marker date="1487863851920" expanded="true" signature="614:666" placeholder="update respo... " />
+            <marker date="1487863851920" expanded="true" signature="691:859" placeholder="update tests... " />
+            <marker date="1487863851920" expanded="true" signature="889:923" placeholder="select * fro... tests" />
           </folding>
         </state>
       </provider>
