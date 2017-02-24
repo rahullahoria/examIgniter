@@ -82,11 +82,11 @@
       <file leaf-file-name="insertQuestion.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/questions/insertQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29411766">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.61497325">
+              <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1487934888200" expanded="true" signature="239:506" placeholder="INSERT INTO `questions`... " />
+                <marker date="1487935299212" expanded="true" signature="239:506" placeholder="INSERT INTO `questions`... " />
               </folding>
             </state>
           </provider>
@@ -115,7 +115,7 @@
       <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.75">
+            <state vertical-scroll-proportion="33.75">
               <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="45" />
               <folding>
                 <marker date="1487865125176" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
@@ -821,7 +821,13 @@
       <option name="project" value="LOCAL" />
       <updated>1487932902978</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="auth">
+      <created>1487934898781</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1487934898781</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1228,7 +1234,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.75">
+        <state vertical-scroll-proportion="33.75">
           <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="45" />
           <folding>
             <marker date="1487865125176" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
@@ -1239,11 +1245,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/questions/insertQuestion.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29411766">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="49" selection-end-line="11" selection-end-column="49" />
+        <state vertical-scroll-proportion="0.61497325">
+          <caret line="29" column="55" selection-start-line="29" selection-start-column="55" selection-end-line="29" selection-end-column="55" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1487934888200" expanded="true" signature="239:506" placeholder="INSERT INTO `questions`... " />
+            <marker date="1487935299212" expanded="true" signature="239:506" placeholder="INSERT INTO `questions`... " />
           </folding>
         </state>
       </provider>

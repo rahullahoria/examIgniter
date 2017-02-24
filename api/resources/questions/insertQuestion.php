@@ -22,12 +22,12 @@ function insertQuestion(){
         $db = getDB();
         $stmt = $db->prepare($sql);
 
-        $stmt->bindParam("question", $question->question);
-        $stmt->bindParam("img_id", $question->img_id);
-        $stmt->bindParam("option_1", $question->option_1);
-        $stmt->bindParam("option_2", $question->option_2);
-        $stmt->bindParam("option_3", $question->option_3);
-        $stmt->bindParam("option_4", $question->option_4);
+        $stmt->bindParam("question", htmlspecialchars($question->question), ENT_QUOTES);
+        $stmt->bindParam("img_id", htmlspecialchars($question->img_id, ENT_QUOTES));
+        $stmt->bindParam("option_1", htmlspecialchars($question->option_1, ENT_QUOTES));
+        $stmt->bindParam("option_2", htmlspecialchars($question->option_2, ENT_QUOTES));
+        $stmt->bindParam("option_3", htmlspecialchars($question->option_3, ENT_QUOTES));
+        $stmt->bindParam("option_4", htmlspecialchars($question->option_4, ENT_QUOTES));
         $stmt->bindParam("answer", $question->answer);
         $stmt->bindParam("topic_id", $question->topic_id);
 
