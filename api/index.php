@@ -18,5 +18,4 @@ require_once "resources/questions/insertQuestion.php";
 require_once "app.php";
 
 
-
 ?>
