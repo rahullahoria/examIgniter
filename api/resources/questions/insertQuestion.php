@@ -9,7 +9,7 @@
 function insertQuestion(){
     $request = \Slim\Slim::getInstance()->request();
 
-    $question = json_decode("{'file_name':'','size':''}");
+    $question = json_decode($request->getBody());
 
     $sql = "INSERT INTO `questions`
                       (`question`, `img_id`, `option_1`, `option_2`, `option_3`, `option_4`, `answer`, `topic_id`)
