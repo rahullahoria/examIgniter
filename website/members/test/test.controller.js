@@ -121,21 +121,23 @@
         vm.loadQuestion = function (index){
 
             console.log(index);
-            CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
-                .then(function (response) {
-                    vm.currentQuestion = response.questions[0];
-                    vm.currentQuestionNo = index;
+            if( vm.tests.questions[index]) {
+                CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
+                    .then(function (response) {
+                        vm.currentQuestion = response.questions[0];
+                        vm.currentQuestionNo = index;
 
-                    var currentdate = new Date(vm.currentQuestion.question_fetch_time .replace(/-/g,"/"));
-                    vm.timeRemaing = parseInt(60*vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime())/1000);
-                    console.log('time remaing',vm.timeRemaing);
-                    if(vm.timeRemaing <= 0) {
-                        console.log('i am nagative');
-                        vm.showResults();
-                    }
+                        var currentdate = new Date(vm.currentQuestion.question_fetch_time.replace(/-/g, "/"));
+                        vm.timeRemaing = parseInt(60 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
+                        console.log('time remaing', vm.timeRemaing);
+                        if (vm.timeRemaing <= 0) {
+                            console.log('i am nagative');
+                            vm.showResults();
+                        }
 
-                    console.log(vm.currentQuestion.id);
-                });
+                        console.log(vm.currentQuestion.id);
+                    });
+            }
 
         }
 

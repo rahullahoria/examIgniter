@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html">Ncy with BullDog</a>
+            <a class="navbar-brand" href="index.html">ExamHans.com | Learn and Earn</a>
         </div>
         <!-- /.navbar-header -->
         <ul class="nav navbar-top-links navbar-right">
@@ -213,7 +213,12 @@
                     <!-- /.panel-heading -->
                     <div class="panel-body">
                         <div class="row"><div class="col-md-1 {{ (vm.tests.questions[$index].done)?'bg-success':'bg-warning'}}" ng-repeat="question in vm.tests.questions" ><a ng-click="vm.loadQuestion($index)"> {{ $index + 1}}</a></div> </div>
-
+                        <br>
+                        <br>
+                        <br>
+                        <button class="btn btn-danger" ng-click="vm.showResults()">
+                            End Test
+                        </button>
 
 
                     </div>
