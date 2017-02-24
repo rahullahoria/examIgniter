@@ -34,6 +34,8 @@ $app->get('/user/:userMd5/test/:testId/result', 'getTestResult');
 
 $app->post('/auth', 'userAuth');
 
+$app->post('/question', 'insertQuestion');
+
 /* Ending Routes */
 
 $app->run();
