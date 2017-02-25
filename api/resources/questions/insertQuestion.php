@@ -14,7 +14,7 @@ function insertQuestion(){
     $sql = "INSERT INTO `questions`
                       (`question`, `img_id`, `option_1`, `option_2`, `option_3`, `option_4`, `answer`, `topic_id`,`source`)
                       VALUES
-                      (:question,:img_id,:option_1,:option_2,:option_3,:option_4,:answer,:topic_id)";
+                      (:question,:img_id,:option_1,:option_2,:option_3,:option_4,:answer,:topic_id,:source)";
 
     try {
 
