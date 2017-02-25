@@ -12,7 +12,7 @@ function insertQuestion(){
     $question = json_decode($request->getBody());
 
     $sql = "INSERT INTO `questions`
-                      (`question`, `img_id`, `option_1`, `option_2`, `option_3`, `option_4`, `answer`, `topic_id`)
+                      (`question`, `img_id`, `option_1`, `option_2`, `option_3`, `option_4`, `answer`, `topic_id`,`source`)
                       VALUES
                       (:question,:img_id,:option_1,:option_2,:option_3,:option_4,:answer,:topic_id)";
 
@@ -30,6 +30,7 @@ function insertQuestion(){
         $stmt->bindParam("option_4", htmlspecialchars($question->option_4, ENT_QUOTES));
         $stmt->bindParam("answer", $question->answer);
         $stmt->bindParam("topic_id", $question->topic_id);
+        $stmt->bindParam("source", $question->source);
 
 
         $stmt->execute();
