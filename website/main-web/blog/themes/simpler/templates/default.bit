@@ -23,7 +23,7 @@
 		echo $plugin->blog_head();
 	}
 ?>
-<link href="http://examhans.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
