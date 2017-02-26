@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="<?php echo Blog::language() ?>">
 <head>
+<link href="http://examhans.com/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <?php
 	// Charset, title, description, keywords, robots, etc
 	echo Blog::meta_tags();
