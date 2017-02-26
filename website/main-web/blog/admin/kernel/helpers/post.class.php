@@ -153,7 +153,7 @@ class Post {
 		$text = $text===false?'':$text;
 
 		$url = Url::post($post, true);
-		return 'https://www.facebook.com/sharer/sharer.php?u='.urlencode($text.' '.$url);
+		return 'https://www.facebook.com/sharer/sharer.php?u='.$text.' '.$url;
 	}
 
 	public static function linkedin($title=false, $text=false)
