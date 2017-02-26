@@ -38,14 +38,14 @@
 			<span class="blog-name"><?php echo Blog::name() ?></span>
 			<span class="blog-slogan"><?php echo Blog::slogan() ?></span>
 		</a>
-
-                                <a class="page-scroll" href="http://examhans.com/#services">How?</a>
-                                <a class="page-scroll" href="http://examhans.com/blog/">Blog</a>
-                                <a class="page-scroll" href="http://examhans.com/members/">Members</a>
-                                <a class="page-scroll" href="https://rahul372.typeform.com/to/Wq52n6">Enquiry</a>
-                                <a class="page-scroll" href="https://rahul372.typeform.com/to/Wq52n6">Survey</a>
-                                <a class="page-scroll" href="http://examhans.com/members/">Login/Register</a>
-                                <a class="page-scroll" href="http://examhans.com/#contact">Contact</a>
+<br>
+                                <a class="category" href="http://examhans.com/#services">How?</a>
+                                <a class="category" href="http://examhans.com/blog/">Blog</a>
+                                <a class="category" href="http://examhans.com/members/">Members</a>
+                                <a class="category" href="https://rahul372.typeform.com/to/Wq52n6">Enquiry</a>
+                                <a class="category" href="https://rahul372.typeform.com/to/Wq52n6">Survey</a>
+                                <a class="category" href="http://examhans.com/members/">Login/Register</a>
+                                <a class="category" href="http://examhans.com/#contact">Contact</a>
 
 	</header>
 
