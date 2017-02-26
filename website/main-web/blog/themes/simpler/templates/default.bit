@@ -27,11 +27,7 @@
 
 </head>
 <body>
-
 <div id="container">
-
-
-
 	<!-- HEADER -->
 	<header id="blog-head">
 		<a href="<?php echo Blog::url() ?>">
@@ -39,6 +35,10 @@
 			<span class="blog-slogan"><?php echo Blog::slogan() ?></span>
 		</a>
 <br>
+<a style='color: #006ac8;
+                                              font-size: 1.4em;
+                                              text-decoration: none;'
+                                   href="http://examhans.com">Home</a>|
                                 <a style='color: #006ac8;
                                               font-size: 1.4em;
                                               text-decoration: none;'
