@@ -69,21 +69,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="default.bit" pinned="false" current-in-tab="false">
+      <file leaf-file-name="default.bit" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/main-web/blog/themes/simpler/templates/default.bit">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.07692308">
+              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main-web/blog/themes/simpler/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="2.2797618">
-              <caret line="729" column="1" selection-start-line="729" selection-start-column="1" selection-end-line="729" selection-end-column="1" />
+            <state vertical-scroll-proportion="-1.2962962">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -152,8 +152,8 @@
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
         <option value="$PROJECT_DIR$/api/resources/questions/insertQuestion.php" />
         <option value="$PROJECT_DIR$/website/main-web/index.html" />
-        <option value="$PROJECT_DIR$/website/main-web/blog/themes/simpler/templates/default.bit" />
         <option value="$PROJECT_DIR$/website/main-web/blog/themes/simpler/css/main.css" />
+        <option value="$PROJECT_DIR$/website/main-web/blog/themes/simpler/templates/default.bit" />
       </list>
     </option>
   </component>
@@ -767,12 +767,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00003" summary="auth">
-      <created>1487760332899</created>
-      <option name="number" value="00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1487760332900</updated>
-    </task>
     <task id="LOCAL-00004" summary="auth">
       <created>1487761388644</created>
       <option name="number" value="00004" />
@@ -1061,7 +1055,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488114649321</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="auth">
+      <created>1488115062428</created>
+      <option name="number" value="00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1488115062428</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1440,6 +1440,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website/main-web/vendor/bootstrap/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.075472">
+          <caret line="4691" column="1" selection-start-line="3973" selection-start-column="0" selection-end-line="4691" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/main-web/blog/themes/simpler/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.2962962">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.962264">
@@ -1452,24 +1468,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/blog/themes/simpler/templates/default.bit">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/vendor/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.075472">
-          <caret line="4691" column="1" selection-start-line="3973" selection-start-column="0" selection-end-line="4691" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/blog/themes/simpler/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.2797618">
-          <caret line="729" column="1" selection-start-line="729" selection-start-column="1" selection-end-line="729" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.07692308">
+          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
           <folding />
         </state>
       </provider>
