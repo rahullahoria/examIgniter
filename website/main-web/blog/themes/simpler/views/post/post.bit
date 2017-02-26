@@ -11,7 +11,7 @@
 			</span>
 
 			<span class="share">
-				<a target="_blank" href="<?php echo Post::facebook(Post::title()) ?>" style="background-image: url('http://w.sharethis.com/images/2017/facebook_32.png')"></a>
+				<a target="_blank" href="<?php echo Post::facebook(Post::title()) ?>" >Facebook</a>
 			</span>
 
 			<span class="share">
