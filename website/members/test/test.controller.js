@@ -5,8 +5,8 @@
         .module('app')
         .controller('TestController', TestController);
 
-    TestController.$inject = ['$scope','UserService', '$timeout','$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
-    function TestController($scope,UserService, $timeout, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
+    TestController.$inject = ['$scope', '$sce','UserService', '$timeout','$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
+    function TestController($scope,$sce,UserService, $timeout, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
         var vm = this;
 
         vm.user = null;
@@ -58,6 +58,8 @@
         vm.currentQuestionNo = 0;
         function loadTest(){
             vm.tests = JSON.parse($cookieStore.get('tests'));
+            vm.topicName = $cookieStore.get('topic_name');
+            vm.subjectName = $cookieStore.get('subject_name');
 
             vm.testStartTime = new Date(vm.tests.test_start_time.replace(/-/g,"/"));
             vm.timeRemaing = 10;
@@ -115,14 +117,33 @@
                          vm.showResults();
                          }, vm.testStartTime*1000);
                          }, 5000);*/
-                        if(vm.currentQuestion.question.replaceAll)
-                        vm.currentQuestion.question = vm.currentQuestion.question.replaceAll("�s", '\'s');
+
 
                         console.log(vm.currentQuestion.question);
                     }
                 });
 
         }
+
+        vm.replacements = function(str){
+            if(str == undefined)
+                return str;
+            console.log(typeof(str) );
+            str = str.replace(/\\n/g, '')
+                .replace(/\\r/g, '')
+                .replace(/\\/g, '')
+                .replace(/�s/g, '\'s')
+                .replace(/�/g, '\'')
+
+                .replace(/src="/g, 'src="http://'+vm.currentQuestion.source);
+            console.log(str );
+            return str;
+
+        };
+
+        vm.renderHtml = function (htmlCode) {
+            return $sce.trustAsHtml(htmlCode);
+        };
 
         vm.htmlDecode = function (value) {
             return $("<textarea/>").html(value).text();
@@ -149,7 +170,7 @@
                             vm.showResults();
                         }
 
-                        vm.currentQuestion.question = vm.currentQuestion.question.replaceAll("\\", '');
+
 
                         console.log(vm.currentQuestion.question);
                     });
