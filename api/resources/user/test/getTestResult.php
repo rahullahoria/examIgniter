@@ -79,6 +79,9 @@ set amount_made = :amount,total_questions =:total_questions,answered=:answered,c
                 $response1['answered'] += 1;
                 $response1['wrong'] += 1;
             }
+            else{
+                $response1['amount_made'] += 1 ;
+            }
 
             if($status == "")
                 $status = 'incorrect';

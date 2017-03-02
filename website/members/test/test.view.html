@@ -20,6 +20,7 @@
             <!--<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings </a>
             </li>-->
             <li class="divider"></li>
+
             <li><a ng-click="vm.logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
             </li>
 
@@ -37,13 +38,14 @@
                         <a href="#/manager" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
 
-                    <li>
+                    <!--<li>
                         <a href="#/employee/{{ vm.inUser.md5_id }}"><i class="fa fa-table fa-fw"></i> My Performance</a>
-                    </li>
+                    </li>-->
 
                     <!--<li>
                         <a href="#"><i class="glyphicon glyphicon-cog fa-fw"></i> Settings</a>
                     </li>-->
+
                     <li>
                         <a ng-click="vm.logout()"><i class="glyphicon glyphicon-off fa-fw"></i> Logout</a>
                     </li>
@@ -157,18 +159,22 @@
         </div>-->
 
         <div class="row">
-            <h3 class="pull-right"> <timer countdown="vm.timeRemaing" max-time-unit="'minute'" interval="1000">{{mminutes}} : {{sseconds}}</timer>
-            </h3>
+
             <div class="col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i>
+                        <i class="fa fa-question-circle fa-fw"></i>
+                        <span class="pull-right" >
+                            <b><timer countdown="vm.timeRemaing" max-time-unit="'minute'" interval="1000">
+                                {{mminutes}} : {{sseconds}}
+                            </timer></b>
+                        </span>
 
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
 
-                            <h2>Q{{ vm.currentQuestionNo + 1 }}. {{ vm.currentQuestion.question }}</h2>
+                            <h2>Q{{ vm.currentQuestionNo + 1 }}. {{ vm.htmlDecode(vm.currentQuestion.question)  }}</h2>
                         <div class="row">
                             <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="1" name="response" > {{ vm.currentQuestion.option_1 }}   </div>
                             <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="2" name="response" > {{ vm.currentQuestion.option_2 }}</div>
@@ -181,20 +187,21 @@
                         <br>
 
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-8">
                                 <button class="btn btn-danger" ng-show="vm.currentQuestionNo != 0" ng-click="vm.loadQuestion(vm.currentQuestionNo-1)">
-                                     Previous
-                                </button>
-                                <button ng-click="vm.submitResponse()" class="btn btn-warning">
-                                    Submit & Next >
+                                    <i class="fa fa-arrow-left fa-fw"></i> Previous
                                 </button>
                                 <button ng-hide="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.loadQuestion(vm.currentQuestionNo + 1)">
-                                    Next>
+                                    Next <i class="fa fa-arrow-right fa-fw"></i>
                                 </button>
+                                <button ng-click="vm.submitResponse()" class="btn btn-warning">
+                                    Submit & Next <i class="fa fa-arrow-right fa-fw"></i>
+                                </button>
+
                             </div>
-                            <div class="col-lg-6">
-                                <button ng-show="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.showResults()">
-                                    Finish
+                            <div class="col-lg-4">
+                                <button ng-show="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.showResultsConf()">
+                                    <i class="fa fa-check-square-o fa-fw"></i> Finish
                                 </button>
                             </div>
                         </div>
@@ -207,17 +214,20 @@
             <div class="col-lg-4">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> Questions Index
+                        <i class="fa fa-list fa-fw"></i> Questions Index
 
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
-                        <div class="row"><div class="col-md-1 {{ (vm.tests.questions[$index].done)?'bg-success':'bg-warning'}}" ng-repeat="question in vm.tests.questions" ><a ng-click="vm.loadQuestion($index)"> {{ $index + 1}}</a></div> </div>
+                        <div class="row">
+                            <div class="col-md-1 col-sm-1 {{ (vm.tests.questions[$index].done)?'bg-success':'bg-warning'}}"
+                                 ng-repeat="question in vm.tests.questions"  >
+                                <a ng-click="vm.loadQuestion($index)"> {{ $index + 1}}</a></div> </div>
                         <br>
                         <br>
                         <br>
-                        <button class="btn btn-danger" ng-click="vm.showResults()">
-                            End Test
+                        <button class="btn btn-danger" ng-click="vm.showResultsConf()">
+                            <i class="fa fa-check-square-o fa-fw"></i> End Test
                         </button>
 
 
@@ -233,3 +243,24 @@
 
 </div>
 <!-- /#wrapper -->
+
+<div id="showResultsConfModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Are you sure to End the Test?</h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">No</button>
+                <button type="button" class="btn btn-danger pull-left" ng-click="vm.showResults()" data-dismiss="modal">Yes</button>
+            </div>
+        </div>
+
+    </div>
+</div>
