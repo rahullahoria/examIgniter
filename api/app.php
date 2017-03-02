@@ -36,6 +36,12 @@ $app->post('/auth', 'userAuth');
 
 $app->post('/question', 'insertQuestion');
 
+
+//topic
+$app->get('/topics/:topicId/videos', 'getTopicVideo');
+
+$app->post('/topics/:topicId/videos', 'insertTopicVideo');
+
 /* Ending Routes */
 
 $app->run();
