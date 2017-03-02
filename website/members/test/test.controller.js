@@ -95,26 +95,31 @@
 
             CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
                 .then(function (response) {
-                    vm.currentQuestion = response.questions[0];
+                    if(response.questions == undefined){
+                        $location.path('/test/'+vm.tests.test_id+'/result');
+                    } else {
+                        vm.currentQuestion = response.questions[0];
 
-                    var currentdate = new Date(vm.currentQuestion.question_fetch_time .replace(/-/g,"/"));
-                    vm.timeRemaing = parseInt(60*vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime())/1000);
-                    console.log('time remaing',vm.timeRemaing);
-                    $scope.$broadcast('timer-add-cd-seconds', vm.timeRemaing);
-                    if(vm.timeRemaing <= 0) {
-                        console.log('i am nagative');
-                        vm.showResults();
-                    }
+                        var currentdate = new Date(vm.currentQuestion.question_fetch_time.replace(/-/g, "/"));
+                        vm.timeRemaing = parseInt(60 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
+                        console.log('time remaing', vm.timeRemaing);
+                        $scope.$broadcast('timer-add-cd-seconds', vm.timeRemaing);
+                        if (vm.timeRemaing <= 0) {
+                            console.log('i am nagative');
+                            vm.showResults();
+                        }
 
-                    /*$timeout(function() {
-                        console.log('senting timeout for',vm.timeRemaing);
-                        $timeout(function() {
-                             vm.showResults();
+                        /*$timeout(function() {
+                         console.log('senting timeout for',vm.timeRemaing);
+                         $timeout(function() {
+                         vm.showResults();
                          }, vm.testStartTime*1000);
-                    }, 5000);*/
-                    vm.currentQuestion.question = vm.currentQuestion.question.replaceAll("\\", '');
+                         }, 5000);*/
+                        if(vm.currentQuestion.question.replaceAll)
+                        vm.currentQuestion.question = vm.currentQuestion.question.replaceAll("�s", '\'s');
 
-                    console.log(vm.currentQuestion.question);
+                        console.log(vm.currentQuestion.question);
+                    }
                 });
 
         }
