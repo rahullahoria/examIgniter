@@ -15,7 +15,8 @@
         <!-- /.navbar-header -->
         <ul class="nav navbar-top-links navbar-right">
 
-            <li><a href="#/employee/{{ vm.inUser.md5_id }}"><i class="fa fa-user fa-fw"></i> {{ vm.inUser.username}}</a>
+            <li>
+                <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
             </li>
             <!--<li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings </a>
             </li>-->
@@ -163,18 +164,19 @@
             <div class="col-lg-8">
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-question-circle fa-fw"></i>
+                        <i class="fa fa-question-circle fa-fw"></i>{{ vm.topicName }} | {{ vm.subjectName}}
                         <span class="pull-right" >
-                            <b><timer countdown="vm.timeRemaing" max-time-unit="'minute'" interval="1000">
+                            <b>Time Remaining<timer countdown="vm.timeRemaing" max-time-unit="'minute'" interval="1000">
                                 {{mminutes}} : {{sseconds}}
-                            </timer></b>
+                            </timer><i class="fa fa-clock-o" aria-hidden="true"></i>
+                            </b>
                         </span>
 
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
 
-                            <h2>Q{{ vm.currentQuestionNo + 1 }}. {{ vm.htmlDecode(vm.currentQuestion.question)  }}</h2>
+                        <h4 ng-bind-html="vm.renderHtml('Q'+(vm.currentQuestionNo + 1)+'. '+ vm.replacements(vm.htmlDecode(vm.currentQuestion.question)) )"></h4>
                         <div class="row">
                             <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="1" name="response" > {{ vm.currentQuestion.option_1 }}   </div>
                             <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="2" name="response" > {{ vm.currentQuestion.option_2 }}</div>
@@ -238,6 +240,24 @@
             </div>
         </div>
 
+        <div class="row">
+
+            <div class="col-lg-8">
+                <h4><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    Warning</h4>
+                <ol>
+                    <li>If you have founded coping, your session will be closed</li>
+                    <li>Saving questions is not allowed that may cause closing of your session</li>
+                    <li>Any random behaviour may also cause locking of your session</li>
+                </ol>
+
+            </div>
+            <div class="col-lg-4">
+
+
+            </div>
+        </div>
+
     </div>
     <!-- /#page-wrapper -->
 
@@ -254,6 +274,7 @@
                 <h4 class="modal-title">Are you sure to End the Test?</h4>
             </div>
             <div class="modal-body">
+                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
 
             </div>
             <div class="modal-footer">

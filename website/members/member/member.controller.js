@@ -92,7 +92,7 @@
 
 
         }
-        vm.startTest = function(topicId,noOfQuestion,testId){
+        vm.startTest = function(topicId,noOfQuestion,testId,topicName,subjectName){
             console.log(topicId);
             if(testId)
                 $location.path('/test/'+testId+'/result');
@@ -109,6 +109,8 @@
                         console.log('member',vm.subjects);
 
                         $cookieStore.put('tests', JSON.stringify(vm.subjects));
+                        $cookieStore.put('topic_name', topicName);
+                        $cookieStore.put('subject_name', subjectName);
 
                         $location.path('/test');
                     });
