@@ -112,10 +112,19 @@
                              vm.showResults();
                          }, vm.testStartTime*1000);
                     }, 5000);*/
+                    vm.currentQuestion.question = vm.currentQuestion.question.replaceAll("\\", '');
 
-                    console.log('question id',vm.currentQuestion.id);
+                    console.log(vm.currentQuestion.question);
                 });
 
+        }
+
+        vm.htmlDecode = function (value) {
+            return $("<textarea/>").html(value).text();
+        }
+
+        vm.htmlEncode = function (value) {
+            return $('<textarea/>').text(value).html();
         }
 
         vm.loadQuestion = function (index){
@@ -135,13 +144,19 @@
                             vm.showResults();
                         }
 
-                        console.log(vm.currentQuestion.id);
+                        vm.currentQuestion.question = vm.currentQuestion.question.replaceAll("\\", '');
+
+                        console.log(vm.currentQuestion.question);
                     });
             }
 
         }
 
 
+        vm.showResultsConf = function(){
+            $("#showResultsConfModel").modal("show");
+
+        }
 
         vm.showResults = function(){
             CandidateService.ShowResults(vm.inUser.md5, vm.tests.test_id)
