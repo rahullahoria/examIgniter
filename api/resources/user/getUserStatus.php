@@ -36,7 +36,7 @@ function getUserStatus($userMd5){
      * 'Quantitative Aptitude','English','General Awareness','Computer Knowledge']
      *
      * */
-    $sql = "SELECT distinct d.id as subject_id, d.name as subject_name, a.exam_id
+    $sql = "SELECT distinct d.id as subject_id, d.name as subject_name, a.exam_id, a.user_id
             FROM `users` as a
             inner join topic_exam_mappings as b
             inner join topics as c
@@ -50,12 +50,13 @@ function getUserStatus($userMd5){
                             FROM topic_exam_mappings as a
                             inner join topics as b
                             inner join patterns as c
-                            left join tests as d on d.topic_id = b.id
+                            left join tests as d on d.topic_id = b.id and d.user_id = :user_id
                             where
                             a.exam_id = :exam_id
                             and a.topic_id = b.id
                             and b.subject_id = :subject_id
-                            and c.topic_id = b.id";
+                            and c.topic_id = b.id
+                            ";
 
 
 
@@ -77,6 +78,7 @@ function getUserStatus($userMd5){
 
             $stmt = $db->prepare($sqlGetTopics);
 
+            $stmt->bindParam("user_id", $subject->user_id);
             $stmt->bindParam("exam_id", $subject->exam_id);
             $stmt->bindParam("subject_id", $subject->subject_id);
 
