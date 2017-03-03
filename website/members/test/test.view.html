@@ -178,12 +178,12 @@
 
                         <h4 ng-bind-html="vm.renderHtml('Q'+(vm.currentQuestionNo + 1)+'. '+ vm.replacements(vm.htmlDecode(vm.currentQuestion.question)) )"></h4>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="1" name="response" > {{ vm.currentQuestion.option_1 }}   </div>
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="2" name="response" > {{ vm.currentQuestion.option_2 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="1" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_1 )"></span>  </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="2" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_2 )"></span> </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="3" name="response" > {{ vm.currentQuestion.option_3 }}</div>
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="4" name="response" > {{ vm.currentQuestion.option_4 }}</div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="3" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_3 )"></span> </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="4" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_4 )"></span> </div>
                         </div>
                         <br>
                         <br>
@@ -197,7 +197,7 @@
                                     Next <i class="fa fa-arrow-right fa-fw"></i>
                                 </button>
                                 <button ng-click="vm.submitResponse()" class="btn btn-warning">
-                                    Submit & Next <i class="fa fa-arrow-right fa-fw"></i>
+                                    Submit {{( vm.currentQuestionNo == vm.tests.questions.length - 1 )?'':'& Next' }} <i class="fa fa-arrow-right fa-fw"></i>
                                 </button>
 
                             </div>
@@ -221,10 +221,15 @@
                     </div>
                     <!-- /.panel-heading -->
                     <div class="panel-body">
+                            <span class="{{ (vm.tests.questions[$index].done)?'btn-success':''}}
+                                            {{(vm.seenSet.indexOf($index) == -1)?'btn-warning':''}}
+                                            {{((vm.seenSet.indexOf($index) != -1) && !vm.tests.questions[$index].done )?'btn-danger':''}}"
+                                  ng-repeat="question in vm.tests.questions"  style="cursor: pointer;float: left;text-align: center ;
+	min-width: 30px;" >
+                                <a ng-click="vm.loadQuestion($index)" style="color: #ffffff"><b> {{ $index + 1}}</b></a></span>
+
                         <div class="row">
-                            <div class="col-md-1 col-sm-1 {{ (vm.tests.questions[$index].done)?'bg-success':'bg-warning'}}"
-                                 ng-repeat="question in vm.tests.questions"  >
-                                <a ng-click="vm.loadQuestion($index)"> {{ $index + 1}}</a></div> </div>
+                        </div>
                         <br>
                         <br>
                         <br>
@@ -274,7 +279,10 @@
                 <h4 class="modal-title">Are you sure to End the Test?</h4>
             </div>
             <div class="modal-body">
-                <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                <i class="fa fa-exclamation-triangle fa-3x btn-warning" aria-hidden="true"></i>
+                <br>
+                This event will submit your test and you can not change answers after that. <br>
+                Do you really want to submit the test for evaluation?
 
             </div>
             <div class="modal-footer">

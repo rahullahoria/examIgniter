@@ -57,13 +57,12 @@
     </nav>
 
     <div id="page-wrapper">
-        <!--<div class="row">
+        <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Dashboard</h1>
+                <h1 class="page-header"><a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a> > Result</h1>
             </div>
-            &lt;!&ndash; /.col-lg-12 &ndash;&gt;
-        </div>-->
-        <!-- /.row -->
+
+        </div>
         <br/><!--
         <div class="row">
             <div class="col-lg-3 col-md-6">
@@ -162,7 +161,7 @@
         <div class="row">
             <div class="col-md-4 col-md-offset-4">
                 <div class="table-responsive">
-                   <h2> Results</h2>
+
 
                     <table   class="table table-bordered table-hover table-striped" style="max-width: 99%;">
                         <thead>
@@ -174,6 +173,15 @@
                         </tr>
                         </thead>
                         <tbody>
+                        <tr >
+
+
+                            <td><b>Total Questions</b></td>
+                            <td>{{vm.results.total_questions}}</td>
+
+
+                        </tr>
+
 
                         <tr >
 
@@ -211,6 +219,8 @@
 
                         </tbody>
                     </table>
+
+                    <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i>Go Home</a>
             </div>
 
             </div>

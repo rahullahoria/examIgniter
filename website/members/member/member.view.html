@@ -161,7 +161,7 @@
                 <h2 >{{ subject.subject_name }} </h2>
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> {{ subject.subject_name }} | Total Question : {{subject.subjectTotalQ}} | Topics : {{ subject.noOfTopics }}
+                        <i class="fa fa-list fa-fw"></i> {{ subject.subject_name }} | Total Question <i class="fa fa-question-circle fa-fw"></i> : {{subject.subjectTotalQ}} | Topics <i class="fa fa-anchor fa-fw"></i> : {{ subject.noOfTopics }}
                         <!--<div class="pull-right">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -189,11 +189,11 @@
                         <table datatable="ng"  class="table table-bordered table-hover table-striped" style="max-width: 99%;">
                             <thead>
                             <tr>
-                                <th>Topic</th>
-                                <th>Prepare</th>
-                                <th>#Question</th>
-                                <th>Earned</th>
-                                <th>Status</th>
+                                <th>Topic <i class="fa fa-anchor fa-fw"></i></th>
+                                <th>Prepare <i class="fa fa-bicycle fa-fw"></i></th></th>
+                                <th>#Question <i class="fa fa-question-circle fa-fw"></i></th>
+                                <th>Earned <i class="fa fa-university fa-fw"></i></th></th>
+                                <th>Status <i class="fa fa-coffee  fa-fw"></i></th></th>
 
                             </tr>
                             </thead>
@@ -212,7 +212,7 @@
 
                                 </td>
 
-                                <td>{{ (topic.amount_made==null)?'Not Done':topic.amount_made }}</td>
+                                <td>{{ (topic.amount_made==null)?'Not Done':topic.amount_made+'&#8377;' }}</td>
                                 <td>{{ (topic.amount_made==null)?'Start Test':'Done' }} </td>
 
 

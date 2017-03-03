@@ -14,11 +14,8 @@
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
         vm.loadUser = loadUser;
+        vm.seenSet = [];
 
-
-
-        vm.threeMonths = [];
-        vm.whichMonth = {};
         vm.loadUser = loadUser;
         vm.currentMonthIndex = 0;
         vm.dataLoading = false;
@@ -95,6 +92,11 @@
         //vm.currentQuestion = {};
         function loadQuestion(index){
 
+            if(vm.seenSet.indexOf(index) == -1) {
+                vm.seenSet.push(index);
+                console.log('I am inside push', vm.seenSet);
+            }
+
             CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
                 .then(function (response) {
                     if(response.questions == undefined){
@@ -104,7 +106,7 @@
 
                         var currentdate = new Date(vm.currentQuestion.question_fetch_time.replace(/-/g, "/"));
                         vm.timeRemaing = parseInt(60 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
-                        console.log('time remaing', vm.timeRemaing);
+                        //console.log('time remaing', vm.timeRemaing);
                         $scope.$broadcast('timer-add-cd-seconds', vm.timeRemaing);
                         if (vm.timeRemaing <= 0) {
                             console.log('i am nagative');
@@ -119,7 +121,7 @@
                          }, 5000);*/
 
 
-                        console.log(vm.currentQuestion.question);
+                        //console.log(vm.currentQuestion.question);
                     }
                 });
 
@@ -153,9 +155,14 @@
             return $('<textarea/>').text(value).html();
         }
 
+        vm.currentQuestion = {};
         vm.loadQuestion = function (index){
+            if(vm.seenSet.indexOf(index) == -1)
+                vm.seenSet.push(index);
 
-            console.log(index);
+
+
+            console.log(index,vm.seenSet);
             if( vm.tests.questions[index]) {
                 CandidateService.GetQuestion(vm.inUser.md5, vm.tests.test_id, vm.tests.questions[index].id)
                     .then(function (response) {
@@ -164,15 +171,15 @@
 
                         var currentdate = new Date(vm.currentQuestion.question_fetch_time.replace(/-/g, "/"));
                         vm.timeRemaing = parseInt(60 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
-                        console.log('time remaing', vm.timeRemaing);
+                        //console.log('time remaing', vm.timeRemaing);
                         if (vm.timeRemaing <= 0) {
-                            console.log('i am nagative');
+                           // console.log('i am nagative');
                             vm.showResults();
                         }
 
 
 
-                        console.log(vm.currentQuestion.question);
+                        //console.log(vm.currentQuestion.question);
                     });
             }
 
@@ -185,6 +192,7 @@
         }
 
         vm.showResults = function(){
+            vm.submitResponse();
             CandidateService.ShowResults(vm.inUser.md5, vm.tests.test_id)
                 .then(function (response) {
 
@@ -196,37 +204,12 @@
 
         }
 
-        vm.loadToCallCandidates = loadToCallCandidates;
 
 
 
 
-        function loadToCallCandidates(){
-            vm.dataLoading = true;
-
-            CandidateService.GetAll(vm.inUser.company_name,vm.inUser.md5_id,(vm.whichMonth.num+1))
-                .then(function (response) {
-                    vm.toCallCandidates = response.employees;
-
-                    vm.date1 = new Date(2016, vm.whichMonth.num+1, 0).getDate();
-                    if(vm.currentMonthIndex == 0)
-                        vm.date1 = new Date().getDate();
 
 
-
-                    for(var i=0;i < vm.toCallCandidates.length ; i++){
-
-                        vm.champs += (vm.getColor(vm.toCallCandidates[i].time) == "primary")?1:0;
-                        vm.good += (vm.getColor(vm.toCallCandidates[i].time) == "success")?1:0;
-                        vm.improve += (vm.getColor(vm.toCallCandidates[i].time) == "warning")?1:0;
-                        vm.bad += (vm.getColor(vm.toCallCandidates[i].time) == "danger")?1:0;
-                    }
-                    vm.dataLoading = false;
-
-                    console.log(vm.toCallCandidates[1].name);
-                });
-
-        }
 
         /*function loadCurrentUser() {
             UserService.GetByUsername($rootScope.globals.currentUser.username)
