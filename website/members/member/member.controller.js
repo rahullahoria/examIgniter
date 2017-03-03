@@ -54,29 +54,7 @@
 
         }
 
-        function loadMonths(){
-            var months = new Array(12);
-            months[0] = "January";
-            months[1] = "February";
-            months[2] = "March";
-            months[3] = "April";
-            months[4] = "May";
-            months[5] = "June";
-            months[6] = "July";
-            months[7] = "August";
-            months[8] = "September";
-            months[9] = "October";
-            months[10] = "November";
-            months[11] = "December";
 
-            var myDate = new Date();
-            vm.whichMonth.name = months[myDate.getMonth()];
-            vm.whichMonth.num = myDate.getMonth();
-            vm.threeMonths[0] = {"name":months[myDate.getMonth()],"num":myDate.getMonth()};
-            vm.threeMonths[1] = {"name":months[myDate.getMonth()-1], "num":myDate.getMonth()-1};
-            vm.threeMonths[2] = {"name":months[myDate.getMonth()-2],"num":myDate.getMonth()-2};
-            console.log(vm.threeMonths);
-        }
 
         vm.logout = function(){
             vm.inUser = null;
@@ -129,26 +107,7 @@
            return Math.floor((Math.random() * (work/60/60)) + (work/60/60/4));
         };
 
-        vm.getColor = function(eff){
 
-            eff = (eff/60/60/(vm.date1*6.85))*100;
-
-            //return "danger";
-
-            if(eff <= 30){
-                return "danger";
-            }
-            if(eff <= 60){
-                return "warning";
-            }
-            if(eff <= 80){
-                return "success";
-            }
-            if(eff >= 80){
-                return "primary";
-            }
-
-        };
 
         function loadToCallCandidates(){
             vm.dataLoading = true;
@@ -166,6 +125,7 @@
 
                         }
                         vm.subjects[i].subjectTotalQ = temp;
+                        vm.subjects[i].noOfTopics = vm.subjects[i].topics.length;
                     }
 
                     console.log('inside controller',vm.subjects);

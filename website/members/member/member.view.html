@@ -56,12 +56,12 @@
     </nav>
 
     <div id="page-wrapper">
-        <!--<div class="row">
+        <div class="row">
             <div class="col-lg-12">
                 <h1 class="page-header">Dashboard</h1>
             </div>
-            &lt;!&ndash; /.col-lg-12 &ndash;&gt;
-        </div>-->
+
+        </div>
         <!-- /.row -->
         <br/><!--
         <div class="row">
@@ -158,9 +158,10 @@
         <!-- /.row -->
         <div class="row">
             <div class="col-lg-12"  ng-repeat="subject in vm.subjects">
+                <h2 >{{ subject.subject_name }} </h2>
                 <div class="panel panel-default">
                     <div class="panel-heading">
-                        <i class="fa fa-bar-chart-o fa-fw"></i> {{ subject.subject_name }} | Total Question : {{subject.subjectTotalQ}}
+                        <i class="fa fa-bar-chart-o fa-fw"></i> {{ subject.subject_name }} | Total Question : {{subject.subjectTotalQ}} | Topics : {{ subject.noOfTopics }}
                         <!--<div class="pull-right">
                             <div class="btn-group">
                                 <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -225,7 +226,7 @@
                 </div>
                 <!-- /.panel -->
 
-
+            <hr>
             </div>
             <!-- /.col-lg-8 -->
 
