@@ -21,12 +21,15 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
 
     $user = json_decode($request->getBody());
 
-    $sql = "SELECT a.id, a.question, a.img_id, a.option_1, a.option_2, a.option_3, a.option_4, a.source, b.response
+    $sql = "SELECT a.id, a.question, a.img_id, a.option_1, a.option_2, a.option_3, a.option_4, a.source,
+                b.response,b.id as responses_id
                   FROM `questions` as a INNER JOIN responses as b
                   WHERE
                     b.test_id = :test_id
                     and b.question_id = a.id
                     and  a.id = :id";
+
+    $sqlUpdateGetQuestionTime = "Update responses set get_question = :question_fetch_time where id=:responses_id ";
 
 
 
@@ -44,6 +47,13 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
 
         $questions[0]->question_fetch_time =  date("Y-m-d H:i:s");
         //var_dump($response1);die();
+
+        $stmt = $db->prepare($sqlUpdateGetQuestionTime);
+
+        $stmt->bindParam("question_fetch_time", $questions[0]->question_fetch_time);
+        $stmt->bindParam("responses_id", $questions[0]->responses_id);
+
+        $stmt->execute();
 
         $db = null;
 
