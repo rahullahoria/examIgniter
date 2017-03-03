@@ -178,12 +178,12 @@
 
                         <h4 ng-bind-html="vm.renderHtml('Q'+(vm.currentQuestionNo + 1)+'. '+ vm.replacements(vm.htmlDecode(vm.currentQuestion.question)) )"></h4>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="1" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_1 )"></span>  </div>
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="2" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_2 )"></span> </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="1" name="response" > <span ng-bind-html="vm.renderHtml(vm.replacements(vm.htmlDecode(vm.currentQuestion.option_1)) )"></span>  </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="2" name="response" > <span ng-bind-html="vm.renderHtml(vm.replacements(vm.htmlDecode(vm.currentQuestion.option_2)) )"></span> </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="3" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_3 )"></span> </div>
-                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="4" name="response" > <span ng-bind-html="vm.renderHtml(vm.currentQuestion.option_4 )"></span> </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="3" name="response" > <span ng-bind-html="vm.renderHtml(vm.replacements(vm.htmlDecode(vm.currentQuestion.option_3 )))"></span> </div>
+                            <div class="col-lg-6"><input type="radio" ng-model="vm.currentQuestion.response" ng-click="vm.uncheck($event)"  value="4" name="response" > <span ng-bind-html="vm.renderHtml(vm.replacements(vm.htmlDecode(vm.currentQuestion.option_4)) )"></span> </div>
                         </div>
                         <br>
                         <br>

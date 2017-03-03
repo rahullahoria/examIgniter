@@ -5,8 +5,8 @@
         .module('app')
         .controller('TestController', TestController);
 
-    TestController.$inject = ['$scope', '$sce','UserService', '$timeout','$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
-    function TestController($scope,$sce,UserService, $timeout, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
+    TestController.$inject = ['$scope', '$sce','UserService', '$cookieStore', 'CandidateService', '$rootScope', 'FlashService','$location'];
+    function TestController($scope,$sce,UserService,  $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
         var vm = this;
 
         vm.user = null;
@@ -32,6 +32,19 @@
             loadTest();
 
         }
+
+        $scope.$on('$locationChangeStart', function(event, next, current){
+            // Here you can take the control and call your own functions:
+            console.log(event, next, current);
+            if(next.indexOf('result') !== -1){
+
+            }else{
+
+            alert('Sorry ! Back Button is disabled');
+            // Prevent the browser default action (Going back):
+            event.preventDefault();
+            }
+        });
 
 
 
