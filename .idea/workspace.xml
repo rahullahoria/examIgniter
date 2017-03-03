@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.controller.js" afterPath="$PROJECT_DIR$/website/members/test/test.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/test/test.view.html" afterPath="$PROJECT_DIR$/website/members/test/test.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -622,12 +620,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00024" summary="auth">
-      <created>1487826941425</created>
-      <option name="number" value="00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1487826941425</updated>
-    </task>
     <task id="LOCAL-00025" summary="auth">
       <created>1487827149718</created>
       <option name="number" value="00025" />
@@ -916,7 +908,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488529379485</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="auth">
+      <created>1488531532701</created>
+      <option name="number" value="00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1488531532702</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="ToolWindowManager">
