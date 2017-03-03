@@ -31,6 +31,7 @@
         service.GetQuestion = GetQuestion;
         service.SubmitRespnse = SubmitRespnse;
         service.ShowResults = ShowResults;
+        service.GetTopicMatter = GetTopicMatter;
 
         return service;
 
@@ -43,6 +44,12 @@
         function GetStatus(userMD5) {
             return $http
                 .get('http://api.examhans.com/user/'+userMD5+'/status')
+                .then(handleSuccess, handleError('Error getting all users'));
+        }
+
+        function GetTopicMatter(topicId) {
+            return $http
+                .get('http://api.examhans.com/topics/'+topicId+'/videos')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

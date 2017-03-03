@@ -50,6 +50,12 @@
                 controllerAs: 'vm'
 
             })
+            .when('/prepare/:topic_name/:topic_id', {
+                controller: 'PrepareController',
+                templateUrl: 'prepare/prepare.view.html',
+                controllerAs: 'vm'
+
+            })
 
 
 
