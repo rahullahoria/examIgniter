@@ -36,7 +36,7 @@ function getUserStatus($userMd5){
      * 'Quantitative Aptitude','English','General Awareness','Computer Knowledge']
      *
      * */
-    $sql = "SELECT distinct d.id as subject_id, d.name as subject_name, a.exam_id, a.user_id
+    $sql = "SELECT distinct d.id as subject_id, d.name as subject_name, a.exam_id, a.id as user_id
             FROM `users` as a
             inner join topic_exam_mappings as b
             inner join topics as c

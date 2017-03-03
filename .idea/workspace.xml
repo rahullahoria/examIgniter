@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" afterPath="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" afterPath="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/getUserStatus.php" afterPath="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="saveTestQuestionAnswer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="saveTestQuestionAnswer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.64171124">
-              <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+            <state vertical-scroll-proportion="-18.125">
+              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <marker date="1488535635996" expanded="true" signature="313:438" placeholder="UPDATE `resp... " />
               </folding>
@@ -109,14 +108,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="20.625">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.56149733">
+              <caret line="38" column="91" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
               <folding>
-                <marker date="1487865125176" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
-                <marker date="1487865125176" expanded="true" signature="1450:2019" placeholder="SELECT b.id topic_exam_mappings" />
+                <marker date="1488536778748" expanded="true" signature="1061:1441" placeholder="SELECT disti... users" />
+                <marker date="1488536778748" expanded="true" signature="1467:2061" placeholder="SELECT b.id topic_exam_mappings" />
               </folding>
             </state>
           </provider>
@@ -162,7 +161,6 @@
         <option value="$PROJECT_DIR$/website/members/app-services/authentication.service.js" />
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/website/members/result/result.controller.js" />
-        <option value="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/startTopicTest.php" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
         <option value="$PROJECT_DIR$/api/resources/questions/insertQuestion.php" />
@@ -192,6 +190,7 @@
         <option value="$PROJECT_DIR$/website/members/test/test.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
+        <option value="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
       </list>
     </option>
   </component>
@@ -623,18 +622,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00026" summary="auth">
-      <created>1487827188910</created>
-      <option name="number" value="00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1487827188910</updated>
-    </task>
-    <task id="LOCAL-00027" summary="auth">
-      <created>1487834858758</created>
-      <option name="number" value="00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1487834858758</updated>
-    </task>
     <task id="LOCAL-00028" summary="auth">
       <created>1487839464780</created>
       <option name="number" value="00028" />
@@ -917,7 +904,19 @@
       <option name="project" value="LOCAL" />
       <updated>1488532624887</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="auth">
+      <created>1488535650085</created>
+      <option name="number" value="00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1488535650086</updated>
+    </task>
+    <task id="LOCAL-00076" summary="auth">
+      <created>1488536668632</created>
+      <option name="number" value="00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1488536668632</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1323,17 +1322,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="20.625">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1487865125176" expanded="true" signature="1061:1424" placeholder="SELECT disti... users" />
-            <marker date="1487865125176" expanded="true" signature="1450:2019" placeholder="SELECT b.id topic_exam_mappings" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/startTopicTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1368,10 +1356,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64171124">
-          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
+        <state vertical-scroll-proportion="-18.125">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
           <folding>
             <marker date="1488535635996" expanded="true" signature="313:438" placeholder="UPDATE `resp... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.56149733">
+          <caret line="38" column="91" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
+          <folding>
+            <marker date="1488536778748" expanded="true" signature="1061:1441" placeholder="SELECT disti... users" />
+            <marker date="1488536778748" expanded="true" signature="1467:2061" placeholder="SELECT b.id topic_exam_mappings" />
           </folding>
         </state>
       </provider>
