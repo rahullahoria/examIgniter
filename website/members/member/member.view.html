@@ -189,6 +189,7 @@
                             <thead>
                             <tr>
                                 <th>Topic</th>
+                                <th>Prepare</th>
                                 <th>#Question</th>
                                 <th>Earned</th>
                                 <th>Status</th>
@@ -201,6 +202,9 @@
 
                                 <td>
                                     <a ng-click="vm.startTest(topic.topic_id,topic.no_of_question, topic.test_id,topic.topic_name,subject.subject_name )">{{ topic.topic_name }}</a>
+                                </td>
+                                <td>
+                                    <a href="#/prepare/{{topic.topic_name }}/{{topic.topic_id}}">Start Preparation</a>
                                 </td>
                                 <td>
                                     {{ topic.no_of_question }}
