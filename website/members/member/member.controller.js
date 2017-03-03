@@ -32,6 +32,8 @@
         vm.dataLoading = false;
         vm.subjectTotalQ = 0;
 
+        vm.currentShow = 0;
+
         initController();
 
         function initController() {

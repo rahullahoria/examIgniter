@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/getUserStatus.php" afterPath="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/member/member.controller.js" afterPath="$PROJECT_DIR$/website/members/member/member.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/member/member.view.html" afterPath="$PROJECT_DIR$/website/members/member/member.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,16 +59,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="prepare.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/prepare/prepare.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="63" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="getTestQuestionNo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -108,10 +99,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.56149733">
+            <state vertical-scroll-proportion="11.25">
               <caret line="38" column="91" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
               <folding>
                 <marker date="1488536778748" expanded="true" signature="1061:1441" placeholder="SELECT disti... users" />
@@ -121,11 +112,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="member.view.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="member.view.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/members/member/member.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.375">
-              <caret line="214" column="102" selection-start-line="214" selection-start-column="102" selection-end-line="214" selection-end-column="102" />
+            <state vertical-scroll-proportion="0.42780748">
+              <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="member.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/members/member/member.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -183,14 +184,14 @@
         <option value="$PROJECT_DIR$/website/members/app.js" />
         <option value="$PROJECT_DIR$/website/members/prepare/prepare.controller.js" />
         <option value="$PROJECT_DIR$/website/members/prepare/prepare.view.html" />
-        <option value="$PROJECT_DIR$/website/members/member/member.controller.js" />
         <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
-        <option value="$PROJECT_DIR$/website/members/member/member.view.html" />
         <option value="$PROJECT_DIR$/website/members/test/test.view.html" />
         <option value="$PROJECT_DIR$/website/members/test/test.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
         <option value="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
+        <option value="$PROJECT_DIR$/website/members/member/member.controller.js" />
+        <option value="$PROJECT_DIR$/website/members/member/member.view.html" />
       </list>
     </option>
   </component>
@@ -622,12 +623,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00028" summary="auth">
-      <created>1487839464780</created>
-      <option name="number" value="00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1487839464780</updated>
-    </task>
     <task id="LOCAL-00029" summary="auth">
       <created>1487853559396</created>
       <option name="number" value="00029" />
@@ -916,7 +911,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488536668632</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="auth">
+      <created>1488536793395</created>
+      <option name="number" value="00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1488536793396</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1250,14 +1251,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/member/member.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="127" column="80" selection-start-line="127" selection-start-column="80" selection-end-line="127" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/result/result.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1286,14 +1279,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.125">
           <caret line="179" column="60" selection-start-line="179" selection-start-column="60" selection-end-line="179" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/member/member.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.375">
-          <caret line="214" column="102" selection-start-line="214" selection-start-column="102" selection-end-line="214" selection-end-column="102" />
           <folding />
         </state>
       </provider>
@@ -1366,12 +1351,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.56149733">
+        <state vertical-scroll-proportion="11.25">
           <caret line="38" column="91" selection-start-line="38" selection-start-column="91" selection-end-line="38" selection-end-column="91" />
           <folding>
             <marker date="1488536778748" expanded="true" signature="1061:1441" placeholder="SELECT disti... users" />
             <marker date="1488536778748" expanded="true" signature="1467:2061" placeholder="SELECT b.id topic_exam_mappings" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/member/member.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/member/member.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42780748">
+          <caret line="68" column="78" selection-start-line="68" selection-start-column="78" selection-end-line="68" selection-end-column="78" />
+          <folding />
         </state>
       </provider>
     </entry>
