@@ -14,7 +14,7 @@ function saveTestQuestionAnswer($userMd5,$testId,$responseId){
     $response = json_decode($request->getBody());
 
     $sql = "UPDATE `responses`
-                SET `response`=:response
+                SET `response`=:response, submit_response =:submit_response
                 WHERE id = :id ";
 
 
@@ -27,6 +27,7 @@ function saveTestQuestionAnswer($userMd5,$testId,$responseId){
 
         $stmt->bindParam("id", $responseId);
         $stmt->bindParam("response", $response->response);
+        $stmt->bindParam("submit_response", date("Y-m-d H:i:s"));
 
         $stmt->execute();
 
