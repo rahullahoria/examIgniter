@@ -32,7 +32,7 @@ $topicName = "Number Series";
 
     <meta name="p:domain_verify" content=""/>
     <meta property="og:image" content='http://examhans.com/img/logos/examhans_logo.png' />
-    <meta property="og:url" content="http://examhans.com" />
+
     <meta property="og:image:type" content="image/png" />
 
     <meta property="og:description" content="Its nice to get paid while learning, I am practicing online and get paid for that. This will increase my chance of getting selected" />
