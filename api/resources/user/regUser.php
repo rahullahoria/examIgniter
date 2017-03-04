@@ -39,8 +39,10 @@ function regUser(){
             $stmt->execute();
             $refIdArr = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-            if (count($refIdArr) == 0)
-                die("this bitch is not registered");
+            if (count($refIdArr) == 0) {
+                echo '{"error":{"text":"this bitch is not registered"}}';
+                die();
+            }
             //var_dump($response1);die();
 
 
