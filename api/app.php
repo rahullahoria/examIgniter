@@ -39,6 +39,8 @@ $app->post('/user', 'regUser');
 
 $app->post('/question', 'insertQuestion');
 
+//exams
+$app->get('/exams', 'getExamList');
 
 //topic
 $app->get('/topics/:topicId/videos', 'getTopicVideo');

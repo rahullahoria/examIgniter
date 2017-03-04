@@ -14,6 +14,9 @@ require_once "includes/error.php";
 //Random string lib
 require_once "includes/getRandonString.php";
 
+//exams
+require_once "resources/exams/getExamList.php";
+
 require_once "resources/auth/postUserAuth.php";
 require_once "resources/user/getUserStatus.php";
 require_once "resources/user/test/getTestQuestionNo.php";
