@@ -11,7 +11,7 @@ function regUser(){
 
     $requestJson = json_decode($request->getBody());
 
-    $getUserId = "SELECT id form users where username = :username";
+    $getUserId = "SELECT id FROM  users where username = :username";
 
     $sql = "INSERT INTO `users`(`username`, `email`, `mobile`, `ref_user_id`, `password`, `md5`,`exam_id`)
               VALUES
