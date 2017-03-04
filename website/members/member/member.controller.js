@@ -72,6 +72,8 @@
 
 
         }
+
+
         vm.startTest = function(topicId,noOfQuestion,testId,topicName,subjectName){
             console.log(topicId);
             if(testId)

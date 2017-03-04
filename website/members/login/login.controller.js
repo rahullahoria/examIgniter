@@ -5,8 +5,8 @@
         .module('app')
         .controller('LoginController', LoginController);
 
-    LoginController.$inject = ['$location', 'UserService', 'AuthenticationService', 'FlashService'];
-    function LoginController($location, UserService, AuthenticationService, FlashService) {
+    LoginController.$inject = ['$location', 'UserService', 'CandidateService', 'AuthenticationService', 'FlashService'];
+    function LoginController($location, UserService, CandidateService, AuthenticationService, FlashService) {
         var vm = this;
 
         vm.login = login;
@@ -33,6 +33,25 @@
             login();
         }
 
+        vm.reg = function(){
+            CandidateService.Create(vm.user, function (resp) {
+                console.log("resp",resp);
+
+                if (resp.id) {
+                    AuthenticationService.SetCredentials(vm.user.username, vm.user.password);
+                    vm.inUser = UserService.GetInUser();
+
+                    console.log("auth success");
+                    $location.path('/member');
+
+                } else {
+                    FlashService.Error(resp.message);
+                    vm.dataLoading = false;
+                }
+            });
+
+            console.log(vm.user);
+        };
 
         vm.employeeDemo = function(){
             vm.user.company = "shatkonlabs";vm.user.email = "anil@blueteam.in"; vm.user.password = "anil";

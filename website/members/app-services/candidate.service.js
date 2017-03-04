@@ -119,7 +119,7 @@
 
 
         function Create(user) {
-            return $http.post('http://api.shatkonjobs.com/candidates', user).then(handleSuccess, handleError('Error creating user'));
+            return $http.post('http://api.shatkonjobs.com/user', user).then(handleSuccess, handleError('Error creating user'));
         }
 
         function Update(user) {
