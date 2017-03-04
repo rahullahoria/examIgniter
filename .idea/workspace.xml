@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/story.php" afterPath="$PROJECT_DIR$/website/main-web/story.php" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -394,12 +393,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00032" summary="auth">
-      <created>1487862948195</created>
-      <option name="number" value="00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1487862948195</updated>
-    </task>
     <task id="LOCAL-00033" summary="auth">
       <created>1487863075711</created>
       <option name="number" value="00033" />
@@ -688,7 +681,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488626376225</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="auth">
+      <created>1488626707590</created>
+      <option name="number" value="00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1488626707590</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="ToolWindowManager">
