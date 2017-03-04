@@ -4,9 +4,6 @@
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/regUser.php" afterPath="$PROJECT_DIR$/api/resources/user/regUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,12 +70,13 @@
       <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48128343">
-              <caret line="39" column="21" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.18716578">
+              <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1488644373592" expanded="true" signature="303:500" placeholder="INSERT INTO `users`... " />
-                <marker date="1488644373592" expanded="true" signature="523:590" placeholder="update users... " />
+                <marker date="1488644489672" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+                <marker date="1488644489672" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+                <marker date="1488644489672" expanded="true" signature="524:591" placeholder="update users... " />
               </folding>
             </state>
           </provider>
@@ -554,12 +552,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00034" summary="auth">
-      <created>1487863540127</created>
-      <option name="number" value="00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1487863540127</updated>
-    </task>
     <task id="LOCAL-00035" summary="auth">
       <created>1487863756012</created>
       <option name="number" value="00035" />
@@ -848,7 +840,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488642151904</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="auth">
+      <created>1488644397624</created>
+      <option name="number" value="00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1488644397624</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1349,12 +1347,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48128343">
-          <caret line="39" column="21" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.18716578">
+          <caret line="13" column="33" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1488644373592" expanded="true" signature="303:500" placeholder="INSERT INTO `users`... " />
-            <marker date="1488644373592" expanded="true" signature="523:590" placeholder="update users... " />
+            <marker date="1488644489672" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+            <marker date="1488644489672" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+            <marker date="1488644489672" expanded="true" signature="524:591" placeholder="update users... " />
           </folding>
         </state>
       </provider>
