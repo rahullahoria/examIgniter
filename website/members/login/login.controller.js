@@ -52,7 +52,7 @@
                         $location.path('/member');
 
                     } else {
-                        FlashService.Error(resp.message);
+                        FlashService.Error(response.error.text);
                         vm.dataLoading = false;
                     }
                 });
