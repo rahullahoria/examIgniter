@@ -29,10 +29,13 @@ $app->post('/user/:userMd5/test/', 'startTopicTest');
 $app->get('/user/:userMd5/test/:testId/goto/:questionNo', 'getTestQuestionNo');
 $app->post('/user/:userMd5/test/:testId/question/:responseId', 'saveTestQuestionAnswer');
 
+$app->post('/user/:userMd5/verify/:type/otp/:otp', 'checkOtp');
+
 //result
 $app->get('/user/:userMd5/test/:testId/result', 'getTestResult');
 
 $app->post('/auth', 'userAuth');
+$app->post('/user', 'regUser');
 
 $app->post('/question', 'insertQuestion');
 

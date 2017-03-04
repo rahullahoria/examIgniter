@@ -2,35 +2,30 @@
 /**
  * Created by PhpStorm.
  * User: spider-ninja
- * Date: 6/22/16
- * Time: 2:13 PM
+ * Date: 3/4/17
+ * Time: 10:43 AM
  */
 
-
-function userAuth(){
-
-    $request = \Slim\Slim::getInstance()->request();
-
-    $user = json_decode($request->getBody());
+function checkOtp($userMd5, $type, $otp){
 
 
     $sql = "SELECT a.`username`, a.`md5`, b.name
                 FROM users as a
-                inner join exams as b
-                 WHERE a.exam_id = b.id
-                 and a.username =:username
-                 and a.password=:password
-                  and a.amount != 0;";
+                 WHERE
+                  a.md5 =:user_md5
+                 and a.".$type."_otp =:otp ;";
+
+    $updateOTP = "update users set ".$type."_verified = 'yes' where 1";
 
 
     try {
         $db = getDB();
         $stmt = $db->prepare($sql);
 
-        $stmt->bindParam("username", $user->username);
-        $stmt->bindParam("password", $user->password);
+        $stmt->bindParam("user_md5", $userMd5);
+        $stmt->bindParam("otp", $otp);
 
-       // var_dump($user);die();
+        // var_dump($user);die();
 
         $stmt->execute();
         $users = $stmt->fetchAll(PDO::FETCH_OBJ);
@@ -38,8 +33,13 @@ function userAuth(){
 
         $db = null;
 
-        if(count($users) == 1)
+        if(count($users) == 1) {
+            $stmt = $db->prepare($updateOTP);
+
+            $stmt->execute();
+
             echo '{"user": ' . json_encode($users[0]) . ',"auth": "true"}';
+        }
         else
             echo '{"auth": "false"}';
 
@@ -48,6 +48,5 @@ function userAuth(){
         //error_log($e->getMessage(), 3, '/var/tmp/php.log');
         echo '{"error":{"text":' . $e->getMessage() . '}}';
     }
+
 }
-
-
