@@ -32,9 +32,9 @@ function regUser(){
         ) {
 
             $db = getDB();
-            $stmt = $db->prepare($sql);
+            $stmt = $db->prepare($getUserId);
 
-            $stmt->bindParam("username", $getUserId);
+            $stmt->bindParam("username", $requestJson->ref_username);
 
             $stmt->execute();
             $refIdArr = $stmt->fetchAll(PDO::FETCH_OBJ);

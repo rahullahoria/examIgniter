@@ -19,44 +19,47 @@
             // reset login status
             //vm.inUser = UserService.GetInUser();
             if(vm.inUser){
-                if(vm.inUser.type == 'manager' )
-                    $location.path('/manager');
-                else if(vm.inUser.type == 'employee' )
-                    $location.path('/employee/'+vm.inUser.md5_id);
-            }else
+
+                    $location.path('/member');
+            }else{
+
+                CandidateService.GetExams(''
+                    )
+                    .then(function (response) {
+                        console.log("resp",response);
+
+                        vm.exams = response.exams;
+                        console.log("exams",vm.exams);
+                    });
 
             AuthenticationService.ClearCredentials();
+            }
         })();
 
-        vm.managerDemo = function(){
-            vm.user.company = "shatkonlabs";vm.user.email = "rahul@blueteam.in"; vm.user.password = "rahul";
-            login();
-        }
+
 
         vm.reg = function(){
-            CandidateService.Create(vm.user, function (resp) {
-                console.log("resp",resp);
+            CandidateService.Create(vm.user
+                )
+                .then(function (response) {
+                    console.log("resp",response);
 
-                if (resp.id) {
-                    AuthenticationService.SetCredentials(vm.user.username, vm.user.password);
-                    vm.inUser = UserService.GetInUser();
+                    if (response.id) {
+                        AuthenticationService.SetCredentials(vm.user.reg_username, vm.user.reg_password);
+                        vm.inUser = UserService.GetInUser();
 
-                    console.log("auth success");
-                    $location.path('/member');
+                        console.log("auth success");
+                        $location.path('/member');
 
-                } else {
-                    FlashService.Error(resp.message);
-                    vm.dataLoading = false;
-                }
-            });
+                    } else {
+                        FlashService.Error(resp.message);
+                        vm.dataLoading = false;
+                    }
+                });
 
             console.log(vm.user);
         };
 
-        vm.employeeDemo = function(){
-            vm.user.company = "shatkonlabs";vm.user.email = "anil@blueteam.in"; vm.user.password = "anil";
-            login();
-        }
 
         function login() {
             vm.dataLoading = true;

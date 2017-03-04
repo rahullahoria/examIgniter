@@ -13,19 +13,12 @@
     function CandidateService($http) {
         var service = {};
 
-        service.GetAll = GetAll;
-        service.GetById = GetById;
-        service.GetByManagerEmployeeId = GetByManagerEmployeeId;
-        service.GetByUsername = GetByUsername;
+        service.GetExams = GetExams;
         service.Create = Create;
         service.Update = Update;
         service.Delete = Delete;
-        service.Search = Search;
-        service.GetAllProfession = GetAllProfession;
         service.GetUserInstance = GetUserInstance;
         service.UpdateInstance = UpdateInstance;
-        service.GetUserLast10Instance = GetUserLast10Instance;
-        service.GetTodayUsage = GetTodayUsage;
         service.GetStatus = GetStatus;
         service.StartTest = StartTest;
         service.GetQuestion = GetQuestion;
@@ -35,11 +28,7 @@
 
         return service;
 
-        function GetAll(company,manager,month) {
-            return $http
-                        .get('http://api.bulldog.shatkonlabs.com/companies/'+company+'/managers/'+manager+'/employees'+ "?month=" +month)
-                        .then(handleSuccess, handleError('Error getting all users'));
-        }
+
 
         function GetStatus(userMD5) {
             return $http
@@ -65,61 +54,24 @@
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
-        function GetUserLast10Instance(userId,uType) {
-            return $http
-                .get('http://api.bulldog.shatkonlabs.com/instance/'+userId+'/last10')
-                .then(handleSuccess, handleError('Error getting all users'));
-        }
 
-        function GetTodayUsage(userId) {
-            return $http
-                .get('http://api.bulldog.shatkonlabs.com/usage/'+userId)
-                .then(handleSuccess, handleError('Error getting all users'));
-        }
 
-        function GetAllProfession() {
-            return $http
-                .get('http://api.shatkonjobs.com/professions')
-                .then(handleSuccess, handleError('Error getting all users'));
-        }
 
-        function Search(userSearch) {
-
-            console.log(userSearch);
-
-            var conStr = "";
-            if(userSearch.age != undefined) conStr += "&age=" + userSearch.age;
-            if(userSearch.area != undefined) conStr += "&area=" + userSearch.area;
-            if(userSearch.gender != undefined) conStr += "&gender=" + userSearch.gender;
-
-            return $http
-                .get('http://api.shatkonjobs.com/candidates/search?profession_id='
-                                                        + userSearch.profession
-                                                        + conStr
-                )
-                .then(handleSuccess, handleError('Error getting all users'));
-        }
-
-        function GetById(id) {
-            return $http.get('/api/users/' + id).then(handleSuccess, handleError('Error getting user by id'));
-        }
 
         function GetQuestion(userMd5,testId,id) {
             return $http.get('http://api.examhans.com/user/'+userMd5+'/test/'+testId+'/goto/' + id).then(handleSuccess, handleError('Error getting user by id'));
         }
 
-        function GetByManagerEmployeeId(id,month) {
-            return $http.get('http://api.bulldog.shatkonlabs.com/companies/:company_id/managers/:manager_id/employees/' + id+ "?month=" +month).then(handleSuccess, handleError('Error getting user by id'));
-        }
 
-        function GetByUsername(username) {
-            return $http.get('/api/users/' + username).then(handleSuccess, handleError('Error getting user by username'));
+
+        function GetExams(str) {
+            return $http.get('http://api.examhans.com/exams' ).then(handleSuccess, handleError('Error getting user by username'));
         }
 
 
 
         function Create(user) {
-            return $http.post('http://api.shatkonjobs.com/user', user).then(handleSuccess, handleError('Error creating user'));
+            return $http.post('http://api.examhans.com/user', user).then(handleSuccess, handleError('Error creating user'));
         }
 
         function Update(user) {
