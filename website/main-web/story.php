@@ -15,7 +15,7 @@ $sql = "SELECT a.amount_made,b.username,c.name
           WHERE a.user_id = b.id  and b.exam_id = c.id and a.id=".$t;
 echo $sql;
 $tests = mysqli_query($dbHandle, $sql);
-var_dump(mysqli_errno($dbHandle));
+var_dump(mysqli_error($dbHandle));
 $test = mysqli_fetch_array($tests);
 var_dump($test);
 
