@@ -62,7 +62,7 @@
         }
 
         vm.addAccount = function(){
-
+            vm.account.amount = vm.results.amount_made;
             CandidateService.postAccount(vm.inUser.md5, vm.account)
                 .then(function (response) {
                     vm.results = response.results;
