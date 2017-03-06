@@ -32,7 +32,7 @@ function checkOtp($userMd5, $type, $otp){
         $users = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 
-        $db = null;
+
 
         if(count($users) == 1) {
             $stmt = $db->prepare($updateOTP);
@@ -43,6 +43,7 @@ function checkOtp($userMd5, $type, $otp){
         }
         else
             echo '{"auth": "false"}';
+        $db = null;
 
 
     } catch (PDOException $e) {
