@@ -22,6 +22,8 @@ require_once "resources/user/getUserStatus.php";
 require_once "resources/user/test/getTestQuestionNo.php";
 require_once "resources/user/test/getTestResult.php";
 require_once "resources/user/regUser.php";
+
+//check otp
 require_once "resources/user/checkOtp.php";
 require_once "resources/user/test/saveTestQuestionAnswer.php";
 require_once "resources/user/test/startTopicTest.php";
