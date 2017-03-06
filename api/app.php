@@ -24,6 +24,7 @@ $app->get('/user/:userMd5/status', 'getUserStatus');
 
 //Start Test
 $app->post('/user/:userMd5/test/', 'startTopicTest');
+$app->post('/user/:userMd5/demo_test', 'startDemoTest');
 
 //next question
 $app->get('/user/:userMd5/test/:testId/goto/:questionNo', 'getTestQuestionNo');
@@ -34,6 +35,7 @@ $app->get('/user/:userMd5/verify/:type/otp/:otp', 'checkOtp');
 //result
 $app->get('/user/:userMd5/test/:testId/result', 'getTestResult');
 
+$app->post('/auth', 'userAuth');
 $app->post('/auth', 'userAuth');
 $app->post('/user', 'regUser');
 
