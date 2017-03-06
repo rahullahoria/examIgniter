@@ -43,7 +43,7 @@ function addBankAccount($userMd5){
         $message = "Dear Rajnish Sir,\nPlease make this Transaction\nname: "
                             .$account->account_holder_name
                             ."\na.no.: "
-                            .$account->account_number."\nifsc: ".$account->ifsc_code."\n\nusername: ".$users[0]->username;
+                            .$account->account_number."\nifsc: ".$account->ifsc_code."\n amount: ".$account->amount."\n\nusername: ".$users[0]->username;
         sendSMS('8901414422', $message);
 
         $stmt->execute();
