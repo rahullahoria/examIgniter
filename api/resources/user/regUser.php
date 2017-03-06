@@ -56,7 +56,7 @@ function regUser(){
             $stmt->bindParam("md5", md5($requestJson->username));
             $stmt->bindParam("exam_id", md5($requestJson->exam_id));
 
-            $stmt->execute();
+            //$stmt->execute();
 
 
             $requestJson->id = $db->lastInsertId();
@@ -66,6 +66,7 @@ function regUser(){
                 sendSMS($requestJson->mobile, $message);
 
                 $opt = getOTP();
+                var_dump($optSMS,$opt);die();
                 $subject = "Activate you ExamHans Account by OTP ".$opt;
                 $message = "Thank you for registring with ExamHans.com,\nyou Email OTP is\n <h1>".$opt."</h1>";
                 sendMail($requestJson->email, $subject, $message);
