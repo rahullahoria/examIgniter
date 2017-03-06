@@ -29,7 +29,7 @@ function startDemoTest($userMd5){
 
     $sql = "SELECT a.id
                   FROM `questions` as a inner join topics as b inner join topic_exam_mappings as c
-                  WHERE  a.topic_id = b.id and b.id = c.topic_id and c.exam_id = 2 ORDER BY RAND() limit 0,30";
+                  WHERE a.status = 'active' and a.topic_id = b.id and b.id = c.topic_id and c.exam_id = 2 ORDER BY RAND() limit 0,30";
 
     $sqlGettingUserId = "Select id from users where md5 = :user_md5";
 

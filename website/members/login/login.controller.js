@@ -45,7 +45,7 @@
                 .then(function (response) {
                     console.log("resp",response);
 
-                    if (response.results.id) {
+                    if (response.results && response.results.id) {
                         AuthenticationService.SetCredentials(vm.user.reg_username, vm.user.reg_password);
                         vm.inUser = response.results;
                         vm.inUser.username = vm.inUser.reg_username;
@@ -59,6 +59,7 @@
 
                     } else {
                         FlashService.Error(response.error.text);
+                        vm.regError = response.error.text;
                         vm.dataLoadingReg = false;
                     }
                 });

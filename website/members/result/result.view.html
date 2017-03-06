@@ -280,7 +280,7 @@
                         </div>
 
                         <div class="form-group" ng-class="{ 'has-error': form.account_number.$dirty && form.account_number.$error.required }">
-                            <input class="form-control" placeholder="Account No." type="text" name="account_number" id="account_number" ng-model="vm.account.account_number" required >
+                            <input class="form-control" placeholder="Account No." type="number" name="account_number" id="account_number" ng-model="vm.account.account_number" required >
                             <span ng-show="form.account_number.$dirty && form.account_number.$error.required" class="help-block">Account No is required</span>
                         </div>
 
@@ -318,11 +318,13 @@
                 <h4 class="modal-title">Thank You</h4>
             </div>
             <div class="modal-body">
-                Thank You for checking our demo. Your about of {{vm.results.amount_made}}  Rs will be credited in your account No. {{ vm.account.account_number }} in next 24 hours
+                Thank You for checking our demo. <br>
+                Your amount will be credited in your account in next 24 hours
+
             </div>
             <div class="modal-footer">
                 <!--<button type="button" class="btn btn-default pull-left" data-dismiss="modal">No</button>-->
-                <button type="button" class="btn btn-danger pull-left" href="http://examhans.com" data-dismiss="modal">OK</button>
+                <a type="button" class="btn btn-danger pull-left" href="http://examhans.com" data-dismiss="modal">OK</a>
             </div>
         </div>
 

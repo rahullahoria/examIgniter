@@ -28,7 +28,7 @@ function startTopicTest($userMd5){
 
 
     $sql = "SELECT a.id
-                  FROM `questions` as a  WHERE  a.topic_id = :topic_id ORDER BY RAND() limit 0,".$topic->no_of_question;
+                  FROM `questions` as a  WHERE  a.status = 'active' and a.topic_id = :topic_id ORDER BY RAND() limit 0,".$topic->no_of_question;
 
     $sqlGettingUserId = "Select id from users where md5 = :user_md5";
 
