@@ -17,6 +17,8 @@
 
         service.GetInUser = function(){
 
+            console.log('in user string',$cookieStore.get('inUser'));
+
             return JSON.parse($cookieStore.get('inUser'));
 
         }

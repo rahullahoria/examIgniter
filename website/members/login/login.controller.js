@@ -48,11 +48,13 @@
                     if (response.results.id) {
                         AuthenticationService.SetCredentials(vm.user.reg_username, vm.user.reg_password);
                         vm.inUser = response.results;
+                        vm.inUser.username = vm.inUser.reg_username;
+                        $cookieStore.put('inUser', JSON.stringify(vm.inUser));
                         vm.dataLoadingReg = false;
 
                         vm.showVerification = true;
 
-                        console.log("auth success",vm.inUser);
+                        console.log("auth success in user",vm.inUser);
                         //$location.path('/member');
 
                     } else {
