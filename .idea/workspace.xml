@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app.php" afterPath="$PROJECT_DIR$/api/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.php" afterPath="$PROJECT_DIR$/api/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/test/startDemoTest.php" afterPath="$PROJECT_DIR$/api/resources/user/test/startDemoTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -86,8 +86,8 @@
       <file leaf-file-name="login.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.875">
-              <caret line="71" column="152" selection-start-line="71" selection-start-column="152" selection-end-line="71" selection-end-column="152" />
+            <state vertical-scroll-proportion="-12.125">
+              <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -96,18 +96,18 @@
       <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.7586207">
-              <caret line="78" column="56" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="56" />
+            <state vertical-scroll-proportion="-7.7586207">
+              <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidate.service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="candidate.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/app-services/candidate.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5935252">
-              <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+            <state vertical-scroll-proportion="-7.2413793">
+              <caret line="98" column="86" selection-start-line="98" selection-start-column="86" selection-end-line="98" selection-end-column="86" />
               <folding />
             </state>
           </provider>
@@ -128,17 +128,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="startDemoTest.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="startDemoTest.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/startDemoTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875">
-              <caret line="8" column="22" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.34759358">
+              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
               <folding>
-                <marker date="1488607970196" expanded="true" signature="475:527" placeholder="SELECT a.id questions" />
-                <marker date="1488607970196" expanded="true" signature="475:677" placeholder="SELECT a.id questions" />
-                <marker date="1488607970196" expanded="true" signature="706:748" placeholder="Select id fr... users" />
-                <marker date="1488607970196" expanded="true" signature="774:871" placeholder="INSERT INTO `tests`... " />
-                <marker date="1488607970196" expanded="true" signature="899:1010" placeholder="INSERT INTO `responses`... " />
+                <marker date="1488778540220" expanded="true" signature="475:527" placeholder="SELECT a.id questions" />
+                <marker date="1488778540220" expanded="true" signature="475:695" placeholder="SELECT a.id questions" />
+                <marker date="1488778540220" expanded="true" signature="724:766" placeholder="Select id fr... users" />
+                <marker date="1488778540220" expanded="true" signature="792:881" placeholder="INSERT INTO `tests`... " />
+                <marker date="1488778540220" expanded="true" signature="909:1020" placeholder="INSERT INTO `responses`... " />
               </folding>
             </state>
           </provider>
@@ -182,7 +182,6 @@
         <option value="$PROJECT_DIR$/website/members/member/member.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
         <option value="$PROJECT_DIR$/api/includes/error.php" />
-        <option value="$PROJECT_DIR$/api/resources/user/test/startDemoTest.php" />
         <option value="$PROJECT_DIR$/api/resources/auth/postUserAuth.php" />
         <option value="$PROJECT_DIR$/website/main-web/index.html" />
         <option value="$PROJECT_DIR$/website/main-web/story.php" />
@@ -191,12 +190,13 @@
         <option value="$PROJECT_DIR$/website/members/index.html" />
         <option value="$PROJECT_DIR$/api/includes/getRandonString.php" />
         <option value="$PROJECT_DIR$/api/resources/user/checkOtp.php" />
-        <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
         <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/api/index.php" />
-        <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
+        <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
+        <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
+        <option value="$PROJECT_DIR$/api/resources/user/test/startDemoTest.php" />
       </list>
     </option>
   </component>
@@ -587,12 +587,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00045" summary="auth">
-      <created>1487934898781</created>
-      <option name="number" value="00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1487934898781</updated>
-    </task>
     <task id="LOCAL-00046" summary="auth">
       <created>1487935310054</created>
       <option name="number" value="00046" />
@@ -881,7 +875,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488775966227</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="auth">
+      <created>1488777341061</created>
+      <option name="number" value="00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1488777341061</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1297,14 +1297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.875">
-          <caret line="71" column="152" selection-start-line="71" selection-start-column="152" selection-end-line="71" selection-end-column="152" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.75">
@@ -1327,20 +1319,6 @@
             <marker date="1487868024712" expanded="true" signature="635:677" placeholder="Select id fr... users" />
             <marker date="1487868024712" expanded="true" signature="703:800" placeholder="INSERT INTO `tests`... " />
             <marker date="1487868024712" expanded="true" signature="828:939" placeholder="INSERT INTO `responses`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/test/startDemoTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875">
-          <caret line="8" column="22" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="22" />
-          <folding>
-            <marker date="1488607970196" expanded="true" signature="475:527" placeholder="SELECT a.id questions" />
-            <marker date="1488607970196" expanded="true" signature="475:677" placeholder="SELECT a.id questions" />
-            <marker date="1488607970196" expanded="true" signature="706:748" placeholder="Select id fr... users" />
-            <marker date="1488607970196" expanded="true" signature="774:871" placeholder="INSERT INTO `tests`... " />
-            <marker date="1488607970196" expanded="true" signature="899:1010" placeholder="INSERT INTO `responses`... " />
           </folding>
         </state>
       </provider>
@@ -1369,14 +1347,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.7586207">
-          <caret line="78" column="56" selection-start-line="78" selection-start-column="43" selection-end-line="78" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.528302">
@@ -1387,9 +1357,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/members/app-services/candidate.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5935252">
-          <caret line="28" column="45" selection-start-line="28" selection-start-column="45" selection-end-line="28" selection-end-column="45" />
+        <state vertical-scroll-proportion="-7.2413793">
+          <caret line="98" column="86" selection-start-line="98" selection-start-column="86" selection-end-line="98" selection-end-column="86" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.125">
+          <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.7586207">
+          <caret line="78" column="74" selection-start-line="78" selection-start-column="74" selection-end-line="78" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/test/startDemoTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34759358">
+          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+          <folding>
+            <marker date="1488778540220" expanded="true" signature="475:527" placeholder="SELECT a.id questions" />
+            <marker date="1488778540220" expanded="true" signature="475:695" placeholder="SELECT a.id questions" />
+            <marker date="1488778540220" expanded="true" signature="724:766" placeholder="Select id fr... users" />
+            <marker date="1488778540220" expanded="true" signature="792:881" placeholder="INSERT INTO `tests`... " />
+            <marker date="1488778540220" expanded="true" signature="909:1020" placeholder="INSERT INTO `responses`... " />
+          </folding>
         </state>
       </provider>
     </entry>
