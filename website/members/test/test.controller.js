@@ -120,7 +120,7 @@
                         vm.currentQuestion = response.questions[0];
 
                         var currentdate = new Date(vm.currentQuestion.question_fetch_time.replace(/-/g, "/"));
-                        vm.timeRemaing = parseInt(60 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
+                        vm.timeRemaing = parseInt(50 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
                         //console.log('time remaing', vm.timeRemaing);
                         $scope.$broadcast('timer-add-cd-seconds', vm.timeRemaing);
                         if (vm.timeRemaing <= 0) {
@@ -185,7 +185,7 @@
                         vm.currentQuestionNo = index;
 
                         var currentdate = new Date(vm.currentQuestion.question_fetch_time.replace(/-/g, "/"));
-                        vm.timeRemaing = parseInt(60 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
+                        vm.timeRemaing = parseInt(50 * vm.tests.questions.length - (currentdate.getTime() - vm.testStartTime.getTime()) / 1000);
                         //console.log('time remaing', vm.timeRemaing);
                         if (vm.timeRemaing <= 0) {
                            // console.log('i am nagative');
