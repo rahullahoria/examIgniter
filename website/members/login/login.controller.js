@@ -39,23 +39,45 @@
 
 
         vm.reg = function(){
+            vm.dataLoadingReg = true;
             CandidateService.Create(vm.user
                 )
                 .then(function (response) {
                     console.log("resp",response);
 
-                    if (response.id) {
+                    if (response.results.id) {
                         AuthenticationService.SetCredentials(vm.user.reg_username, vm.user.reg_password);
-                        vm.inUser = UserService.GetInUser();
+                        vm.inUser = response.results;
+                        vm.dataLoadingReg = false;
+
+                        vm.showVerification = true;
 
                         console.log("auth success");
-                        $location.path('/member');
+                        //$location.path('/member');
 
                     } else {
                         FlashService.Error(response.error.text);
                         vm.dataLoading = false;
                     }
                 });
+
+            console.log(vm.user);
+        };
+
+        vm.checkOTP = function(type){
+          CandidateService.CheckOTP(vm.inUser.userMd5,type,vm.user[type+'_otp']
+              )
+              .then(function (response) {
+                  console.log("resp",response);
+
+                  if (response.auth == "true") {
+                      alert('auth success');
+                      vm.user.mobile_verified = true;
+                  } else {
+                      FlashService.Error(response.error.text);
+                      vm.dataLoading = false;
+                  }
+              });
 
             console.log(vm.user);
         };
