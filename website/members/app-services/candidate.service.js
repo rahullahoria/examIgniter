@@ -26,6 +26,8 @@
         service.ShowResults = ShowResults;
         service.GetTopicMatter = GetTopicMatter;
         service.CheckOTP = CheckOTP;
+        service.StartDemoTest = StartDemoTest;
+
 
         return service;
 
@@ -92,6 +94,9 @@
 
         function StartTest(userMd5, instance) {
             return $http.post('http://api.examhans.com/user/'+userMd5+'/test/', instance).then(handleSuccess, handleError('Error updating user'));
+        }
+        function StartDemoTest(userMd5) {
+            return $http.post('http://api.examhans.com/user/'+userMd5+'/demo_test', instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function Delete(id) {

@@ -72,7 +72,26 @@
 
                   if (response.auth == "true") {
                       alert('auth success');
-                      vm.user.mobile_verified = true;
+                      vm.user[type+'_verified'] = true;
+                      if(vm.user.sms_verifed == true && vm.user.email_verifed == true ){
+                          //show model
+
+                          CandidateService.StartDemoTest(vm.inUser.md5
+                              )
+                              .then(function (response) {
+                                  vm.subjects = response.response;
+
+                                  console.log('member',vm.subjects);
+
+                                  $cookieStore.put('tests', JSON.stringify(vm.subjects));
+                                  $cookieStore.put('topic_name', 'Mix Topics');
+                                  $cookieStore.put('subject_name', 'All Subjects');
+
+                                  $location.path('/test');
+                              });
+
+
+                      }
                   } else {
                       FlashService.Error(response.error.text);
                       vm.dataLoading = false;
