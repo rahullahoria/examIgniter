@@ -5,12 +5,17 @@
  * Date: 3/4/17
  * Time: 12:28 PM
  */
-
+s
 $t = $_GET['t'];
+$dbHandle = mysqli_connect("localhost","root","redhat@11111p","exam_igniter");
+$sql = "SELECT a.amount_made,b.username,c.name FROM `tests` as a inner join users as b inner join exams as c WHERE a.user_id = b.id  and b.exam_id = c.id and a.id=".$t;
+$tests = mysqli_query($dbHandle, $sql);
+$test = mysqli_fetch_array($tests);
 
-$username = "Rahul.Lahoria";
-$amount = "200";
-$topicName = "Number Series";
+$username = $test['username'];
+$amount = $test['amount_made'];
+$topicName = $test['name'];
+mysqli_close($dbHandle);
 ?>
 
 <html>
@@ -31,7 +36,7 @@ $topicName = "Number Series";
     <meta property="og:type" content="website"/>
 
     <meta name="p:domain_verify" content=""/>
-    <meta property="og:image" content='http://examhans.com/img/logos/examhans_logo.png' />
+    <meta property="og:image" content='http://examhans.com/img/logos/examhans_logo_1200x800.png' />
 
     <meta property="og:image:type" content="image/png" />
 
@@ -44,7 +49,7 @@ $topicName = "Number Series";
     <meta name="twitter:url" content="http://examhans.com/story.php?t=<?= $t ?>" />
     <meta name="twitter:title" content="<?= $username ?> earned <?= $amount ?> Rs on ExanHans.com by Solving <?= $topicName ?> Questions" />
     <meta name="twitter:description" content="Its nice to get paid while learning, I am practicing online and get paid for that. This will increase my chance of getting selected" />
-    <meta name="twitter:image" content="http://examhans.com/img/logos/examhans_logo.png" />
+    <meta name="twitter:image" content="http://examhans.com/img/logos/examhans_logo_1200x800.png" />
     <style type="text/css">
 
         #share-buttons img {
@@ -65,7 +70,7 @@ $topicName = "Number Series";
     <h3><?= $username ?> earned <?= $amount ?> Rs on ExanHans.com by Solving <?= $topicName ?> Questions</h3>
     <h4>Its nice to get paid while learning, I am practicing online and get paid for that. This will increase my chance of getting selected</h4>
         <br>
-    <img src="http://examhans.com/img/logos/examhans_logo.png" style="max-width: 20%"/>
+    <img src="http://examhans.com/img/logos/examhans_logo_1200x800.png" style="max-width: 20%"/>
     <div class="intro-lead-in">Do you want to know more?</div>
 
     <h2><a href="http://examhans.com" class="page-scroll btn btn-xl">ExamHans.com</a></h2>
