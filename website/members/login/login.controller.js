@@ -66,7 +66,26 @@
             console.log(vm.user);
         };
 
+        vm.startDemoTest = function(){
+            CandidateService.StartDemoTest(vm.inUser.userMd5
+                )
+                .then(function (response) {
+                    vm.subjects = response.response;
+
+                    console.log('member',vm.subjects);
+
+                    $cookieStore.put('tests', JSON.stringify(vm.subjects));
+                    $cookieStore.put('topic_name', 'Mix Topics');
+                    $cookieStore.put('subject_name', 'All Subjects');
+
+                    $location.path('/test');
+                });
+        }
+
         vm.checkOTP = function(type){
+            if(type == 'skip'){
+                $("#instructionsModel").modal("show");
+            }else
           CandidateService.CheckOTP(vm.inUser.userMd5,type,vm.user[type+'_otp']
               )
               .then(function (response) {
@@ -77,20 +96,8 @@
                       vm.user[type+'_verified'] = true;
                       if(vm.user.sms_verified == true && vm.user.email_verified == true ){
                           //show model
+                          $("#instructionsModel").modal("show");
 
-                          CandidateService.StartDemoTest(vm.inUser.userMd5
-                              )
-                              .then(function (response) {
-                                  vm.subjects = response.response;
-
-                                  console.log('member',vm.subjects);
-
-                                  $cookieStore.put('tests', JSON.stringify(vm.subjects));
-                                  $cookieStore.put('topic_name', 'Mix Topics');
-                                  $cookieStore.put('subject_name', 'All Subjects');
-
-                                  $location.path('/test');
-                              });
 
 
                       }

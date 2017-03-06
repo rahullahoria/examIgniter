@@ -18,7 +18,7 @@ function regUser(){
             (:username, :email, :mobile, :ref_user_id, :password, :md5, :exam_id)";
 
 
-    $updateOTP = 'update users set sms_otp = :sms_otp, email_otp = :email_otp where 1';
+    $updateOTP = 'update users set sms_otp = :sms_otp, email_otp = :email_otp where id = :id';
 
 
     try {
@@ -74,6 +74,7 @@ function regUser(){
                 $stmt = $db->prepare($updateOTP);
                 $stmt->bindParam("sms_otp", $optSMS);
                 $stmt->bindParam("email_otp", $opt);
+                $stmt->bindParam("id", $requestJson->id);
                 $stmt->execute();
 
 

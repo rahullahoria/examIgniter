@@ -166,7 +166,7 @@
                     <div class="panel-heading">
                         <i class="fa fa-question-circle fa-fw"></i>{{ vm.topicName }} | {{ vm.subjectName}}
                         <span class="pull-right" >
-                            <b>Time Remaining<timer countdown="vm.timeRemaing" max-time-unit="'minute'" interval="1000">
+                            <b><timer countdown="vm.timeRemaing" max-time-unit="'minute'" interval="1000">
                                 {{mminutes}} : {{sseconds}}
                             </timer><i class="fa fa-clock-o" aria-hidden="true"></i>
                             </b>
@@ -189,7 +189,7 @@
                         <br>
 
                         <div class="row">
-                            <div class="col-lg-8">
+                            <div class="col-lg-8 col-sm-12">
                                 <button class="btn btn-danger" ng-show="vm.currentQuestionNo != 0" ng-click="vm.loadQuestion(vm.currentQuestionNo-1)">
                                     <i class="fa fa-arrow-left fa-fw"></i> Previous
                                 </button>
@@ -201,7 +201,7 @@
                                 </button>
 
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-sm-12">
                                 <button ng-show="vm.currentQuestionNo == vm.tests.questions.length - 1 " class="btn btn-danger" ng-click="vm.showResultsConf()">
                                     <i class="fa fa-check-square-o fa-fw"></i> Finish
                                 </button>
