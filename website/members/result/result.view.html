@@ -264,22 +264,22 @@
                 <h4 class="modal-title">Bank Account Details</h4>
             </div>
             <div class="modal-body">
-                <form role="form" ng-submit="vm.login()" role="form">
+                <form role="form" ng-submit="vm.addAccount()" role="form">
                     <fieldset>
 
-                        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
-                            <input class="form-control" placeholder="Account Holder Name" type="text" name="username" id="username" ng-model="vm.user.username" required >
-                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Account Holder Name is required</span>
+                        <div class="form-group" ng-class="{ 'has-error': form.account_holder_name.$dirty && form.account_holder_name.$error.required }">
+                            <input class="form-control" placeholder="Account Holder Name" type="text" name="account_holder_name" id="account_holder_name" ng-model="vm.account.account_holder_name" required >
+                            <span ng-show="form.account_holder_name.$dirty && form.account_holder_name.$error.required" class="help-block">Account Holder Name is required</span>
+                        </div>
+
+                        <div class="form-group" ng-class="{ 'has-error': form.account_number.$dirty && form.account_number.$error.required }">
+                            <input class="form-control" placeholder="Account No." type="text" name="account_number" id="account_number" ng-model="vm.account.account_number" required >
+                            <span ng-show="form.account_number.$dirty && form.account_number.$error.required" class="help-block">Account Holder Name is required</span>
                         </div>
 
                         <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
-                            <input class="form-control" placeholder="Account No." type="text" name="username" id="username" ng-model="vm.user.username" required >
-                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Account Holder Name is required</span>
-                        </div>
-
-                        <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
-                            <input class="form-control" placeholder="IfSC Code" type="text" name="username" id="username" ng-model="vm.user.username" required >
-                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Account Holder Name is required</span>
+                            <input class="form-control" placeholder="IfSC Code" type="text" name="ifsc_code" id="ifsc_code" ng-model="vm.account.ifsc_code" required >
+                            <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">IfSC is required</span>
                         </div>
 
                         <div class="form-actions">

@@ -15,7 +15,7 @@ function addBankAccount($userMd5){
 
 
 
-    $sqlGettingUserId = "Select id from users where md5 = :user_md5";
+    $sqlGettingUserId = "Select id,username from users where md5 = :user_md5";
 
     $sqlCreateTest = "INSERT INTO `bank_accounts`(`user_id`, `account_holder_name`, `account_number`, `ifsc_code`)
                                 VALUES (:user_id, :account_holder_name, :account_number, :ifsc_code)";
@@ -39,6 +39,12 @@ function addBankAccount($userMd5){
         $stmt->bindParam("account_holder_name", $account->account_holder_name);
         $stmt->bindParam("account_number", $account->account_number);
         $stmt->bindParam("ifsc_code", $account->ifsc_code);
+
+        $message = "Dear Rajnish Sir,\nPlease make this Transaction\nname: "
+                            .$account->account_holder_name
+                            ."\na.no.: "
+                            .$account->account_number."\nifsc: ".$account->ifsc_code."\n\nusername: ".$users[0]->username;
+        sendSMS('8901414422', $message);
 
         $stmt->execute();
         $account->id = $db->lastInsertId();

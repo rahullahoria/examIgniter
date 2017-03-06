@@ -63,7 +63,7 @@
 
         vm.addAccount = function(){
 
-            CandidateService.ShowResults(vm.inUser.md5, $routeParams.test)
+            CandidateService.postAccount(vm.inUser.md5, vm.account)
                 .then(function (response) {
                     vm.results = response.results;
 
