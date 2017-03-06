@@ -67,7 +67,7 @@
         };
 
         vm.startDemoTest = function(){
-            CandidateService.StartDemoTest(vm.inUser.userMd5
+            CandidateService.StartDemoTest(vm.inUser.md5
                 )
                 .then(function (response) {
                     vm.subjects = response.response;
@@ -86,7 +86,7 @@
             if(type == 'skip'){
                 $("#instructionsModel").modal("show");
             }else
-          CandidateService.CheckOTP(vm.inUser.userMd5,type,vm.user[type+'_otp']
+          CandidateService.CheckOTP(vm.inUser.md5,type,vm.user[type+'_otp']
               )
               .then(function (response) {
                   console.log("resp",response);
