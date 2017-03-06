@@ -246,7 +246,7 @@
                 }(document, 'script', 'facebook-jssdk'));</script>
 
                 <h3> To get {{vm.results.amount_made}} Rs, Please Share</h3>
-                <a href="http://www.facebook.com/sharer.php?u=http://examhans.com" ng-click="vm.getBankAccount()" target="_blank">
+                <a href="http://www.facebook.com/sharer.php?u=http://examhans.com/story.php?t={{vm.testId}}" ng-click="vm.getBankAccount()" target="_blank">
                     <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
                 </a>
                 <br>
@@ -271,6 +271,7 @@
                 <h4 class="modal-title">Bank Account Details</h4>
             </div>
             <div class="modal-body">
+                <p>Need for the transfer of you amount</p>
                 <form role="form" ng-submit="vm.addAccount()" role="form">
                     <fieldset>
 
