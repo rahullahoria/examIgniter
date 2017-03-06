@@ -87,7 +87,18 @@ function regUser(){
         }
 
     } catch (Exception $e) {
+        $errorMessage = " Already Exists";
+        $errors = array('username','mobile','email');
+        $flag = false;
+        foreach($errors as $error){
+            if (strpos($e->getMessage(), $error) !== false) {
+                echo '{"error":{"text":"' . $error.$errorMessage . '"}}';
+                $flag = true;
+            }
+
+        }
         //error_log($e->getMessage(), 3, '/var/tmp/php.log');
+        if(!$flag)
         echo '{"error":{"text":"' . $e->getMessage() . '"}}';
     }
 }
