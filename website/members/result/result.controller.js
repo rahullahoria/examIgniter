@@ -34,6 +34,7 @@
         }
 
         function showResults (){
+            vm.testId = $routeParams.test;
             CandidateService.ShowResults(vm.inUser.md5, $routeParams.test)
                 .then(function (response) {
                     vm.results = response.results;
