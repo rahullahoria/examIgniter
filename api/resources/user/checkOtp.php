@@ -9,7 +9,7 @@
 function checkOtp($userMd5, $type, $otp){
 
 
-    $sql = "SELECT a.`username`, a.`md5`, b.name
+    $sql = "SELECT a.`username`, a.`md5`
                 FROM users as a
                  WHERE
                   a.md5 =:user_md5
