@@ -92,7 +92,7 @@
                   console.log("resp",response);
 
                   if (response.auth == "true") {
-                      alert('auth success');
+                      alert('Verified Successfully');
                       vm.user[type+'_verified'] = true;
                       if(vm.user.sms_verified == true && vm.user.email_verified == true ){
                           //show model
@@ -102,6 +102,7 @@
 
                       }
                   } else {
+                      alert('Don\'t Match Please Try Again!');
                       FlashService.Error(response.error.text);
                       vm.dataLoading = false;
                   }

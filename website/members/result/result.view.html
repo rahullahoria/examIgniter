@@ -225,27 +225,34 @@
 
             </div>
 
-                <div class="col-lg-6">
-                    <div class="fb-like" data-href="https://www.facebook.com/Examhans-1449442445128231/" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
-                    <div id="fb-root"></div>
-                    <script>(function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0];
-                        if (d.getElementById(id)) return;
-                        js = d.createElement(s); js.id = id;
-                        js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=235401549997398";
-                        fjs.parentNode.insertBefore(js, fjs);
-                    }(document, 'script', 'facebook-jssdk'));</script>
 
-                    <h3> To get {{vm.results.amount_made}} Rs, Share us on Facebook</h3>
-                    <a href="http://www.facebook.com/sharer.php?u=http://examhans.com" ng-click="vm.getBankAccount()" target="_blank">
-                        <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-                    </a>
-                    <br>
 
-                    <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i>Go Home</a>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 col-md-offset-3">
+                <div style="text-align: center;">
+                    Please Like Us on Facebook <br>
+                <div class="fb-like" data-href="https://www.facebook.com/Examhans-1449442445128231/" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+                <div id="fb-root"></div>
+                <script>(function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=235401549997398";
+                    fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+                <h3> To get {{vm.results.amount_made}} Rs, Please Share</h3>
+                <a href="http://www.facebook.com/sharer.php?u=http://examhans.com" ng-click="vm.getBankAccount()" target="_blank">
+                    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
+                </a>
+                <br>
+
+                <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i>Go Home</a>
                 </div>
-
-
             </div>
         </div>
     </div>
@@ -274,7 +281,7 @@
 
                         <div class="form-group" ng-class="{ 'has-error': form.account_number.$dirty && form.account_number.$error.required }">
                             <input class="form-control" placeholder="Account No." type="text" name="account_number" id="account_number" ng-model="vm.account.account_number" required >
-                            <span ng-show="form.account_number.$dirty && form.account_number.$error.required" class="help-block">Account Holder Name is required</span>
+                            <span ng-show="form.account_number.$dirty && form.account_number.$error.required" class="help-block">Account No is required</span>
                         </div>
 
                         <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
@@ -295,6 +302,27 @@
             <div class="modal-footer">
 <!--
                 <button type="button" class="btn btn-danger pull-left" ng-click="vm.startDemoTest()" data-dismiss="modal">Start Test</button>-->
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="thankyouModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thank You</h4>
+            </div>
+            <div class="modal-body">
+                Thank You for checking our demo. Your about of {{vm.results.amount_made}}  Rs will be credited in your account No. {{ vm.account.account_number }} in next 24 hours
+            </div>
+            <div class="modal-footer">
+                <!--<button type="button" class="btn btn-default pull-left" data-dismiss="modal">No</button>-->
+                <button type="button" class="btn btn-danger pull-left" href="http://examhans.com" data-dismiss="modal">OK</button>
             </div>
         </div>
 

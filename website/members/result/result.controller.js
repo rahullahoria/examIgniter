@@ -66,6 +66,9 @@
             CandidateService.postAccount(vm.inUser.md5, vm.account)
                 .then(function (response) {
                     vm.results = response.results;
+                    $("#bankDetailsModel").modal("hide");
+
+                    $("#thankyouModel").modal("show");
 
 
                     console.log(response);
