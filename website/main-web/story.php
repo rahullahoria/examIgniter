@@ -8,7 +8,10 @@
 
 $t = $_GET['t'];
 $dbHandle = mysqli_connect("localhost","root","redhat@11111p","exam_igniter");
-$sql = "SELECT a.amount_made,b.username,c.name FROM `tests` as a inner join users as b inner join exams as c WHERE a.user_id = b.id  and b.exam_id = c.id and a.id=".$t;
+$sql = "SELECT a.amount_made,b.username,c.name
+          FROM `tests` as a inner join users as b inner join exams as c
+          WHERE a.user_id = b.id  and b.exam_id = c.id and a.id=".$t;
+echo $sql;
 $tests = mysqli_query($dbHandle, $sql);
 $test = mysqli_fetch_array($tests);
 
