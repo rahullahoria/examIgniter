@@ -25,6 +25,7 @@
         service.SubmitRespnse = SubmitRespnse;
         service.ShowResults = ShowResults;
         service.GetTopicMatter = GetTopicMatter;
+        service.CheckOTP = CheckOTP;
 
         return service;
 
@@ -68,7 +69,9 @@
             return $http.get('http://api.examhans.com/exams' ).then(handleSuccess, handleError('Error getting user by username'));
         }
 
-
+        function CheckOTP(userMd5,type,otp) {
+            return $http.get('http://api.examhans.com/user/'+userMd5+'/verify/'+type+'/otp/'+otp ).then(handleSuccess, handleError('Error getting user by username'));
+        }
 
         function Create(user) {
             return $http.post('http://api.examhans.com/user', user).then(handleSuccess, handleError('Error creating user'));

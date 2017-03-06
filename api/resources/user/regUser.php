@@ -45,7 +45,7 @@ function regUser(){
             }
             //var_dump($response1);die();
 
-
+            $requestJson->userMd5 = md5($requestJson->username);
             $stmt = $db->prepare($sql);
 
             $stmt->bindParam("username", $requestJson->reg_username);
@@ -53,7 +53,7 @@ function regUser(){
             $stmt->bindParam("mobile", $requestJson->mobile);
             $stmt->bindParam("ref_user_id", $refIdArr[0]->id);
             $stmt->bindParam("password", $requestJson->reg_password);
-            $stmt->bindParam("md5", md5($requestJson->username));
+            $stmt->bindParam("md5", $requestJson->userMd5);
             $stmt->bindParam("exam_id", md5($requestJson->exam_id));
 
             $stmt->execute();
