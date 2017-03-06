@@ -10,7 +10,7 @@ $t = $_GET['t'];
 //exam_igniter
 
 $dbHandle = mysqli_connect("localhost","root","redhat@11111p","exam_igniter");
-$sql = "SELECT a.amount_made, b.username, c.name
+$sql = "SELECT a.amount_made, b.username, exams.name
           FROM `tests` as a
           inner join users as b
           left join exams  on b.exam_id = exams.id
