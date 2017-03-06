@@ -5,8 +5,8 @@
         .module('app')
         .controller('LoginController', LoginController);
 
-    LoginController.$inject = ['$location', 'UserService', 'CandidateService', 'AuthenticationService', 'FlashService'];
-    function LoginController($location, UserService, CandidateService, AuthenticationService, FlashService) {
+    LoginController.$inject = ['$location', 'UserService', '$cookieStore','CandidateService', 'AuthenticationService', 'FlashService'];
+    function LoginController($location, UserService, $cookieStore,CandidateService, AuthenticationService, FlashService) {
         var vm = this;
 
         vm.login = login;
@@ -48,11 +48,13 @@
                     if (response.results.id) {
                         AuthenticationService.SetCredentials(vm.user.reg_username, vm.user.reg_password);
                         vm.inUser = response.results;
+                        vm.inUser.username = vm.inUser.reg_username;
+                        $cookieStore.put('inUser', JSON.stringify(vm.inUser));
                         vm.dataLoadingReg = false;
 
                         vm.showVerification = true;
 
-                        console.log("auth success",vm.inUser);
+                        console.log("auth success in user",vm.inUser);
                         //$location.path('/member');
 
                     } else {
@@ -73,10 +75,10 @@
                   if (response.auth == "true") {
                       alert('auth success');
                       vm.user[type+'_verified'] = true;
-                      if(vm.user.sms_verifed == true && vm.user.email_verifed == true ){
+                      if(vm.user.sms_verified == true && vm.user.email_verified == true ){
                           //show model
 
-                          CandidateService.StartDemoTest(vm.inUser.md5
+                          CandidateService.StartDemoTest(vm.inUser.userMd5
                               )
                               .then(function (response) {
                                   vm.subjects = response.response;

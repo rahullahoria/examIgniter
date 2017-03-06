@@ -57,10 +57,12 @@
         };
 
         function loadUser(){
+            console.log("loading in user");
             vm.inUser = UserService.GetInUser();
             /*if(!vm.inUser.name)
                 $location.path('/login');
-            */console.log("in user",vm.inUser);
+            */
+            console.log("in user",vm.inUser);
 
 
         }

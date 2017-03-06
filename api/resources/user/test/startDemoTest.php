@@ -28,12 +28,13 @@ function startDemoTest($userMd5){
 
 
     $sql = "SELECT a.id
-                  FROM `questions` as a inner join topics as b inner join topic_exam_mappings as c WHERE  a.topic_id = b.id and b.id = c.topic_id and c.exam_id = 2 ORDER BY RAND() limit 0,30";
+                  FROM `questions` as a inner join topics as b inner join topic_exam_mappings as c
+                  WHERE  a.topic_id = b.id and b.id = c.topic_id and c.exam_id = 2 ORDER BY RAND() limit 0,30";
 
     $sqlGettingUserId = "Select id from users where md5 = :user_md5";
 
     $sqlCreateTest = "INSERT INTO `tests`(`topic_id`, `user_id`)
-                          VALUES (:topic_id, :user_id)";
+                          VALUES (0, :user_id)";
 
     $sqlSaveQuestion = "INSERT INTO `responses`(`test_id`, `question_id`)
                               VALUES (:test_id, :question_id)";
@@ -47,7 +48,7 @@ function startDemoTest($userMd5){
         //Getting Questions
         $stmt = $db->prepare($sql);
 
-        $stmt->bindParam("topic_id", $topic->topic_id);
+        //$stmt->bindParam("topic_id", $topic->topic_id);
         //$stmt->bindParam("no_of_question", $topic->no_of_question);
 
 
@@ -64,7 +65,7 @@ function startDemoTest($userMd5){
         //creating test
         $stmt = $db->prepare($sqlCreateTest);
 
-        $stmt->bindParam("topic_id", $topic->topic_id);
+        //$stmt->bindParam("topic_id", 0);
         $stmt->bindParam("user_id", $users[0]->id);
 
         $stmt->execute();
