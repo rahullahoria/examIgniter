@@ -61,6 +61,23 @@
 
         }
 
+        vm.addAccount = function(){
+
+            CandidateService.ShowResults(vm.inUser.md5, $routeParams.test)
+                .then(function (response) {
+                    vm.results = response.results;
+
+
+                    console.log(response);
+
+                });
+
+        }
+
+        vm.getBankAccount = function(){
+            $("#bankDetailsModel").modal("show");
+        }
+
 
     }
 

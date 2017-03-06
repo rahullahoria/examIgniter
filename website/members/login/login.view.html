@@ -85,7 +85,7 @@
                             <br>
                             <br>
                             <br>
-                            <a ng-show="vm.user.mobile_verified" ng-click="vm.checkOTP('email')" >Skip</a>
+                            <a ng-show="vm.user.sms_verified" ng-click="vm.checkOTP('skip')" >Start Test</a>
 
                             <!--<div class="form-actions">
                                 <button type="submit" ng-disabled="form.$invalid || vm.dataLoading" class="btn btn-lg btn-primary btn-block">Login</button>
@@ -207,4 +207,35 @@
 
 
 
+</div>
+
+<div id="instructionsModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Start Test Instructions</h4>
+            </div>
+            <div class="modal-body">
+                <i class="fa fa-exclamation-triangle fa-3x btn-warning" aria-hidden="true"></i>
+                <br>
+                <ol>
+                    <li>Correct Answer will pay you <b>5 Rs</b></li>
+                    <li>If you leave question unattended that will pay you <b>1 Rs</b> </li>
+                    <li>Incorrect Answer will not pay you</li>
+                    <li>If you have founded coping, your session will be closed</li>
+                    <li>Saving questions is not allowed that may cause closing of your session</li>
+                    <li>Any random behaviour may also cause locking of your session</li>
+                </ol>
+
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-danger pull-left" ng-click="vm.startDemoTest()" data-dismiss="modal">Start Test</button>
+            </div>
+        </div>
+
+    </div>
 </div>
