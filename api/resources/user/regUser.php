@@ -40,7 +40,7 @@ function regUser(){
             $refIdArr = $stmt->fetchAll(PDO::FETCH_OBJ);
 
             if (count($refIdArr) == 0) {
-                echo '{"error":{"text":"this bitch is not registered"}}';
+                echo '{"error":{"text":"Referring User Don\'t exists "}}';
                 die();
             }
             //var_dump($response1);die();
