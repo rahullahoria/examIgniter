@@ -67,16 +67,18 @@
 
                     <form role="form"  role="form">
                         <fieldset>
-                            {{  vm.inUser.mobile }}
+
                             <div class="form-group" ng-hide="vm.user.sms_verified" ng-class="{ 'has-error': form.mobile_otp.$dirty && form.mobile_otp.$error.required }">
+                                {{  vm.inUser.mobile }}
                                 <input class="form-control" placeholder="Mobile OTP" type="text" name="mobile_otp" id="mobile_otp" ng-model="vm.user.sms_otp" required >
                                 <span ng-show="form.mobile_otp.$dirty && form.mobile_otp.$error.required" class="help-block">Mobile OTP is required</span>
                             </div>
                             <a ng-click="vm.checkOTP('sms')" >Verify</a>
                             <br>
                             <br>
-                            {{  vm.inUser.email }}
+
                             <div class="form-group" ng-hide="vm.user.email_verified" ng-class="{ 'has-error': form.email_otp.$dirty && form.email_otp.$error.required }">
+                                {{  vm.inUser.email }}
                                 <input type="text" name="email_otp" placeholder="Email OTP" id="email_otp" class="form-control" ng-model="vm.user.email_otp"  />
                                 <span ng-show="form.email_otp.$dirty && form.email_otp.$error.required" class="help-block">Email OTP is required</span>
                             </div>

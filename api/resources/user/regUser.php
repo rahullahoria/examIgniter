@@ -54,7 +54,7 @@ function regUser(){
             $stmt->bindParam("ref_user_id", $refIdArr[0]->id);
             $stmt->bindParam("password", $requestJson->reg_password);
             $stmt->bindParam("md5", $requestJson->md5);
-            $stmt->bindParam("exam_id", md5($requestJson->exam_id));
+            $stmt->bindParam("exam_id", $requestJson->exam_id);
 
             $stmt->execute();
 
