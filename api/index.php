@@ -25,7 +25,7 @@ require_once "resources/user/test/startDemoTest.php";
 
 require_once "resources/user/regUser.php";
 
-require_once "resources/user/bankAccount/addBankAccount.php";
+require_once "resources/user/bankAccount/addBankAccount.php ";
 
 //check otp
 require_once "resources/user/checkOtp.php";
