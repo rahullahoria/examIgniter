@@ -62,16 +62,16 @@
         <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.42293233">
-              <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+              <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1488808207808" expanded="true" signature="215:389" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808207808" expanded="true" signature="215:422" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808207808" expanded="true" signature="215:433" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808207808" expanded="true" signature="215:435" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808207808" expanded="true" signature="215:443" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808207808" expanded="true" signature="3618:5365" placeholder="..." />
+                <marker date="1488808319232" expanded="true" signature="215:388" placeholder="SELECT a.amo... tests" />
+                <marker date="1488808319232" expanded="true" signature="215:421" placeholder="SELECT a.amo... tests" />
+                <marker date="1488808319232" expanded="true" signature="215:432" placeholder="SELECT a.amo... tests" />
+                <marker date="1488808319232" expanded="true" signature="215:434" placeholder="SELECT a.amo... tests" />
+                <marker date="1488808319232" expanded="true" signature="215:442" placeholder="SELECT a.amo... tests" />
+                <marker date="1488808319232" expanded="true" signature="3617:5364" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -742,12 +742,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00065" summary="auth">
-      <created>1488449142173</created>
-      <option name="number" value="00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1488449142180</updated>
-    </task>
     <task id="LOCAL-00066" summary="auth">
       <created>1488450519558</created>
       <option name="number" value="00066" />
@@ -1036,7 +1030,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488807852732</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="auth">
+      <created>1488808220200</created>
+      <option name="number" value="00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1488808220200</updated>
+    </task>
+    <option name="localTasksCounter" value="115" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1539,16 +1539,16 @@
     <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42293233">
-          <caret line="15" column="51" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1488808207808" expanded="true" signature="215:389" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808207808" expanded="true" signature="215:422" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808207808" expanded="true" signature="215:433" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808207808" expanded="true" signature="215:435" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808207808" expanded="true" signature="215:443" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808207808" expanded="true" signature="3618:5365" placeholder="..." />
+            <marker date="1488808319232" expanded="true" signature="215:388" placeholder="SELECT a.amo... tests" />
+            <marker date="1488808319232" expanded="true" signature="215:421" placeholder="SELECT a.amo... tests" />
+            <marker date="1488808319232" expanded="true" signature="215:432" placeholder="SELECT a.amo... tests" />
+            <marker date="1488808319232" expanded="true" signature="215:434" placeholder="SELECT a.amo... tests" />
+            <marker date="1488808319232" expanded="true" signature="215:442" placeholder="SELECT a.amo... tests" />
+            <marker date="1488808319232" expanded="true" signature="3617:5364" placeholder="..." />
           </folding>
         </state>
       </provider>

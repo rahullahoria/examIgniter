@@ -13,7 +13,7 @@ $dbHandle = mysqli_connect("localhost","root","redhat@11111p","exam_igniter");
 $sql = "SELECT a.amount_made, b.username, c.name
           FROM `tests` as a
           inner join users as b
-          inner join exams as c on b.exam_id = c.id
+          left join exams  on b.exam_id = exams.id
           WHERE a.id=$t
           and a.user_id = b.id
             ";
