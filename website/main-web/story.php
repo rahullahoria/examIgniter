@@ -14,6 +14,7 @@ $sql = "SELECT a.amount_made,b.username,c.name
 echo $sql;
 $tests = mysqli_query($dbHandle, $sql);
 $test = mysqli_fetch_array($tests);
+var_dump($test);
 
 $username = $test['username'];
 $amount = $test['amount_made'];
