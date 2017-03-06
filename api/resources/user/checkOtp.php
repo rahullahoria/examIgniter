@@ -15,6 +15,7 @@ function checkOtp($userMd5, $type, $otp){
                   a.md5 =:user_md5
                  and a.".$type."_otp =:otp ;";
 
+
     $updateOTP = "update users set ".$type."_verified = 'yes' where 1";
 
 

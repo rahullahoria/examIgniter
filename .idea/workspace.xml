@@ -3,10 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/regUser.php" afterPath="$PROJECT_DIR$/api/resources/user/regUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.php" afterPath="$PROJECT_DIR$/api/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/checkOtp.php" afterPath="$PROJECT_DIR$/api/resources/user/checkOtp.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,10 +37,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.46524063">
+            <state vertical-scroll-proportion="-10.875">
               <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
@@ -67,7 +66,17 @@
         <entry file="file://$PROJECT_DIR$/api/app.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.125">
-              <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="48" />
+              <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-12.5">
+              <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -87,25 +96,25 @@
         <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="44" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="44" />
+              <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkOtp.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="checkOtp.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/checkOtp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.625">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.122994654">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1488770802628" expanded="true" signature="151:301" placeholder="SELECT a.`us... users" />
-                <marker date="1488770802628" expanded="true" signature="151:317" placeholder="SELECT a.`us... users" />
-                <marker date="1488770802628" expanded="true" signature="151:320" placeholder="SELECT a.`us... users" />
-                <marker date="1488770802628" expanded="true" signature="344:360" placeholder="update users... " />
-                <marker date="1488770802628" expanded="true" signature="344:381" placeholder="update users... " />
-                <marker date="1488770802628" expanded="true" signature="344:395" placeholder="update users... " />
+                <marker date="1488771361940" expanded="true" signature="151:301" placeholder="SELECT a.`us... users" />
+                <marker date="1488771361940" expanded="true" signature="151:317" placeholder="SELECT a.`us... users" />
+                <marker date="1488771361940" expanded="true" signature="151:320" placeholder="SELECT a.`us... users" />
+                <marker date="1488771361940" expanded="true" signature="345:361" placeholder="update users... " />
+                <marker date="1488771361940" expanded="true" signature="345:382" placeholder="update users... " />
+                <marker date="1488771361940" expanded="true" signature="345:396" placeholder="update users... " />
               </folding>
             </state>
           </provider>
@@ -129,16 +138,6 @@
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="member.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/member/member.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="81" column="16" selection-start-line="81" selection-start-column="16" selection-end-line="97" selection-end-column="23" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -188,14 +187,14 @@
         <option value="$PROJECT_DIR$/api/resources/exams/getListExamList.php" />
         <option value="$PROJECT_DIR$/api/resources/exams/getExamList.php" />
         <option value="$PROJECT_DIR$/api/app.php" />
-        <option value="$PROJECT_DIR$/api/index.php" />
         <option value="$PROJECT_DIR$/website/members/index.html" />
         <option value="$PROJECT_DIR$/api/includes/getRandonString.php" />
         <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
+        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/checkOtp.php" />
-        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
+        <option value="$PROJECT_DIR$/api/index.php" />
       </list>
     </option>
   </component>
@@ -560,12 +559,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00039" summary="auth">
-      <created>1487870309866</created>
-      <option name="number" value="00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1487870309866</updated>
-    </task>
     <task id="LOCAL-00040" summary="auth">
       <created>1487876391805</created>
       <option name="number" value="00040" />
@@ -854,7 +847,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488768162260</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="auth">
+      <created>1488770898593</created>
+      <option name="number" value="00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1488770898593</updated>
+    </task>
+    <option name="localTasksCounter" value="89" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1255,14 +1254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0">
-          <caret line="17" column="47" selection-start-line="17" selection-start-column="47" selection-end-line="17" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/member/member.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="48.125">
@@ -1313,14 +1304,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.125">
-          <caret line="31" column="12" selection-start-line="31" selection-start-column="12" selection-end-line="31" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.375">
@@ -1329,39 +1312,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="44" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/checkOtp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.625">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1488770802628" expanded="true" signature="151:301" placeholder="SELECT a.`us... users" />
-            <marker date="1488770802628" expanded="true" signature="151:317" placeholder="SELECT a.`us... users" />
-            <marker date="1488770802628" expanded="true" signature="151:320" placeholder="SELECT a.`us... users" />
-            <marker date="1488770802628" expanded="true" signature="344:360" placeholder="update users... " />
-            <marker date="1488770802628" expanded="true" signature="344:381" placeholder="update users... " />
-            <marker date="1488770802628" expanded="true" signature="344:395" placeholder="update users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46524063">
+        <state vertical-scroll-proportion="-10.875">
           <caret line="55" column="57" selection-start-line="55" selection-start-column="57" selection-end-line="55" selection-end-column="57" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
             <marker date="1488770882720" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
             <marker date="1488770882720" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
             <marker date="1488770882720" expanded="true" signature="524:591" placeholder="update users... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="54" column="60" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.5">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/checkOtp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.122994654">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+            <marker date="1488771361940" expanded="true" signature="151:301" placeholder="SELECT a.`us... users" />
+            <marker date="1488771361940" expanded="true" signature="151:317" placeholder="SELECT a.`us... users" />
+            <marker date="1488771361940" expanded="true" signature="151:320" placeholder="SELECT a.`us... users" />
+            <marker date="1488771361940" expanded="true" signature="345:361" placeholder="update users... " />
+            <marker date="1488771361940" expanded="true" signature="345:382" placeholder="update users... " />
+            <marker date="1488771361940" expanded="true" signature="345:396" placeholder="update users... " />
           </folding>
         </state>
       </provider>

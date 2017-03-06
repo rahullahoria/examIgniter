@@ -52,12 +52,12 @@
 
                         vm.showVerification = true;
 
-                        console.log("auth success");
+                        console.log("auth success",vm.inUser);
                         //$location.path('/member');
 
                     } else {
                         FlashService.Error(response.error.text);
-                        vm.dataLoading = false;
+                        vm.dataLoadingReg = false;
                     }
                 });
 
