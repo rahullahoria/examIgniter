@@ -55,8 +55,8 @@
     <meta property="og:type" content="website"/>
 
     <meta name="p:domain_verify" content=""/>
-    <meta property="og:image" content='http://examhans.com/img/logos/examhans_logo.png' />
-    <meta property="og:url" content="http://examhans.com" />
+    <meta property="og:image" content='https://examhans.com/img/logos/examhans_logo.png' />
+    <meta property="og:url" content="https://examhans.com" />
     <meta property="og:image:type" content="image/png" />
 
     <meta property="og:description" content="Learn and Earn, Bank PO, SSC, SSC CGL, Solve Question and earn back money. Increase you chance to get selected." />
@@ -65,10 +65,10 @@
     <!-- <meta name="twitter:card" content="n/a" /> -->
     <meta name="twitter:site" content="@hireblueteam">
     <meta name="twitter:creator" content="@hireblueteam">
-    <meta name="twitter:url" content="http://examhans.com" />
+    <meta name="twitter:url" content="https://examhans.com" />
     <meta name="twitter:title" content="ExamHans | Learn and Earn." />
     <meta name="twitter:description" content="Learn and Earn, Bank PO, SSC, SSC CGL, Solve Question and earn back money. Increase you chance to get selected." />
-    <meta name="twitter:image" content="http://examhans.com/img/logos/examhans_logo.png" />
+    <meta name="twitter:image" content="https://examhans.com/img/logos/examhans_logo.png" />
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -571,7 +571,7 @@
             </div>
         </div>
     </div>
-
+<?php /*
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
@@ -715,7 +715,7 @@
             </div>
         </div>
     </div>
-
+*/ ?>
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
