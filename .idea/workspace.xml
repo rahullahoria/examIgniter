@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.html" afterPath="$PROJECT_DIR$/website/main-web/index.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +27,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7326203">
+            <state vertical-scroll-proportion="0.973262">
               <caret line="396" column="116" selection-start-line="396" selection-start-column="116" selection-end-line="396" selection-end-column="116" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -733,12 +732,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00073" summary="auth">
-      <created>1488531532701</created>
-      <option name="number" value="00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1488531532702</updated>
-    </task>
     <task id="LOCAL-00074" summary="auth">
       <created>1488532624887</created>
       <option name="number" value="00074" />
@@ -1027,7 +1020,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488867228670</updated>
     </task>
-    <option name="localTasksCounter" value="122" />
+    <task id="LOCAL-00122" summary="auth">
+      <created>1488872598384</created>
+      <option name="number" value="00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1488872598384</updated>
+    </task>
+    <option name="localTasksCounter" value="123" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1539,7 +1538,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7326203">
+        <state vertical-scroll-proportion="0.973262">
           <caret line="396" column="116" selection-start-line="396" selection-start-column="116" selection-end-line="396" selection-end-column="116" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
