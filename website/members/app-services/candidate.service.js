@@ -36,25 +36,25 @@
 
         function GetStatus(userMD5) {
             return $http
-                .get('http://api.examhans.com/user/'+userMD5+'/status')
+                .get('https://api.examhans.com/user/'+userMD5+'/status')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
         function GetTopicMatter(topicId) {
             return $http
-                .get('http://api.examhans.com/topics/'+topicId+'/videos')
+                .get('https://api.examhans.com/topics/'+topicId+'/videos')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
         function ShowResults(userMD5,testId) {
             return $http
-                .get('http://api.examhans.com/user/'+userMD5+'/test/'+testId+'/result')
+                .get('https://api.examhans.com/user/'+userMD5+'/test/'+testId+'/result')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
         function GetUserInstance(professionId,uType,month) {
             return $http
-                .get('http://api.bulldog.shatkonlabs.com/profession/'+professionId+'/type/'+uType+"/instance?month=" +month)
+                .get('https://api.bulldog.shatkonlabs.com/profession/'+professionId+'/type/'+uType+"/instance?month=" +month)
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
@@ -63,46 +63,46 @@
 
 
         function GetQuestion(userMd5,testId,id) {
-            return $http.get('http://api.examhans.com/user/'+userMd5+'/test/'+testId+'/goto/' + id).then(handleSuccess, handleError('Error getting user by id'));
+            return $http.get('https://api.examhans.com/user/'+userMd5+'/test/'+testId+'/goto/' + id).then(handleSuccess, handleError('Error getting user by id'));
         }
 
 
 
         function GetExams(str) {
-            return $http.get('http://api.examhans.com/exams' ).then(handleSuccess, handleError('Error getting user by username'));
+            return $http.get('https://api.examhans.com/exams' ).then(handleSuccess, handleError('Error getting user by username'));
         }
 
         function CheckOTP(userMd5,type,otp) {
-            return $http.get('http://api.examhans.com/user/'+userMd5+'/verify/'+type+'/otp/'+otp ).then(handleSuccess, handleError('Error getting user by username'));
+            return $http.get('https://api.examhans.com/user/'+userMd5+'/verify/'+type+'/otp/'+otp ).then(handleSuccess, handleError('Error getting user by username'));
         }
 
         function Create(user) {
-            return $http.post('http://api.examhans.com/user', user).then(handleSuccess, handleError('Error creating user'));
+            return $http.post('https://api.examhans.com/user', user).then(handleSuccess, handleError('Error creating user'));
         }
 
         function Update(user) {
-            return $http.put('http://api.shatkonjobs.com/candidates/' + user.id, user).then(handleSuccess, handleError('Error updating user'));
+            return $http.put('https://api.shatkonjobs.com/candidates/' + user.id, user).then(handleSuccess, handleError('Error updating user'));
         }
 
         function UpdateInstance(instance) {
-            return $http.post('http://api.bulldog.shatkonlabs.com/instance', instance).then(handleSuccess, handleError('Error updating user'));
+            return $http.post('https://api.bulldog.shatkonlabs.com/instance', instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function SubmitRespnse(userMd5,testId,responseId,instance) {
             ///user/:userMd5/test/:testId/question/:responseId
-            return $http.post('http://api.examhans.com/user/'+userMd5+'/test/'+testId+'/question/'+responseId, instance).then(handleSuccess, handleError('Error updating user'));
+            return $http.post('https://api.examhans.com/user/'+userMd5+'/test/'+testId+'/question/'+responseId, instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function StartTest(userMd5, instance) {
-            return $http.post('http://api.examhans.com/user/'+userMd5+'/test/', instance).then(handleSuccess, handleError('Error updating user'));
+            return $http.post('https://api.examhans.com/user/'+userMd5+'/test/', instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function postAccount(userMd5, instance) {
-            return $http.post('http://api.examhans.com/user/'+userMd5+'/bank_account', instance).then(handleSuccess, handleError('Error updating user'));
+            return $http.post('https://api.examhans.com/user/'+userMd5+'/bank_account', instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function StartDemoTest(userMd5) {
-            return $http.post('http://api.examhans.com/user/'+userMd5+'/demo_test', {}).then(handleSuccess, handleError('Error updating user'));
+            return $http.post('https://api.examhans.com/user/'+userMd5+'/demo_test', {}).then(handleSuccess, handleError('Error updating user'));
         }
 
         function Delete(id) {
