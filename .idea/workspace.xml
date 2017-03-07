@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/result/result.controller.js" afterPath="$PROJECT_DIR$/website/members/result/result.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/result/result.view.html" afterPath="$PROJECT_DIR$/website/members/result/result.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.html" afterPath="$PROJECT_DIR$/website/main-web/index.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,6 +25,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.40106952">
+              <caret line="153" column="90" selection-start-line="153" selection-start-column="90" selection-end-line="153" selection-end-column="90" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/test/test.controller.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,18 +100,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="saveTestQuestionAnswer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.75">
-              <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-              <folding>
-                <marker date="1488535635996" expanded="true" signature="313:438" placeholder="UPDATE `resp... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="startTopicTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api/resources/user/test/startTopicTest.php">
           <provider selected="true" editor-type-id="text-editor">
@@ -115,10 +115,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3315508">
+            <state vertical-scroll-proportion="-7.75">
               <caret line="273" column="54" selection-start-line="273" selection-start-column="54" selection-end-line="273" selection-end-column="54" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
@@ -186,7 +186,6 @@
         <option value="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
         <option value="$PROJECT_DIR$/api/includes/error.php" />
         <option value="$PROJECT_DIR$/api/resources/auth/postUserAuth.php" />
-        <option value="$PROJECT_DIR$/website/main-web/index.html" />
         <option value="$PROJECT_DIR$/api/resources/exams/getListExamList.php" />
         <option value="$PROJECT_DIR$/api/resources/exams/getExamList.php" />
         <option value="$PROJECT_DIR$/website/members/index.html" />
@@ -207,6 +206,7 @@
         <option value="$PROJECT_DIR$/website/main-web/story.php" />
         <option value="$PROJECT_DIR$/website/members/result/result.controller.js" />
         <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
+        <option value="$PROJECT_DIR$/website/main-web/index.html" />
       </list>
     </option>
   </component>
@@ -737,12 +737,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00069" summary="auth">
-      <created>1488468837178</created>
-      <option name="number" value="00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1488468837178</updated>
-    </task>
     <task id="LOCAL-00070" summary="auth">
       <created>1488516358705</created>
       <option name="number" value="00070" />
@@ -1031,7 +1025,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488808495217</updated>
     </task>
-    <option name="localTasksCounter" value="118" />
+    <task id="LOCAL-00118" summary="auth">
+      <created>1488808877418</created>
+      <option name="number" value="00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1488808877418</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1255,14 +1255,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="5.625">
           <caret line="14" column="9" selection-start-line="14" selection-start-column="9" selection-end-line="14" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75">
-          <caret line="115" column="11" selection-start-line="115" selection-start-column="11" selection-end-line="120" selection-end-column="18" />
           <folding />
         </state>
       </provider>
@@ -1540,10 +1532,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3315508">
+        <state vertical-scroll-proportion="-7.75">
           <caret line="273" column="54" selection-start-line="273" selection-start-column="54" selection-end-line="273" selection-end-column="54" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40106952">
+          <caret line="153" column="90" selection-start-line="153" selection-start-column="90" selection-end-line="153" selection-end-column="90" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
