@@ -4,8 +4,6 @@
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.html" afterPath="$PROJECT_DIR$/website/main-web/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/result/result.view.html" afterPath="$PROJECT_DIR$/website/members/result/result.view.html" />
     </list>
     <ignored path="examIgniter.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.875">
-              <caret line="378" column="42" selection-start-line="378" selection-start-column="42" selection-end-line="378" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.7326203">
+              <caret line="396" column="116" selection-start-line="396" selection-start-column="116" selection-end-line="396" selection-end-column="116" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -50,10 +48,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.27807486">
+            <state vertical-scroll-proportion="-77.75">
               <caret line="168" column="175" selection-start-line="168" selection-start-column="175" selection-end-line="168" selection-end-column="175" />
               <folding>
                 <element signature="n#style#0;n#div#7;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
@@ -203,8 +201,8 @@
         <option value="$PROJECT_DIR$/website/main-web/story.php" />
         <option value="$PROJECT_DIR$/website/members/result/result.controller.js" />
         <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
-        <option value="$PROJECT_DIR$/website/main-web/index.html" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
+        <option value="$PROJECT_DIR$/website/main-web/index.html" />
       </list>
     </option>
   </component>
@@ -735,12 +733,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00072" summary="auth">
-      <created>1488529379485</created>
-      <option name="number" value="00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1488529379485</updated>
-    </task>
     <task id="LOCAL-00073" summary="auth">
       <created>1488531532701</created>
       <option name="number" value="00073" />
@@ -1029,7 +1021,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488862126403</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary="auth">
+      <created>1488867228670</created>
+      <option name="number" value="00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1488867228670</updated>
+    </task>
+    <option name="localTasksCounter" value="122" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1511,6 +1509,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-77.75">
+          <caret line="168" column="175" selection-start-line="168" selection-start-column="175" selection-end-line="168" selection-end-column="175" />
+          <folding>
+            <element signature="n#style#0;n#div#7;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.09434">
@@ -1530,22 +1539,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.875">
-          <caret line="378" column="42" selection-start-line="378" selection-start-column="42" selection-end-line="378" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.7326203">
+          <caret line="396" column="116" selection-start-line="396" selection-start-column="116" selection-end-line="396" selection-end-column="116" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.27807486">
-          <caret line="168" column="175" selection-start-line="168" selection-start-column="175" selection-end-line="168" selection-end-column="175" />
-          <folding>
-            <element signature="n#style#0;n#div#7;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
