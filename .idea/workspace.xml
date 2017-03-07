@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/app-services/user.service.js" afterPath="$PROJECT_DIR$/website/members/app-services/user.service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/index.html" afterPath="$PROJECT_DIR$/website/members/index.html" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -29,12 +29,22 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.3962264">
-              <caret line="742" column="0" selection-start-line="742" selection-start-column="0" selection-end-line="742" selection-end-column="0" />
+            <state vertical-scroll-proportion="-8.528302">
+              <caret line="71" column="0" selection-start-line="44" selection-start-column="3" selection-end-line="71" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/members/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.91689754">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="user.service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="user.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/app-services/user.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.2949438">
+            <state vertical-scroll-proportion="-3.6206896">
               <caret line="7" column="33" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="33" />
               <folding />
             </state>
@@ -137,16 +147,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/result/result.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.37931">
-              <caret line="36" column="12" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -182,7 +182,6 @@
         <option value="$PROJECT_DIR$/api/resources/auth/postUserAuth.php" />
         <option value="$PROJECT_DIR$/api/resources/exams/getListExamList.php" />
         <option value="$PROJECT_DIR$/api/resources/exams/getExamList.php" />
-        <option value="$PROJECT_DIR$/website/members/index.html" />
         <option value="$PROJECT_DIR$/api/includes/getRandonString.php" />
         <option value="$PROJECT_DIR$/api/resources/user/checkOtp.php" />
         <option value="$PROJECT_DIR$/website/members/test/test.view.html" />
@@ -201,6 +200,7 @@
         <option value="$PROJECT_DIR$/website/main-web/index.html" />
         <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/members/app-services/user.service.js" />
+        <option value="$PROJECT_DIR$/website/members/index.html" />
       </list>
     </option>
   </component>
@@ -595,12 +595,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00080" summary="auth">
-      <created>1488626376225</created>
-      <option name="number" value="00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1488626376225</updated>
-    </task>
     <task id="LOCAL-00081" summary="auth">
       <created>1488626707590</created>
       <option name="number" value="00081" />
@@ -889,7 +883,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488902353033</updated>
     </task>
-    <option name="localTasksCounter" value="129" />
+    <task id="LOCAL-00129" summary="favicons">
+      <created>1488902492646</created>
+      <option name="number" value="00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1488902492646</updated>
+    </task>
+    <option name="localTasksCounter" value="130" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1138,14 +1138,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.625">
-          <caret line="51" column="190" selection-start-line="51" selection-start-column="190" selection-end-line="51" selection-end-column="190" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/includes/getRandonString.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.125">
@@ -1386,17 +1378,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.3962264">
-          <caret line="742" column="0" selection-start-line="742" selection-start-column="0" selection-end-line="742" selection-end-column="0" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/app-services/candidate.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.0689654">
@@ -1415,8 +1396,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/members/app-services/user.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2949438">
+        <state vertical-scroll-proportion="-3.6206896">
           <caret line="7" column="33" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.528302">
+          <caret line="71" column="0" selection-start-line="44" selection-start-column="3" selection-end-line="71" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.91689754">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
       </provider>
