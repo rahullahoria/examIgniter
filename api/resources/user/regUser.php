@@ -39,7 +39,7 @@ function regUser(){
             $stmt->execute();
             $refIdArr = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-            if (!isset($requestJson->ref_username) && count($refIdArr) == 0) {
+            if (isset($requestJson->ref_username) && count($refIdArr) == 0) {
                 echo '{"error":{"text":"Referring User Don\'t exists "}}';
                 die();
             }
