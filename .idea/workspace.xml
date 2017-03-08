@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/index.html" afterPath="$PROJECT_DIR$/website/members/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/regUser.php" afterPath="$PROJECT_DIR$/api/resources/user/regUser.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -39,12 +39,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.91689754">
+            <state vertical-scroll-proportion="54.375">
               <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5187166">
+              <caret line="90" column="13" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="13" />
+              <folding>
+                <element signature="e#6#92#0#PHP" expanded="true" />
+                <marker date="1488949627596" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+                <marker date="1488949627596" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+                <marker date="1488949627596" expanded="true" signature="524:590" placeholder="update users... " />
+                <marker date="1488949627596" expanded="true" signature="524:598" placeholder="update users... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,19 +140,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.375">
-              <caret line="164" column="50" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
-              <folding>
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/app.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -191,7 +194,6 @@
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/test/startDemoTest.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/startTopicTest.php" />
-        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/website/members/test/test.controller.js" />
         <option value="$PROJECT_DIR$/website/main-web/story.php" />
         <option value="$PROJECT_DIR$/website/members/result/result.controller.js" />
@@ -201,6 +203,7 @@
         <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/members/app-services/user.service.js" />
         <option value="$PROJECT_DIR$/website/members/index.html" />
+        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
       </list>
     </option>
   </component>
@@ -595,12 +598,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00081" summary="auth">
-      <created>1488626707590</created>
-      <option name="number" value="00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1488626707590</updated>
-    </task>
     <task id="LOCAL-00082" summary="auth">
       <created>1488642151904</created>
       <option name="number" value="00082" />
@@ -889,7 +886,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488902492646</updated>
     </task>
-    <option name="localTasksCounter" value="130" />
+    <task id="LOCAL-00130" summary="favicons">
+      <created>1488902734762</created>
+      <option name="number" value="00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1488902734762</updated>
+    </task>
+    <option name="localTasksCounter" value="131" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -903,7 +906,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1274,20 +1277,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.25">
-          <caret line="100" column="17" selection-start-line="100" selection-start-column="17" selection-end-line="100" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1488802169140" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
-            <marker date="1488802169140" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
-            <marker date="1488802169140" expanded="true" signature="524:590" placeholder="update users... " />
-            <marker date="1488802169140" expanded="true" signature="524:598" placeholder="update users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/test/test.controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.37931">
@@ -1415,9 +1404,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/members/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91689754">
+        <state vertical-scroll-proportion="54.375">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5187166">
+          <caret line="90" column="13" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="13" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+            <marker date="1488949627596" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+            <marker date="1488949627596" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+            <marker date="1488949627596" expanded="true" signature="524:590" placeholder="update users... " />
+            <marker date="1488949627596" expanded="true" signature="524:598" placeholder="update users... " />
+          </folding>
         </state>
       </provider>
     </entry>

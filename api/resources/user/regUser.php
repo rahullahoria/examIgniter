@@ -26,7 +26,6 @@ function regUser(){
         if(isset($requestJson->reg_username) &&
             isset($requestJson->email) &&
             isset($requestJson->mobile) &&
-            isset($requestJson->reg_password) &&
             isset($requestJson->exam_id) &&
             isset($requestJson->ref_username)
         ) {
