@@ -21,12 +21,15 @@ function regUser(){
     $updateOTP = 'update users set sms_otp = :sms_otp, email_otp = :email_otp where id = :id';
 
 
+    if(!isset($requestJson->reg_username)){
+        $requestJson->reg_username = $requestJson->mobile;
+    }
     try {
 
-        if(isset($requestJson->reg_username) &&
-            isset($requestJson->email) &&
+        if(/*isset($requestJson->reg_username) &&*/
+            /*isset($requestJson->email) &&*/
             isset($requestJson->mobile) &&
-            isset($requestJson->reg_password) &&
+            /*isset($requestJson->reg_password) &&*/
             isset($requestJson->exam_id)
 
         ) {
@@ -69,7 +72,7 @@ function regUser(){
                 //var_dump($optSMS,$opt);die();
                 $subject = "Activate you ExamHans Account by OTP ".$opt;
                 $message = "Thank you for registring with ExamHans.com,\nyou Email OTP is\n <h1>".$opt."</h1>";
-                sendMail($requestJson->email, $subject, $message);
+                /*sendMail($requestJson->email, $subject, $message);*/
 
                 $stmt = $db->prepare($updateOTP);
                 $stmt->bindParam("sms_otp", $optSMS);

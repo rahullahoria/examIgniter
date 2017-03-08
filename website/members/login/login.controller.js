@@ -95,6 +95,7 @@
                   if (response.auth == "true") {
                       alert('Verified Successfully');
                       vm.user[type+'_verified'] = true;
+                      $("#instructionsModel").modal("show");
                       if(vm.user.sms_verified == true && vm.user.email_verified == true ){
                           //show model
                           $("#instructionsModel").modal("show");

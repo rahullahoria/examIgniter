@@ -78,12 +78,12 @@
                             <br>
                             <br>
 
-                            <div class="form-group" ng-hide="vm.user.email_verified" ng-class="{ 'has-error': form.email_otp.$dirty && form.email_otp.$error.required }">
+                            <!--<div class="form-group" ng-hide="vm.user.email_verified" ng-class="{ 'has-error': form.email_otp.$dirty && form.email_otp.$error.required }">
                                 {{  vm.inUser.email }}
                                 <input type="text" name="email_otp" placeholder="Email OTP" id="email_otp" class="form-control" ng-model="vm.user.email_otp"  />
                                 <span ng-show="form.email_otp.$dirty && form.email_otp.$error.required" class="help-block">Email OTP is required</span>
                                 <a ng-click="vm.checkOTP('email')" >Verify</a>
-                            </div>
+                            </div>-->
 
 
                             <br>
@@ -151,14 +151,14 @@
                     <div class="panel-body">
                         <form role="form" ng-submit="vm.reg()" role="form">
                             <fieldset>
-                                <div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
+                                <!--<div class="form-group" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
                                     <input class="form-control" placeholder="Username" type="text" name="username" id="reg_username" ng-model="vm.user.reg_username" required autofocus>
                                     <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username Name is required</span>
-                                </div>
-                                <div class="form-group" ng-class="{ 'has-error': form.email_reg.$dirty && form.email_reg.$error.required }">
+                                </div>-->
+                                <!--<div class="form-group" ng-class="{ 'has-error': form.email_reg.$dirty && form.email_reg.$error.required }">
                                     <input class="form-control" placeholder="E-mail" type="text" name="email" id="email_reg" ng-model="vm.user.email" required >
                                     <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Email is required</span>
-                                </div>
+                                </div>-->
 
                                 <div class="form-group" ng-class="{ 'has-error': form.mobile.$dirty && form.mobile.$error.required }">
                                     <input class="form-control" placeholder="Mobile" type="text" name="mobile" id="mobile" ng-model="vm.user.mobile" required autofocus>
@@ -167,10 +167,10 @@
 
 
 
-                                <div class="form-group" ng-class="{ 'has-error': form.password_reg.$dirty && form.password.$error.required }">
+                                <!--<div class="form-group" ng-class="{ 'has-error': form.password_reg.$dirty && form.password.$error.required }">
                                     <input type="password" name="password" placeholder="Password" id="password_reg" class="form-control" ng-model="vm.user.reg_password" required />
                                     <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
-                                </div>
+                                </div>-->
                                 <div class="form-group" ng-class="{ 'has-error': form.exam_id.$dirty && form.exam_id.$error.required }">
                                     <select name="exam_id"  id="exam_id" class="form-control" ng-model="vm.user.exam_id" required>
                                         <option value="" selected>Select Exam</option>

@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.php" afterPath="$PROJECT_DIR$/website/main-web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/regUser.php" afterPath="$PROJECT_DIR$/api/resources/user/regUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/story.php" afterPath="$PROJECT_DIR$/website/main-web/story.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
@@ -30,9 +32,10 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.811321">
-              <caret line="107" column="66" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
+            <state vertical-scroll-proportion="-7.4905663">
+              <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="766" selection-end-column="7" />
               <folding>
+                <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -43,24 +46,24 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="42.25">
+            <state vertical-scroll-proportion="-27.125">
               <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.125">
-              <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.8128342">
+              <caret line="50" column="29" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="29" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1488949948904" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
-                <marker date="1488949948904" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
-                <marker date="1488949948904" expanded="true" signature="524:590" placeholder="update users... " />
-                <marker date="1488949948904" expanded="true" signature="524:598" placeholder="update users... " />
+                <marker date="1488969949100" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+                <marker date="1488969949100" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+                <marker date="1488969949100" expanded="true" signature="524:590" placeholder="update users... " />
+                <marker date="1488969949100" expanded="true" signature="524:598" placeholder="update users... " />
               </folding>
             </state>
           </provider>
@@ -96,15 +99,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7860963">
-              <caret line="184" column="38" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
+            <state vertical-scroll-proportion="-14.625">
+              <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
               <folding>
-                <element signature="n#style#0;n#div#7;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#4;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="97" column="60" selection-start-line="97" selection-start-column="60" selection-end-line="97" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,17 +125,19 @@
       <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.09434">
-              <caret line="90" column="211" selection-start-line="90" selection-start-column="196" selection-end-line="90" selection-end-column="211" />
+            <state vertical-scroll-proportion="-5.5471697">
+              <caret line="257" column="26" selection-start-line="257" selection-start-column="26" selection-end-line="257" selection-end-column="26" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1488808480924" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808480924" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808480924" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808480924" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808480924" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
-                <marker date="1488808480924" expanded="true" signature="3615:5362" placeholder="..." />
+                <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#section#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#footer#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1488953390236" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
+                <marker date="1488953390236" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
+                <marker date="1488953390236" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
+                <marker date="1488953390236" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
+                <marker date="1488953390236" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
               </folding>
             </state>
           </provider>
@@ -137,16 +152,6 @@
                 <marker date="1488535565452" expanded="true" signature="481:833" placeholder="SELECT a.id,... questions" />
                 <marker date="1488535565452" expanded="true" signature="870:949" placeholder="Update respo... " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -192,20 +197,20 @@
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/api/index.php" />
         <option value="$PROJECT_DIR$/api/resources/user/bankAccount/addBankAccount.php" />
-        <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/test/startDemoTest.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/startTopicTest.php" />
         <option value="$PROJECT_DIR$/website/members/test/test.controller.js" />
-        <option value="$PROJECT_DIR$/website/main-web/story.php" />
         <option value="$PROJECT_DIR$/website/members/result/result.controller.js" />
         <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
         <option value="$PROJECT_DIR$/website/main-web/index.html" />
         <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/members/app-services/user.service.js" />
         <option value="$PROJECT_DIR$/website/members/index.html" />
-        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/website/main-web/index.php" />
+        <option value="$PROJECT_DIR$/website/main-web/story.php" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
+        <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
+        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
       </list>
     </option>
   </component>
@@ -600,12 +605,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00086" summary="auth">
-      <created>1488767912819</created>
-      <option name="number" value="00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1488767912819</updated>
-    </task>
     <task id="LOCAL-00087" summary="auth">
       <created>1488768162260</created>
       <option name="number" value="00087" />
@@ -894,7 +893,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488949958388</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="favicons">
+      <created>1488950307895</created>
+      <option name="number" value="00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1488950307895</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1234,14 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.2413793">
-          <caret line="47" column="40" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/startDemoTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875">
@@ -1330,23 +1327,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.09434">
-          <caret line="90" column="211" selection-start-line="90" selection-start-column="196" selection-end-line="90" selection-end-column="211" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1488808480924" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808480924" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808480924" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808480924" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808480924" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
-            <marker date="1488808480924" expanded="true" signature="3615:5362" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/test/getTestQuestionNo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-19.375">
@@ -1382,34 +1362,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.125">
-          <caret line="41" column="16" selection-start-line="41" selection-start-column="16" selection-end-line="41" selection-end-column="16" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1488949948904" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
-            <marker date="1488949948904" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
-            <marker date="1488949948904" expanded="true" signature="524:590" placeholder="update users... " />
-            <marker date="1488949948904" expanded="true" signature="524:598" placeholder="update users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.811321">
-          <caret line="107" column="66" selection-start-line="107" selection-start-column="66" selection-end-line="107" selection-end-column="66" />
+        <state vertical-scroll-proportion="-7.4905663">
+          <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="766" selection-end-column="7" />
           <folding>
+            <element signature="n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5471697">
+          <caret line="257" column="26" selection-start-line="257" selection-start-column="26" selection-end-line="257" selection-end-column="26" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#header#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#header#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#section#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#footer#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1488953390236" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
+            <marker date="1488953390236" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
+            <marker date="1488953390236" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
+            <marker date="1488953390236" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
+            <marker date="1488953390236" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="42.25">
+        <state vertical-scroll-proportion="-27.125">
           <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding />
         </state>
@@ -1417,11 +1403,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7860963">
-          <caret line="184" column="38" selection-start-line="184" selection-start-column="38" selection-end-line="184" selection-end-column="38" />
+        <state vertical-scroll-proportion="-14.625">
+          <caret line="85" column="37" selection-start-line="85" selection-start-column="37" selection-end-line="85" selection-end-column="37" />
           <folding>
-            <element signature="n#style#0;n#div#7;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="60" selection-start-line="97" selection-start-column="60" selection-end-line="97" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8128342">
+          <caret line="50" column="29" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+            <marker date="1488969949100" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+            <marker date="1488969949100" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+            <marker date="1488969949100" expanded="true" signature="524:590" placeholder="update users... " />
+            <marker date="1488969949100" expanded="true" signature="524:598" placeholder="update users... " />
           </folding>
         </state>
       </provider>
