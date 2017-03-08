@@ -165,10 +165,7 @@
                                     <span ng-show="form.mobile.$dirty && form.mobile.$error.required" class="help-block">Mobile No. Name is required</span>
                                 </div>
 
-                                <div class="form-group" ng-class="{ 'has-error': form.ref_username.$dirty && form.ref_username.$error.required }">
-                                    <input class="form-control" placeholder="refer username" type="text" name="ref_username" id="ref_username" ng-model="vm.user.ref_username" >
-                                    <span ng-show="form.ref_username.$dirty && form.ref_username.$error.required" class="help-block">refer username is required</span>
-                                </div>
+
 
                                 <div class="form-group" ng-class="{ 'has-error': form.password_reg.$dirty && form.password.$error.required }">
                                     <input type="password" name="password" placeholder="Password" id="password_reg" class="form-control" ng-model="vm.user.reg_password" required />
@@ -180,6 +177,11 @@
                                         <option value="{{exam.id}}" ng-repeat="exam in vm.exams">{{exam.name}}</option>
                                     </select>
                                     <span ng-show="form.exam_id.$dirty && form.exam_id.$error.required" class="help-block">Exam is required</span>
+                                </div>
+
+                                <div class="form-group" ng-class="{ 'has-error': form.ref_username.$dirty && form.ref_username.$error.required }">
+                                    <input class="form-control" placeholder="refer username" type="text" name="ref_username" id="ref_username" ng-model="vm.user.ref_username" >
+                                    <span ng-show="form.ref_username.$dirty && form.ref_username.$error.required" class="help-block">refer username is required</span>
                                 </div>
                                 <div class="checkbox">
                                     <label>

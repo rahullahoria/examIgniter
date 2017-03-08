@@ -103,6 +103,10 @@
                     <li>
                         <a class="page-scroll" href="#services">How?</a>
                     </li>
+
+                    <li>
+                        <a class="page-scroll" href="#plans">Plans</a>
+                    </li>
                     <li>
                         <a class="page-scroll" href="blog/">Blog</a>
                     </li>
@@ -195,8 +199,66 @@
         </div>
     </section>
 
+    <section id="plans" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Plans</h2>
+                    <h3 class="section-subheading text-muted">Let's Learn and Earn</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="https://creativenetworks.net/wp-content/uploads/2015/09/silver-badge-300x296.png" class="img-responsive img-circle" alt="">
+                        <h4>Silver Plan</h4><br>
+
+                        <p>400<b> special Questions</b> </p>
+                        <p>Earn<b> 3 Rs </b>per Questions</p>
+                        <p>Earn Back <b>1.2k Rs</b></p>
+                        <p class="text-muted">Cost <b>1k Rs</b></p>
+                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="https://creativenetworks.net/wp/wp-content/uploads/2015/09/Gold-Badge-300x296.png" class="img-responsive img-circle" alt="">
+                        <h4>Gold Plan</h4><br>
+
+                        <p>800<b> special Questions</b> </p>
+                        <p>Earn<b> 4 Rs </b>per Questions</p>
+                        <p>Earn Back <b>3.2k Rs</b></p>
+                        <p class="text-muted">Cost <b>2k Rs</b></p>
+
+                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img src="https://creativenetworks.net/wp-content/uploads/2015/09/Platinum-Badge-300x296.png" class="img-responsive img-circle" alt="">
+
+                        <h4>Platinum Plan</h4><br>
+                        <p>2000<b> special Questions</b> </p>
+                        <p>Earn<b> 5 Rs </b>per Questions</p>
+                        <p>Earn Back <b>10k Rs</b></p>
+                        <p class="text-muted">Cost <b>5k Rs</b></p>
+
+                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
+
+                    </div>
+                </div>
+            </div>
+            <!--<div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <p class="large text-muted">orem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                </div>
+            </div>-->
+        </div>
+    </section>
+
+
     <!-- Portfolio Grid Section -->
-    //
+
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -376,62 +438,6 @@
     </section>-->
 
     <!-- Team Section -->
-   <section id="team" class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Plans</h2>
-                    <h3 class="section-subheading text-muted">Let's Learn and Earn</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://creativenetworks.net/wp-content/uploads/2015/09/silver-badge-300x296.png" class="img-responsive img-circle" alt="">
-                        <h4>Silver Plan</h4><br>
-
-                        <p>400<b> special Questions</b> </p>
-                        <p>Earn<b> 3 Rs </b>per Questions</p>
-                        <p>Earn Back <b>1.2k Rs</b></p>
-                        <p class="text-muted">Cost <b>1k Rs</b></p>
-                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://creativenetworks.net/wp/wp-content/uploads/2015/09/Gold-Badge-300x296.png" class="img-responsive img-circle" alt="">
-                        <h4>Gold Plan</h4><br>
-
-                        <p>800<b> special Questions</b> </p>
-                        <p>Earn<b> 4 Rs </b>per Questions</p>
-                        <p>Earn Back <b>3.2k Rs</b></p>
-                        <p class="text-muted">Cost <b>2k Rs</b></p>
-
-                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="team-member">
-                        <img src="https://creativenetworks.net/wp-content/uploads/2015/09/Platinum-Badge-300x296.png" class="img-responsive img-circle" alt="">
-
-                        <h4>Platinum Plan</h4><br>
-                        <p>2000<b> special Questions</b> </p>
-                        <p>Earn<b> 5 Rs </b>per Questions</p>
-                        <p>Earn Back <b>10k Rs</b></p>
-                        <p class="text-muted">Cost <b>5k Rs</b></p>
-
-                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
-
-                    </div>
-                </div>
-            </div>
-            <!--<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">orem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>-->
-        </div>
-    </section>
 
     <!-- Clients Aside -->
     <!--<aside class="clients">
