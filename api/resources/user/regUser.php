@@ -42,10 +42,15 @@ function regUser(){
             $stmt->execute();
             $refIdArr = $stmt->fetchAll(PDO::FETCH_OBJ);
 
+
             if (isset($requestJson->ref_username) && count($refIdArr) == 0) {
-                echo '{"error":{"text":"Referring User Don\'t exists "}}';
-                die();
+                ///echo '{"error":{"text":"Referring User Don\'t exists "}}';
+                //die();
+                $refUserID = 0;
+
             }
+            else
+                $refUserID = $refIdArr[0]->id;
             //var_dump($response1);die();
 
             $requestJson->md5 = md5($requestJson->reg_username);
@@ -54,7 +59,7 @@ function regUser(){
             $stmt->bindParam("username", $requestJson->reg_username);
             $stmt->bindParam("email", $requestJson->email);
             $stmt->bindParam("mobile", $requestJson->mobile);
-            $stmt->bindParam("ref_user_id", $refIdArr[0]->id);
+            $stmt->bindParam("ref_user_id", $refUserID);
             $stmt->bindParam("password", $requestJson->reg_password);
             $stmt->bindParam("md5", $requestJson->md5);
             $stmt->bindParam("exam_id", $requestJson->exam_id);

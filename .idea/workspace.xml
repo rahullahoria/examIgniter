@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/regUser.php" afterPath="$PROJECT_DIR$/api/resources/user/regUser.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -50,17 +49,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.0">
-              <caret line="50" column="29" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.43850267">
+              <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1488969949100" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
-                <marker date="1488969949100" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
-                <marker date="1488969949100" expanded="true" signature="524:590" placeholder="update users... " />
-                <marker date="1488969949100" expanded="true" signature="524:598" placeholder="update users... " />
+                <marker date="1488976195320" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+                <marker date="1488976195320" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+                <marker date="1488976195320" expanded="true" signature="524:590" placeholder="update users... " />
+                <marker date="1488976195320" expanded="true" signature="524:598" placeholder="update users... " />
               </folding>
             </state>
           </provider>
@@ -109,10 +108,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.20512821">
+            <state vertical-scroll-proportion="0.0">
               <caret line="17" column="95" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
               <folding />
             </state>
@@ -204,10 +203,10 @@
         <option value="$PROJECT_DIR$/website/members/app-services/user.service.js" />
         <option value="$PROJECT_DIR$/website/members/index.html" />
         <option value="$PROJECT_DIR$/website/main-web/story.php" />
-        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/website/main-web/index.php" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
+        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
       </list>
     </option>
   </component>
@@ -602,12 +601,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00092" summary="auth">
-      <created>1488775353664</created>
-      <option name="number" value="00092" />
-      <option name="project" value="LOCAL" />
-      <updated>1488775353664</updated>
-    </task>
     <task id="LOCAL-00093" summary="auth">
       <created>1488775966227</created>
       <option name="number" value="00093" />
@@ -896,7 +889,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488972881159</updated>
     </task>
-    <option name="localTasksCounter" value="141" />
+    <task id="LOCAL-00141" summary="favicons">
+      <created>1488973194069</created>
+      <option name="number" value="00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1488973194069</updated>
+    </task>
+    <option name="localTasksCounter" value="142" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1386,20 +1385,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.0">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="26" selection-end-line="50" selection-end-column="29" />
-          <folding>
-            <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1488969949100" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
-            <marker date="1488969949100" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
-            <marker date="1488969949100" expanded="true" signature="524:590" placeholder="update users... " />
-            <marker date="1488969949100" expanded="true" signature="524:598" placeholder="update users... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.7924528">
@@ -1424,9 +1409,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.20512821">
+        <state vertical-scroll-proportion="0.0">
           <caret line="17" column="95" selection-start-line="17" selection-start-column="95" selection-end-line="17" selection-end-column="95" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43850267">
+          <caret line="48" column="31" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding>
+            <element signature="e#6#92#0#PHP" expanded="true" />
+            <marker date="1488976195320" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+            <marker date="1488976195320" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+            <marker date="1488976195320" expanded="true" signature="524:590" placeholder="update users... " />
+            <marker date="1488976195320" expanded="true" signature="524:598" placeholder="update users... " />
+          </folding>
         </state>
       </provider>
     </entry>
