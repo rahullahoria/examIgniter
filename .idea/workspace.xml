@@ -52,14 +52,14 @@
       <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5187166">
-              <caret line="90" column="13" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.4117647">
+              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
               <folding>
                 <element signature="e#6#92#0#PHP" expanded="true" />
-                <marker date="1488949627596" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
-                <marker date="1488949627596" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
-                <marker date="1488949627596" expanded="true" signature="524:590" placeholder="update users... " />
-                <marker date="1488949627596" expanded="true" signature="524:598" placeholder="update users... " />
+                <marker date="1488949781632" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+                <marker date="1488949781632" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+                <marker date="1488949781632" expanded="true" signature="524:590" placeholder="update users... " />
+                <marker date="1488949781632" expanded="true" signature="524:598" placeholder="update users... " />
               </folding>
             </state>
           </provider>
@@ -598,12 +598,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00082" summary="auth">
-      <created>1488642151904</created>
-      <option name="number" value="00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1488642151904</updated>
-    </task>
     <task id="LOCAL-00083" summary="auth">
       <created>1488644397624</created>
       <option name="number" value="00083" />
@@ -892,7 +886,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488902734762</updated>
     </task>
-    <option name="localTasksCounter" value="131" />
+    <task id="LOCAL-00131" summary="favicons">
+      <created>1488949643815</created>
+      <option name="number" value="00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1488949643815</updated>
+    </task>
+    <option name="localTasksCounter" value="132" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1412,14 +1412,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5187166">
-          <caret line="90" column="13" selection-start-line="90" selection-start-column="8" selection-end-line="90" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.4117647">
+          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding>
             <element signature="e#6#92#0#PHP" expanded="true" />
-            <marker date="1488949627596" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
-            <marker date="1488949627596" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
-            <marker date="1488949627596" expanded="true" signature="524:590" placeholder="update users... " />
-            <marker date="1488949627596" expanded="true" signature="524:598" placeholder="update users... " />
+            <marker date="1488949781632" expanded="true" signature="240:288" placeholder="SELECT id FR... users" />
+            <marker date="1488949781632" expanded="true" signature="304:501" placeholder="INSERT INTO `users`... " />
+            <marker date="1488949781632" expanded="true" signature="524:590" placeholder="update users... " />
+            <marker date="1488949781632" expanded="true" signature="524:598" placeholder="update users... " />
           </folding>
         </state>
       </provider>
