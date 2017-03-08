@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
@@ -95,11 +96,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5989305">
-              <caret line="185" column="91" selection-start-line="185" selection-start-column="91" selection-end-line="185" selection-end-column="91" />
+            <state vertical-scroll-proportion="-14.0">
+              <caret line="185" column="92" selection-start-line="185" selection-start-column="92" selection-end-line="185" selection-end-column="92" />
               <folding>
                 <element signature="n#style#0;n#div#4;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
@@ -108,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="28" />
+            <state vertical-scroll-proportion="0.43589744">
+              <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -204,9 +205,9 @@
         <option value="$PROJECT_DIR$/website/members/index.html" />
         <option value="$PROJECT_DIR$/website/main-web/story.php" />
         <option value="$PROJECT_DIR$/website/main-web/index.php" />
-        <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
+        <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
       </list>
     </option>
   </component>
@@ -601,12 +602,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00094" summary="auth">
-      <created>1488777341061</created>
-      <option name="number" value="00094" />
-      <option name="project" value="LOCAL" />
-      <updated>1488777341061</updated>
-    </task>
     <task id="LOCAL-00095" summary="auth">
       <created>1488778551819</created>
       <option name="number" value="00095" />
@@ -895,7 +890,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488976210374</updated>
     </task>
-    <option name="localTasksCounter" value="143" />
+    <task id="LOCAL-00143" summary="favicons">
+      <created>1488976389054</created>
+      <option name="number" value="00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1488976389054</updated>
+    </task>
+    <option name="localTasksCounter" value="144" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1410,22 +1411,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5989305">
-          <caret line="185" column="91" selection-start-line="185" selection-start-column="91" selection-end-line="185" selection-end-column="91" />
+        <state vertical-scroll-proportion="-14.0">
+          <caret line="185" column="92" selection-start-line="185" selection-start-column="92" selection-end-line="185" selection-end-column="92" />
           <folding>
             <element signature="n#style#0;n#div#4;n#fieldset#0;n#form#0;n#div#1;n#div#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43589744">
+          <caret line="17" column="59" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding />
         </state>
       </provider>
     </entry>
