@@ -28,6 +28,7 @@ function regUser(){
             isset($requestJson->mobile) &&
             isset($requestJson->reg_password) &&
             isset($requestJson->exam_id)
+
         ) {
 
             $db = getDB();
@@ -38,7 +39,7 @@ function regUser(){
             $stmt->execute();
             $refIdArr = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-            if (count($refIdArr) == 0) {
+            if (!isset($requestJson->ref_username) && count($refIdArr) == 0) {
                 echo '{"error":{"text":"Referring User Don\'t exists "}}';
                 die();
             }
