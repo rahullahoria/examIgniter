@@ -14,8 +14,10 @@
         vm.user.username = "";
         vm.user.password = "";
         vm.inUser = null;
+        vm.regR = ($location.search().rt != undefined)?true:false;
+        console.log('rt', $location.search().rt);
 
-            (function initController() {
+        (function initController() {
             // reset login status
             //vm.inUser = UserService.GetInUser();
             if(vm.inUser){

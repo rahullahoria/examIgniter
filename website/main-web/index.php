@@ -142,7 +142,7 @@
                     <div class="intro-lead-in">
                         Get Selected in SSC/Bank PO by practicing special Questions<br><br>
                     <b>Also Earn 5 Rs per correct answer</b><br><br>
-                        Start 30 question <a href="members/" class="page-scroll btn btn-xl" target="_blank">Demo Test</a> Now & Earn 150 Rs
+                        Start 30 question <a href="https://examhans.com/members/#/?rt=demo" class="page-scroll btn" target="_blank">Demo Test</a> Now & Earn 150 Rs
                 </div>
 
             </div>
