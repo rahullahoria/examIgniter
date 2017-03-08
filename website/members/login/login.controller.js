@@ -15,6 +15,7 @@
         vm.user.password = "";
         vm.inUser = null;
         vm.regR = ($location.search().rt != undefined)?true:false;
+        vm.user.ref_username = ($location.search().rt != undefined)?$location.search().ref_user:'';
         console.log('rt', $location.search().rt);
 
         (function initController() {
