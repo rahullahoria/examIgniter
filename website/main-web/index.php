@@ -105,6 +105,10 @@
                     </li>
 
                     <li>
+                        <a class="page-scroll" href="https://examhans.com/members/#/?rt=demo">How?</a>
+                    </li>
+
+                    <li>
                         <a class="page-scroll" href="#plans">Plans</a>
                     </li>
                     <li>
