@@ -77,7 +77,7 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
 </head>
 
 <body id="page-top" class="index">
@@ -265,13 +265,36 @@
 
     <section id="portfolio" class="bg-light-gray">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">SSC News</h2>
-                    <h3 class="section-subheading text-muted">find out more</h3>
+            <div ng-app="myApp" ng-controller="myCtrl">
+
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">SSC News</h2>
+                        <h3 class="section-subheading text-muted">find out more</h3>
+                    </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="url in urls" style="height: 450px">
+                        <a href="{{ url.url }}" class="portfolio-link" target="_blank" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="{{ url.img }}" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>{{ url.title }}</h4>
+                            <p class="text-muted">{{ url.description| limitTo: 150 }}</p>
+                        </div>
+                    </div>
+                    </div>
+
             </div>
-            <div class="row">
+
+
+            <!--<div class="row">
                 <div class="col-md-4 col-sm-6 portfolio-item">
                     <a href="http://www.hindustantimes.com/education/ssc-junior-engineer-je-exam-2016-commission-issues-instructions-for-candidates/story-hovLQmagonCVQmf2hciNkK.html" class="portfolio-link" target="_blank" data-toggle="modal">
                         <div class="portfolio-hover">
@@ -356,9 +379,20 @@
                         <p class="text-muted">Website Design</p>
                     </div>
                 </div>-->
-            </div>
+            </div>-->
         </div>
     </section>
+
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope, $http) {
+            $http.get("http://api.ragnar.shatkonlabs.com/search_keyword/ssc exam")
+                .then(function(response) {
+                    $scope.urls = response.data.urls;
+                    console.log(response);
+                });
+        });
+    </script>
 
     <!-- About Section -->
    <!-- <section id="about">
