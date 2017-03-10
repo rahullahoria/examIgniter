@@ -386,7 +386,7 @@
     <script>
         var app = angular.module('myApp', []);
         app.controller('myCtrl', function($scope, $http) {
-            $http.get("http://api.ragnar.shatkonlabs.com/search_keyword/ssc exam")
+            $http.get("https://api.ragnar.shatkonlabs.com/search_keyword/ssc exam")
                 .then(function(response) {
                     $scope.urls = response.data.urls;
                     console.log(response);
