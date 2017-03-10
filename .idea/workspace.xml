@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/story.php" afterPath="$PROJECT_DIR$/website/main-web/story.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/prepare/prepare.controller.js" afterPath="$PROJECT_DIR$/website/members/prepare/prepare.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/prepare/prepare.view.html" afterPath="$PROJECT_DIR$/website/members/prepare/prepare.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/result/result.view.html" afterPath="$PROJECT_DIR$/website/members/result/result.view.html" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -28,16 +26,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="144" column="157" selection-start-line="144" selection-start-column="42" selection-end-line="144" selection-end-column="157" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/index.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -129,10 +117,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5328597">
+            <state vertical-scroll-proportion="-12.5">
               <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
@@ -142,6 +130,16 @@
                 <marker date="1489134846028" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
                 <marker date="1489134846028" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.04278075">
+              <caret line="159" column="110" selection-start-line="159" selection-start-column="110" selection-end-line="159" selection-end-column="110" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,7 +187,6 @@
         <option value="$PROJECT_DIR$/api/resources/user/test/startTopicTest.php" />
         <option value="$PROJECT_DIR$/website/members/test/test.controller.js" />
         <option value="$PROJECT_DIR$/website/members/result/result.controller.js" />
-        <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
         <option value="$PROJECT_DIR$/website/main-web/index.html" />
         <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/members/app-services/user.service.js" />
@@ -201,6 +198,7 @@
         <option value="$PROJECT_DIR$/website/members/prepare/prepare.controller.js" />
         <option value="$PROJECT_DIR$/website/members/prepare/prepare.view.html" />
         <option value="$PROJECT_DIR$/website/main-web/story.php" />
+        <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
       </list>
     </option>
   </component>
@@ -617,12 +615,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00096" summary="auth">
-      <created>1488781569874</created>
-      <option name="number" value="00096" />
-      <option name="project" value="LOCAL" />
-      <updated>1488781569874</updated>
-    </task>
     <task id="LOCAL-00097" summary="auth">
       <created>1488784169555</created>
       <option name="number" value="00097" />
@@ -911,7 +903,13 @@
       <option name="project" value="LOCAL" />
       <updated>1488976524721</updated>
     </task>
-    <option name="localTasksCounter" value="145" />
+    <task id="LOCAL-00145" summary="favicons">
+      <created>1489134863954</created>
+      <option name="number" value="00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1489134863958</updated>
+    </task>
+    <option name="localTasksCounter" value="146" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -920,6 +918,7 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3060606" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -927,7 +926,6 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32626426" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1214,13 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.375">
-          <caret line="164" column="50" selection-start-line="164" selection-start-column="50" selection-end-line="164" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1334,7 +1325,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5328597">
+        <state vertical-scroll-proportion="-12.5">
           <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
@@ -1344,6 +1335,14 @@
             <marker date="1489134846028" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
             <marker date="1489134846028" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.04278075">
+          <caret line="159" column="110" selection-start-line="159" selection-start-column="110" selection-end-line="159" selection-end-column="110" />
+          <folding />
         </state>
       </provider>
     </entry>
