@@ -22,7 +22,7 @@ $tests = mysqli_query($dbHandle, $sql);
 $test = mysqli_fetch_array($tests);
 //var_dump($test);
 
-$username = "I have";
+$username = "Hi, I have";
 $amount = $test['amount_made'];
 $topicName = $test['name'];
 mysqli_close($dbHandle);

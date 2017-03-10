@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/result/result.view.html" afterPath="$PROJECT_DIR$/website/members/result/result.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/story.php" afterPath="$PROJECT_DIR$/website/main-web/story.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -117,27 +117,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="story.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="story.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.53475934">
+              <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1489134846028" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
-                <marker date="1489134846028" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
-                <marker date="1489134846028" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
-                <marker date="1489134846028" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
-                <marker date="1489134846028" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
+                <marker date="1489135602384" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
+                <marker date="1489135602384" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
+                <marker date="1489135602384" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
+                <marker date="1489135602384" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
+                <marker date="1489135602384" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5187166">
+            <state vertical-scroll-proportion="-12.125">
               <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
               <folding />
             </state>
@@ -197,8 +197,8 @@
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
         <option value="$PROJECT_DIR$/website/members/prepare/prepare.controller.js" />
         <option value="$PROJECT_DIR$/website/members/prepare/prepare.view.html" />
-        <option value="$PROJECT_DIR$/website/main-web/story.php" />
         <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
+        <option value="$PROJECT_DIR$/website/main-web/story.php" />
       </list>
     </option>
   </component>
@@ -615,12 +615,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00099" summary="auth">
-      <created>1488789445540</created>
-      <option name="number" value="00099" />
-      <option name="project" value="LOCAL" />
-      <updated>1488789445540</updated>
-    </task>
     <task id="LOCAL-00100" summary="auth">
       <created>1488790491191</created>
       <option name="number" value="00100" />
@@ -909,7 +903,13 @@
       <option name="project" value="LOCAL" />
       <updated>1489135386293</updated>
     </task>
-    <option name="localTasksCounter" value="148" />
+    <task id="LOCAL-00148" summary="favicons">
+      <created>1489135460605</created>
+      <option name="number" value="00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1489135460606</updated>
+    </task>
+    <option name="localTasksCounter" value="149" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1323,26 +1323,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
+    <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1489134846028" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
-            <marker date="1489134846028" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
-            <marker date="1489134846028" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
-            <marker date="1489134846028" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
-            <marker date="1489134846028" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
-          </folding>
+        <state vertical-scroll-proportion="-12.125">
+          <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
+    <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5187166">
-          <caret line="183" column="20" selection-start-line="183" selection-start-column="20" selection-end-line="183" selection-end-column="20" />
-          <folding />
+        <state vertical-scroll-proportion="0.53475934">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+            <marker date="1489135602384" expanded="true" signature="215:369" placeholder="SELECT a.amo... tests" />
+            <marker date="1489135602384" expanded="true" signature="215:404" placeholder="SELECT a.amo... tests" />
+            <marker date="1489135602384" expanded="true" signature="215:424" placeholder="SELECT a.amo... tests" />
+            <marker date="1489135602384" expanded="true" signature="215:426" placeholder="SELECT a.amo... tests" />
+            <marker date="1489135602384" expanded="true" signature="215:436" placeholder="SELECT a.amo... tests" />
+          </folding>
         </state>
       </provider>
     </entry>
