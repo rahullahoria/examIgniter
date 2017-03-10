@@ -71,6 +71,7 @@
                         var temp = 0;
                         vm.matter[i].url = decodeURIComponent(vm.matter[i].url);
                         if(vm.matter[i].url.indexOf('youtube')) {
+                            vm.matter[i].orgUrl = vm.matter[i].url;
                             vm.matter[i].url = vm.matter[i].url.replace('watch?v=','embed/');
                             var flag = 1;
                             for(var j=0;j< vm.videos.length;j++){
@@ -92,6 +93,17 @@
                     console.log('inside controller',vm.subjects);
                 });
 
+        }
+
+        vm.getMetas =  function(url){
+            var meta = {}
+            $.get(url,
+                function(data) {
+                    meta.des = $(data).find('meta[name=adescription]').attr("content");
+                    meta.title = $(data).find('meta[name=atitle]').attr("content");
+                    meta.des = $(data).find('meta[name=adescription]').attr("content");
+                });
+            return meta;
         }
 
         vm.setProject = function (id) {

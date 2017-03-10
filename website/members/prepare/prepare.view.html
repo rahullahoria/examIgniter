@@ -67,10 +67,13 @@
         <div class="row">
             <div class="col-lg-8 col-md-8 col-sm-12"  ng-repeat="video in vm.videos">
 
-                <iframe  width="560" height="315" src="{{vm.url}}" frameborder="0" allowfullscreen>
+                <iframe  height="315" src="{{vm.url}}" style="min-width: 100%;;" frameborder="0" allowfullscreen>
                     {{ vm.setProject($index) }}
                 </iframe>
 
+                {{vm.getMetas(video.url).des}}
+
+                <br>
                 <br>
                 <br>
 
