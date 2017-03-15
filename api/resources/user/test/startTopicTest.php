@@ -26,6 +26,10 @@ function startTopicTest($userMd5){
     $topic = json_decode($request->getBody());
 
 
+    $sqlConStmt = "SELECT `id` FROM `connected_stmts` WHERE topic_id =:topic_id ORDER BY RAND()";
+
+    $sqlConQuestions = "SELECT a.id
+                  FROM `questions` as a  WHERE  a.status = 'active' and a.connected_stmt_id = :connected_stmt_id ";
 
     $sql = "SELECT a.id
                   FROM `questions` as a  WHERE  a.status = 'active' and a.topic_id = :topic_id ORDER BY RAND() limit 0,".$topic->no_of_question;
@@ -42,53 +46,74 @@ function startTopicTest($userMd5){
     try {
 
         $response = array();
+        $questions = array();
 
         $db = getDB();
         //Getting Questions
-        $stmt = $db->prepare($sql);
 
-        $stmt->bindParam("topic_id", $topic->topic_id);
-        //$stmt->bindParam("no_of_question", $topic->no_of_question);
-
-
-        $stmt->execute();
-        $questions = $stmt->fetchAll(PDO::FETCH_OBJ);
-       // var_dump($questions);die();
-
-        //getting userId
-        $stmt = $db->prepare($sqlGettingUserId);
-        $stmt->bindParam("user_md5", $userMd5);
-        $stmt->execute();
-        $users = $stmt->fetchAll(PDO::FETCH_OBJ);
-
-        //creating test
-        $stmt = $db->prepare($sqlCreateTest);
-
-        $stmt->bindParam("topic_id", $topic->topic_id);
-        $stmt->bindParam("user_id", $users[0]->id);
-
-        $stmt->execute();
-        $testId = $db->lastInsertId();
-        $response['test_id'] = $testId;
-        $response['test_start_time'] =  date("Y-m-d H:i:s");
-
-        //saving questions
-        foreach($questions as $question){
-
-           /* $question->question = htmlspecialchars($question->question);
-            $question->option_1 = htmlspecialchars($question->option_1);
-            $question->option_2 = htmlspecialchars($question->option_2);
-            $question->option_3 = htmlspecialchars($question->option_3);
-            $question->option_4 = htmlspecialchars($question->option_4);*/
-
-            $stmt = $db->prepare($sqlSaveQuestion);
-
-            $stmt->bindParam("test_id", $testId);
-            $stmt->bindParam("question_id", $question->id);
+        if($topic->atomic == 0) {
+            $stmt = $db->prepare($sql);
+            $stmt->bindParam("topic_id", $topic->topic_id);
 
             $stmt->execute();
-            $question->response_id = $db->lastInsertId();
+            $questions = $stmt->fetchAll(PDO::FETCH_OBJ);
+        } else {
+            $stmt = $db->prepare($sqlConStmt);
+            $stmt->bindParam("topic_id", $topic->topic_id);
+
+            $stmt->execute();
+            $conStmts = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+            for($i=0;$i<count($conStmts) && count($questions)<=$topic->no_of_question;$i++){
+                $stmt = $db->prepare($sqlConQuestions);
+                $stmt->bindParam("connected_stmt_id", $conStmts[$i]->id);
+
+                $stmt->execute();
+                $tQuestion = $stmt->fetchAll(PDO::FETCH_OBJ);
+                foreach($tQuestion as $q){
+                    //$q->stmt = $conStmts[$i]->stmt;
+                    $questions[] = $q;
+                }
+            }
+
         }
+            // var_dump($questions);die();
+
+            //getting userId
+            $stmt = $db->prepare($sqlGettingUserId);
+            $stmt->bindParam("user_md5", $userMd5);
+            $stmt->execute();
+            $users = $stmt->fetchAll(PDO::FETCH_OBJ);
+
+            //creating test
+            $stmt = $db->prepare($sqlCreateTest);
+
+            $stmt->bindParam("topic_id", $topic->topic_id);
+            $stmt->bindParam("user_id", $users[0]->id);
+
+            $stmt->execute();
+            $testId = $db->lastInsertId();
+            $response['test_id'] = $testId;
+            $response['test_start_time'] = date("Y-m-d H:i:s");
+
+            //saving questions
+            foreach ($questions as $question) {
+
+                /* $question->question = htmlspecialchars($question->question);
+                 $question->option_1 = htmlspecialchars($question->option_1);
+                 $question->option_2 = htmlspecialchars($question->option_2);
+                 $question->option_3 = htmlspecialchars($question->option_3);
+                 $question->option_4 = htmlspecialchars($question->option_4);*/
+
+                $stmt = $db->prepare($sqlSaveQuestion);
+
+                $stmt->bindParam("test_id", $testId);
+                $stmt->bindParam("question_id", $question->id);
+
+                $stmt->execute();
+                $question->response_id = $db->lastInsertId();
+            }
+
 
         $response['questions'] = $questions;
 

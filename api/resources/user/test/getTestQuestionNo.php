@@ -21,7 +21,7 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
 
     $user = json_decode($request->getBody());
 
-    $sql = "SELECT a.id, a.question, a.img_id, a.option_1, a.option_2, a.option_3, a.option_4, a.source,
+    $sql = "SELECT a.id, a.question, a.img_id, a.option_1, a.option_2, a.option_3, a.option_4, a.source, a.connected_stmt_id,
                 b.response,b.id as responses_id
                   FROM `questions` as a INNER JOIN responses as b
                   WHERE
@@ -32,7 +32,7 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
     $sqlUpdateGetQuestionTime = "Update responses set get_question = :question_fetch_time where id=:responses_id ";
 
 
-
+    $sqlConStmt = "SELECT `stmt` FROM `connected_stmts` WHERE id =:id ";
 
     try {
 
@@ -45,7 +45,19 @@ function getTestQuestionNo($userMd5, $testId,$questionNo){
         $stmt->execute();
         $questions = $stmt->fetchAll(PDO::FETCH_OBJ);
 
+        if($questions[0]->connected_stmt_id != 0){
+            $stmt = $db->prepare($sqlConStmt);
+
+            $stmt->bindParam("id", $questions[0]->connected_stmt_id);
+
+            $stmt->execute();
+            $stmts = $stmt->fetchAll(PDO::FETCH_OBJ);
+            $questions[0]->stmt = $stmts[0]->stmt;
+
+        }
+
         $questions[0]->question_fetch_time =  date("Y-m-d H:i:s");
+
         //var_dump($response1);die();
 
         $stmt = $db->prepare($sqlUpdateGetQuestionTime);

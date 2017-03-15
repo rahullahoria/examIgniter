@@ -74,7 +74,7 @@
         }
 
 
-        vm.startTest = function(topicId,noOfQuestion,testId,topicName,subjectName){
+        vm.startTest = function(topicId,noOfQuestion,testId,topicName,subjectName,atomic){
             console.log(topicId);
             if(testId)
                 $location.path('/test/'+testId+'/result');
@@ -82,7 +82,8 @@
                 CandidateService.StartTest(vm.inUser.md5,
                         {
                         "topic_id":topicId,
-                        "no_of_question":noOfQuestion
+                        "no_of_question":noOfQuestion,
+                            "atomic":atomic
                          }
                     )
                     .then(function (response) {

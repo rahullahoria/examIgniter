@@ -88,72 +88,7 @@
                     </a>
                 </div>
             </div>
-            <!--<div class="col-lg-3 col-md-6">
-                <div class="panel panel-green">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="glyphicon glyphicon-knight fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge">{{ vm.good }}</div>
-                                <div>Doing Good</div>
-                            </div>
-                        </div>
-                    </div>
-                    <a ng-click="vm.filterIt('success')">
-                        <div class="panel-footer">
-                            <span class="pull-left">Select</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel panel-yellow">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="glyphicon glyphicon-bishop fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge">{{ vm.improve }}</div>
-                                <div>Need Improvement</div>
-                            </div>
-                        </div>
-                    </div>
-                    <a ng-click="vm.filterIt('warning')">
-                        <div class="panel-footer">
-                            <span class="pull-left">Select</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="panel panel-red">
-                    <div class="panel-heading">
-                        <div class="row">
-                            <div class="col-xs-3">
-                                <i class="glyphicon glyphicon-pawn fa-5x"></i>
-                            </div>
-                            <div class="col-xs-9 text-right">
-                                <div class="huge">{{ vm.bad }}</div>
-                                <div>Bad Working Hours</div>
-                            </div>
-                        </div>
-                    </div>
-                    <a ng-click="vm.filterIt('danger')">
-                        <div class="panel-footer">
-                            <span class="pull-left">Select</span>
-                            <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                            <div class="clearfix"></div>
-                        </div>
-                    </a>
-                </div>
-            </div>-->
+
 
         </div>
         <!-- /.row -->
@@ -203,7 +138,7 @@
                             <tr ng-repeat="topic in subject.topics"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
 
                                 <td>
-                                    <a ng-click="vm.startTest(topic.topic_id,topic.no_of_question, topic.test_id,topic.topic_name,subject.subject_name )">{{ topic.topic_name }}</a>
+                                    <a ng-click="vm.startTest(topic.topic_id,topic.no_of_question, topic.test_id,topic.topic_name,subject.subject_name,topic.atomic )">{{ topic.topic_name }}</a>
                                 </td>
                                 <td>
                                     <a href="#/prepare/{{topic.topic_name }}/{{topic.topic_id}}">Start Preparation</a>
