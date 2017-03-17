@@ -4,7 +4,6 @@
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php" afterPath="$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -88,13 +87,13 @@
       <file leaf-file-name="getExamSubjectTopics.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.21390374">
-              <caret line="17" column="124" selection-start-line="17" selection-start-column="124" selection-end-line="17" selection-end-column="124" />
+            <state vertical-scroll-proportion="0.45454547">
+              <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1489749824956" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
-                <marker date="1489749824956" expanded="true" signature="379:650" placeholder="select id,na... topics" />
-                <marker date="1489749824956" expanded="true" signature="423:619" placeholder="SELECT disti... topic_exam_mappings" />
+                <marker date="1489750116916" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
+                <marker date="1489750116916" expanded="true" signature="379:706" placeholder="select id,na... topics" />
+                <marker date="1489750116916" expanded="true" signature="423:661" placeholder="SELECT disti... topic_exam_mappings" />
               </folding>
             </state>
           </provider>
@@ -606,12 +605,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00111" summary="auth">
-      <created>1488807610664</created>
-      <option name="number" value="00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1488807610664</updated>
-    </task>
     <task id="LOCAL-00112" summary="auth">
       <created>1488807680849</created>
       <option name="number" value="00112" />
@@ -900,7 +893,13 @@
       <option name="project" value="LOCAL" />
       <updated>1489749559328</updated>
     </task>
-    <option name="localTasksCounter" value="160" />
+    <task id="LOCAL-00160" summary="favicons">
+      <created>1489749834116</created>
+      <option name="number" value="00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1489749834116</updated>
+    </task>
+    <option name="localTasksCounter" value="161" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1355,14 +1354,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
-          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1371,15 +1362,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.21390374">
-          <caret line="17" column="124" selection-start-line="17" selection-start-column="124" selection-end-line="17" selection-end-column="124" />
+        <state vertical-scroll-proportion="0.45454547">
+          <caret line="32" column="32" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="32" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1489749824956" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
-            <marker date="1489749824956" expanded="true" signature="379:650" placeholder="select id,na... topics" />
-            <marker date="1489749824956" expanded="true" signature="423:619" placeholder="SELECT disti... topic_exam_mappings" />
+            <marker date="1489750116916" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
+            <marker date="1489750116916" expanded="true" signature="379:706" placeholder="select id,na... topics" />
+            <marker date="1489750116916" expanded="true" signature="423:661" placeholder="SELECT disti... topic_exam_mappings" />
           </folding>
         </state>
       </provider>
