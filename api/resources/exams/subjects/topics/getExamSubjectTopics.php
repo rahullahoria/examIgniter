@@ -30,7 +30,7 @@ function getExamSubjectTopics($examId, $subjectId){
         $stmt->execute();
 
         $return['topics_in_exams'] = $stmt->fetchAll(PDO::FETCH_OBJ);
-        var_dump($return);die();
+
         $stmt = $db->prepare($sqlNotIn);
         $stmt->bindParam("id", $examId);
         $stmt->bindParam("subject_id", $subjectId);
@@ -38,7 +38,7 @@ function getExamSubjectTopics($examId, $subjectId){
         $stmt->execute();
 
         $return['topics_not_in_exams'] = $stmt->fetchAll(PDO::FETCH_OBJ);
-
+        var_dump($return);die();
         $db = null;
 
         echo '{"topics": ' . json_encode($return) . '}';
