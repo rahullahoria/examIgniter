@@ -29,6 +29,7 @@ require_once "resources/user/bankAccount/addBankAccount.php";
 
 //check otp
 require_once "resources/user/checkOtp.php";
+require_once "resources/user/getAllUsers.php";
 require_once "resources/user/test/saveTestQuestionAnswer.php";
 require_once "resources/user/test/startTopicTest.php";
 require_once "resources/questions/insertQuestion.php";

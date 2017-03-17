@@ -41,6 +41,8 @@ $app->post('/auth', 'userAuth');
 $app->post('/auth', 'userAuth');
 $app->post('/user', 'regUser');
 
+$app->get('/users', 'getAllUsers');
+
 $app->post('/question', 'insertQuestion');
 
 //exams
