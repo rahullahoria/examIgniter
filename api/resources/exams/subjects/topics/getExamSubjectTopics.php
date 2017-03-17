@@ -43,7 +43,7 @@ function getExamSubjectTopics($examId, $subjectId){
         $stmt->execute();
 
         $return['topics_not_in_exams'] = $stmt->fetchAll(PDO::FETCH_OBJ);
-        var_dump($return);die();
+        //var_dump($return);die();
         $db = null;
 
         echo '{"topics": ' . json_encode($return) . '}';
