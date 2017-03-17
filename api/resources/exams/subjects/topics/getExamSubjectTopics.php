@@ -15,7 +15,7 @@ function getExamSubjectTopics($examId, $subjectId){
     $sqlNotIn = "select id,name from topics where id not in (SELECT distinct b.id
               FROM topic_exam_mappings as a
               inner join`topics` as b
-              WHERE a.exam_id = :exam_id and a.topic_id = b.id and b.subject_id = :subject_id) and subject_id = :subject_id";
+              WHERE a.exam_id = :exam_id and a.topic_id = b.id and b.subject_id = :subject_id) and subject_id = :subject_id1";
 
     try {
         $return = array();
@@ -30,6 +30,7 @@ function getExamSubjectTopics($examId, $subjectId){
         $stmt = $db->prepare($sqlNotIn);
         $stmt->bindParam("id", $examId);
         $stmt->bindParam("subject_id", $subjectId);
+        $stmt->bindParam("subject_id1", $subjectId);
         $stmt->execute();
 
         $return['topics_not_in_exams'] = $stmt->fetchAll(PDO::FETCH_OBJ);

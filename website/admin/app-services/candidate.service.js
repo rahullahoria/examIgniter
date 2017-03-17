@@ -44,13 +44,13 @@
 
         function GetExamSubjects(id) {
             return $http
-                .get('https://api.examhans.com/exam/'+id+'/subjects')
+                .get('https://api.examhans.com/exams/'+id+'/subjects')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
         function GetExamSubjectTopics(id,subjectId) {
             return $http
-                .get('https://api.examhans.com/exam/'+id+'/subjects/'+subjectId+'/topics')
+                .get('https://api.examhans.com/exams/'+id+'/subjects/'+subjectId+'/topics')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/exams/subjects/getExamSubjects.php" afterPath="$PROJECT_DIR$/api/resources/exams/subjects/getExamSubjects.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php" afterPath="$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/exams/exams.controller.js" afterPath="$PROJECT_DIR$/website/admin/exams/exams.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/exams/exams.view.html" afterPath="$PROJECT_DIR$/website/admin/exams/exams.view.html" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -90,13 +88,13 @@
       <file leaf-file-name="getExamSubjectTopics.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.40106952">
-              <caret line="27" column="32" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.21390374">
+              <caret line="17" column="124" selection-start-line="17" selection-start-column="124" selection-end-line="17" selection-end-column="124" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1489748196792" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
-                <marker date="1489748196792" expanded="true" signature="379:649" placeholder="select id,na... topics" />
-                <marker date="1489748196792" expanded="true" signature="423:619" placeholder="SELECT disti... topic_exam_mappings" />
+                <marker date="1489749824956" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
+                <marker date="1489749824956" expanded="true" signature="379:650" placeholder="select id,na... topics" />
+                <marker date="1489749824956" expanded="true" signature="423:619" placeholder="SELECT disti... topic_exam_mappings" />
               </folding>
             </state>
           </provider>
@@ -126,7 +124,7 @@
         <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="52" column="88" selection-start-line="52" selection-start-column="88" selection-end-line="52" selection-end-column="88" />
+              <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -201,13 +199,13 @@
         <option value="$PROJECT_DIR$/website/admin/exams/list.temp.html" />
         <option value="$PROJECT_DIR$/website/admin/index.html" />
         <option value="$PROJECT_DIR$/website/admin/app.js" />
-        <option value="$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php" />
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/api/index.php" />
         <option value="$PROJECT_DIR$/api/resources/exams/subjects/getExamSubjects.php" />
-        <option value="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/admin/exams/exams.controller.js" />
         <option value="$PROJECT_DIR$/website/admin/exams/exams.view.html" />
+        <option value="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
+        <option value="$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php" />
       </list>
     </option>
   </component>
@@ -608,12 +606,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00110" summary="auth">
-      <created>1488807340370</created>
-      <option name="number" value="00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1488807340370</updated>
-    </task>
     <task id="LOCAL-00111" summary="auth">
       <created>1488807610664</created>
       <option name="number" value="00111" />
@@ -902,7 +894,13 @@
       <option name="project" value="LOCAL" />
       <updated>1489748558040</updated>
     </task>
-    <option name="localTasksCounter" value="159" />
+    <task id="LOCAL-00159" summary="favicons">
+      <created>1489749559327</created>
+      <option name="number" value="00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1489749559328</updated>
+    </task>
+    <option name="localTasksCounter" value="160" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1306,37 +1304,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.25">
-          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375">
           <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/getExamSubjects.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-          <folding>
-            <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1489748845084" expanded="true" signature="142:317" placeholder="SELECT disti... topic_exam_mappings" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="88" selection-start-line="52" selection-start-column="88" selection-end-line="52" selection-end-column="88" />
           <folding />
         </state>
       </provider>
@@ -1373,15 +1344,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php">
+    <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/getExamSubjects.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.40106952">
-          <caret line="27" column="32" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="32" />
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1489748196792" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
-            <marker date="1489748196792" expanded="true" signature="379:649" placeholder="select id,na... topics" />
-            <marker date="1489748196792" expanded="true" signature="423:619" placeholder="SELECT disti... topic_exam_mappings" />
+            <marker date="1489748845084" expanded="true" signature="142:317" placeholder="SELECT disti... topic_exam_mappings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="52" selection-start-line="59" selection-start-column="52" selection-end-line="59" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21390374">
+          <caret line="17" column="124" selection-start-line="17" selection-start-column="124" selection-end-line="17" selection-end-column="124" />
+          <folding>
+            <element signature="e#6#93#0#PHP" expanded="true" />
+            <marker date="1489749824956" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
+            <marker date="1489749824956" expanded="true" signature="379:650" placeholder="select id,na... topics" />
+            <marker date="1489749824956" expanded="true" signature="423:619" placeholder="SELECT disti... topic_exam_mappings" />
           </folding>
         </state>
       </provider>
