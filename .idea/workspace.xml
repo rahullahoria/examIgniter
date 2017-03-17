@@ -87,13 +87,14 @@
       <file leaf-file-name="getExamSubjectTopics.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82887703">
-              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.72192514">
+              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding>
                 <element signature="e#6#93#0#PHP" expanded="true" />
-                <marker date="1489750189424" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
-                <marker date="1489750189424" expanded="true" signature="379:706" placeholder="select id,na... topics" />
-                <marker date="1489750189424" expanded="true" signature="423:661" placeholder="SELECT disti... topic_exam_mappings" />
+                <marker date="1489750233576" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
+                <marker date="1489750233576" expanded="true" signature="379:693" placeholder="select id,na... topics" />
+                <marker date="1489750233576" expanded="true" signature="379:694" placeholder="select id,na... topics" />
+                <marker date="1489750233576" expanded="true" signature="423:661" placeholder="SELECT disti... topic_exam_mappings" />
               </folding>
             </state>
           </provider>
@@ -605,12 +606,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00113" summary="auth">
-      <created>1488807852732</created>
-      <option name="number" value="00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1488807852732</updated>
-    </task>
     <task id="LOCAL-00114" summary="auth">
       <created>1488808220200</created>
       <option name="number" value="00114" />
@@ -899,7 +894,13 @@
       <option name="project" value="LOCAL" />
       <updated>1489750126206</updated>
     </task>
-    <option name="localTasksCounter" value="162" />
+    <task id="LOCAL-00162" summary="favicons">
+      <created>1489750197555</created>
+      <option name="number" value="00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1489750197555</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1372,13 +1373,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/exams/subjects/topics/getExamSubjectTopics.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82887703">
-          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.72192514">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding>
             <element signature="e#6#93#0#PHP" expanded="true" />
-            <marker date="1489750189424" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
-            <marker date="1489750189424" expanded="true" signature="379:706" placeholder="select id,na... topics" />
-            <marker date="1489750189424" expanded="true" signature="423:661" placeholder="SELECT disti... topic_exam_mappings" />
+            <marker date="1489750233576" expanded="true" signature="159:358" placeholder="SELECT disti... topic_exam_mappings" />
+            <marker date="1489750233576" expanded="true" signature="379:693" placeholder="select id,na... topics" />
+            <marker date="1489750233576" expanded="true" signature="379:694" placeholder="select id,na... topics" />
+            <marker date="1489750233576" expanded="true" signature="423:661" placeholder="SELECT disti... topic_exam_mappings" />
           </folding>
         </state>
       </provider>
