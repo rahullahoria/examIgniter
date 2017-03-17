@@ -93,7 +93,7 @@
         </div>
         <!-- /.row -->
         <div class="row">
-            <div class="col-lg-12" ng-show="$index == vm.currentShow" id="subject-{{$index}}"  ng-repeat="subject in vm.subjects">
+            <div class="col-lg-12" >
 
                 <div class="panel panel-success">
                     <div class="panel-heading">
@@ -125,32 +125,47 @@
                         <table datatable="ng"  class="table table-bordered table-hover table-striped" style="max-width: 99%;">
                             <thead>
                             <tr>
-                                <th>Topic <i class="fa fa-anchor fa-fw"></i></th>
-                                <th>Prepare <i class="fa fa-bicycle fa-fw"></i></th></th>
-                                <th>#Question <i class="fa fa-question-circle fa-fw"></i></th>
-                                <th>Earned <i class="fa fa-university fa-fw"></i></th></th>
-                                <th>Status <i class="fa fa-coffee  fa-fw"></i></th></th>
+                                <th>Username <i class="fa fa-anchor fa-fw"></i></th>
+                                <th>Mobile <i class="fa fa-bicycle fa-fw"></i></th></th>
+                                <th>Ref_id <i class="fa fa-question-circle fa-fw"></i></th>
+                                <th>Exam Id <i class="fa fa-university fa-fw"></i></th></th>
+
+                                <th>Account Holder Name <i class="fa fa-coffee  fa-fw"></i></th></th>
+                                <th>Account No <i class="fa fa-coffee  fa-fw"></i></th></th>
+                                <th>IFSC <i class="fa fa-coffee  fa-fw"></i></th></th>
+                                <th>Amount Made <i class="fa fa-coffee  fa-fw"></i></th></th>
 
                             </tr>
                             </thead>
                             <tbody>
 
-                            <tr ng-repeat="topic in subject.topics"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
+                            <tr ng-repeat="user in vm.users"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
 
                                 <td>
-                                    <a ng-click="vm.startTest(topic.topic_id,topic.no_of_question, topic.test_id,topic.topic_name,subject.subject_name,topic.atomic )">{{ topic.topic_name }}</a>
+                                    <a >{{ user.username }}</a>
                                 </td>
                                 <td>
-                                    <a href="#/prepare/{{topic.topic_name }}/{{topic.topic_id}}">Start Preparation</a>
+                                    {{ user.mobile}}
                                 </td>
                                 <td>
-                                    {{ topic.no_of_question }}
-
+                                    {{ user.ref_user_id}}
+                                </td>
+                                <td>
+                                    {{ user.exam_id}}
                                 </td>
 
-                                <td>{{ (topic.amount_made==null)?'Not Done':topic.amount_made+'&#8377;' }}</td>
-                                <td>{{ (topic.amount_made==null)?'Start Test':'Done' }} </td>
-
+                                <td>
+                                    {{ user.account_holder_name}}
+                                </td>
+                                <td>
+                                    {{ user.account_number}}
+                                </td>
+                                <td>
+                                    {{ user.ifsc_code}}
+                                </td>
+                                <td>
+                                    {{ user.amount_made}}
+                                </td>
 
                             </tr>
 

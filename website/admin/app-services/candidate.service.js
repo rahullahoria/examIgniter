@@ -34,9 +34,9 @@
 
 
 
-        function GetStatus(userMD5) {
+        function GetStatus() {
             return $http
-                .get('https://api.examhans.com/user/'+userMD5+'/status')
+                .get('https://api.examhans.com/users')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

@@ -47,6 +47,8 @@ $app->post('/question', 'insertQuestion');
 
 //exams
 $app->get('/exams', 'getExamList');
+$app->get('/exams/:examId/subjects', 'getExamSubjects');
+$app->get('/exams/:examId/subjects/:subjectId/topics', 'getExamSubjectTopics');
 
 //topic
 $app->get('/topics/:topicId/videos', 'getTopicVideo');

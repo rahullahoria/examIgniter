@@ -2,7 +2,7 @@
     'use strict';
 
     angular
-        .module('app', ['ngRoute', 'ngCookies', 'datatables','timer','base64','ui.bootstrap.datetimepicker'])
+        .module('app', ['ngRoute', 'ngCookies', 'datatables','timer','base64','ui.bootstrap.datetimepicker','dndLists'])
         .config(config)
         .run(run);
 
@@ -34,6 +34,13 @@
             .when('/member', {
                 controller: 'MemberController',
                 templateUrl: 'member/member.view.html',
+                controllerAs: 'vm'
+
+            })
+
+            .when('/exams', {
+                controller: 'ExamsController',
+                templateUrl: 'exams/exams.view.html',
                 controllerAs: 'vm'
 
             })
