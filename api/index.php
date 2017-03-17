@@ -16,6 +16,8 @@ require_once "includes/getRandonString.php";
 
 //exams
 require_once "resources/exams/getExamList.php";
+require_once "resources/exams/subjects/getExamSubjects.php";
+require_once "resources/exams/subjects/topics/getExamSubjectTopics.php";
 
 require_once "resources/auth/postUserAuth.php";
 require_once "resources/user/getUserStatus.php";
