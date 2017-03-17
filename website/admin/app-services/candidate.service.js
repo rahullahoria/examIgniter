@@ -28,6 +28,8 @@
         service.CheckOTP = CheckOTP;
         service.StartDemoTest = StartDemoTest;
         service.postAccount = postAccount;
+        service.GetExamSubjects = GetExamSubjects;
+        service.GetExamSubjectTopics = GetExamSubjectTopics;
 
 
         return service;
@@ -37,6 +39,18 @@
         function GetStatus() {
             return $http
                 .get('https://api.examhans.com/users')
+                .then(handleSuccess, handleError('Error getting all users'));
+        }
+
+        function GetExamSubjects(id) {
+            return $http
+                .get('https://api.examhans.com/exam/'+id+'/subjects')
+                .then(handleSuccess, handleError('Error getting all users'));
+        }
+
+        function GetExamSubjectTopics(id,subjectId) {
+            return $http
+                .get('https://api.examhans.com/exam/'+id+'/subjects/'+subjectId+'/topics')
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

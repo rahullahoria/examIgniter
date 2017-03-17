@@ -16,11 +16,11 @@ function getExamSubjects($examId){
         $stmt->bindParam("id", $examId);
         $stmt->execute();
 
-        $exams = $stmt->fetchAll(PDO::FETCH_OBJ);
+        $subjects = $stmt->fetchAll(PDO::FETCH_OBJ);
 
         $db = null;
 
-        echo '{"exams": ' . json_encode($exams) . '}';
+        echo '{"subjects": ' . json_encode($subjects) . '}';
 
 
 

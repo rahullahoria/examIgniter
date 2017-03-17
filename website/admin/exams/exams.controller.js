@@ -118,34 +118,32 @@
         }
 
 
-        vm.startTest = function(topicId,noOfQuestion,testId,topicName,subjectName,atomic){
-            console.log(topicId);
-            if(testId)
-                $location.path('/test/'+testId+'/result');
-            else
-                CandidateService.StartTest(vm.inUser.md5,
-                        {
-                        "topic_id":topicId,
-                        "no_of_question":noOfQuestion,
-                            "atomic":atomic
-                         }
-                    )
-                    .then(function (response) {
-                        vm.subjects = response.response;
-
-                        console.log('member',vm.subjects);
-
-                        $cookieStore.put('tests', JSON.stringify(vm.subjects));
-                        $cookieStore.put('topic_name', topicName);
-                        $cookieStore.put('subject_name', subjectName);
-
-                        $location.path('/test');
-                    });
 
 
+        vm.loadSubject = function (id){
+            vm.loadedExamId = id;
+            CandidateService.GetExamSubjects(id
+                )
+                .then(function (response) {
+                    vm.subjects = response.subjects;
 
 
-        }
+                });
+        };
+
+        vm.loadSubjectTopics = function (examId, SubjectId){
+
+            vm.loadedSubjectId = SubjectId;
+            CandidateService.GetExamSubjectTopics(examId, SubjectId
+                )
+                .then(function (response) {
+                    vm.topics = response.topics;
+                    //vm.topics.topics_in_exams
+
+
+                });
+
+        };
 
 
 

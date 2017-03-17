@@ -80,16 +80,40 @@
                                     <li ng-repeat="exam in vm.exams"
 
                                     >
-                                        {{exam.name}}
+                                        <a ng-click="vm.loadSubject(exam.id)">{{exam.name}}</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div ng-repeat="list in models" class="col-md-3">
+                    <div class="col-md-3">
                         <div class="panel panel-info">
                             <div class="panel-heading">
-                                <h3 class="panel-title">List {{list.listName}}</h3>
+                                <h3 class="panel-title">Subjects</h3>
+                            </div>
+                            <div class="panel-body" >
+                                <ul dnd-list >
+                                    <li ng-repeat="subject in vm.subjects"
+
+                                    >
+                                        <a ng-click="vm.loadSubjectTopics(vm.loadedExamId, subject.id)">{{subject.name}}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div  class="col-md-3" ng-init="list = vm.topics.topics_in_exams">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Topic Include</h3>
+                            </div>
+                            <div class="panel-body" ng-include="'exams/list.temp.html'"></div>
+                        </div>
+                    </div>
+                    <div  class="col-md-3" ng-init="list = vm.topics.topics_not_in_exams">
+                        <div class="panel panel-info">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Topic Not Include</h3>
                             </div>
                             <div class="panel-body" ng-include="'exams/list.temp.html'"></div>
                         </div>
