@@ -37,13 +37,11 @@
                         <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
 
-                    <!--<li>
-                        <a href="#/employee/{{ vm.inUser.md5_id }}"><i class="fa fa-table fa-fw"></i> My Performance</a>
-                    </li>-->
+                    <li>
+                        <a href="#/exams" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                    </li>
 
-                    <!--<li>
-                        <a href="#"><i class="glyphicon glyphicon-cog fa-fw"></i> Settings</a>
-                    </li>-->
+
                     <li>
                         <a ng-click="vm.logout()"><i class="glyphicon glyphicon-off fa-fw"></i> Logout</a>
                     </li>
@@ -58,7 +56,7 @@
     <div id="page-wrapper">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Dashboard</h1>
+                <h1 class="page-header">Exam Control Room</h1>
             </div>
 
         </div>
@@ -102,18 +100,10 @@
                             </div>
                         </div>
                     </div>
-                    <div  class="col-md-3" ng-init="list = vm.topics.topics_in_exams">
+                    <div ng-repeat="list in models" class="col-md-3">
                         <div class="panel panel-info">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Topic Include</h3>
-                            </div>
-                            <div class="panel-body" ng-include="'exams/list.temp.html'"></div>
-                        </div>
-                    </div>
-                    <div  class="col-md-3" ng-init="list = vm.topics.topics_not_in_exams">
-                        <div class="panel panel-info">
-                            <div class="panel-heading">
-                                <h3 class="panel-title">Topic Not Include</h3>
+                                <h3 class="panel-title">List {{list.listName}} ({{ list.items.length }})</h3>
                             </div>
                             <div class="panel-body" ng-include="'exams/list.temp.html'"></div>
                         </div>

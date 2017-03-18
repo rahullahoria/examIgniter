@@ -30,6 +30,8 @@
         service.postAccount = postAccount;
         service.GetExamSubjects = GetExamSubjects;
         service.GetExamSubjectTopics = GetExamSubjectTopics;
+        service.AddRemark = AddRemark;
+        service.GetRemarks = GetRemarks;
 
 
         return service;
@@ -113,6 +115,16 @@
 
         function postAccount(userMd5, instance) {
             return $http.post('https://api.examhans.com/user/'+userMd5+'/bank_account', instance).then(handleSuccess, handleError('Error updating user'));
+        }
+
+        function AddRemark(userMd5, instance) {
+            return $http.post('http://api.wazir.shatkonlabs.com/feedbacks/1/examhans-'+userMd5, instance).then(handleSuccess, handleError('Error updating user'));
+        }
+
+        function GetRemarks(userMd5) {
+            return $http
+                .get('http://api.wazir.shatkonlabs.com/feedbacks/1/examhans-'+userMd5)
+                .then(handleSuccess, handleError('Error getting all users'));
         }
 
         function StartDemoTest(userMd5) {

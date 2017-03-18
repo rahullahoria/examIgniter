@@ -103,6 +103,34 @@
 
         }
 
+        vm.userDetails = function(index){
+            vm.loadUserId = index;
+            CandidateService.GetRemarks(vm.users[vm.loadUserId].username)
+                .then(function (response) {
+                    vm.comments = response.feedbacks;
+
+
+
+
+                    console.log('inside controller',vm.comments);
+                });
+            $("#userModel").modal("show");
+        };
+
+        vm.writeAboutUser = function(user){
+
+            CandidateService.AddRemark(user.username,
+                {
+                    "feedback":vm.user.feedback,
+                    "digieye_user_id":1
+                }
+                )
+                .then(function (response) {
+                    vm.user.feedback = '';
+                });
+
+        };
+
 
 
         vm.loadToCallCandidates = loadToCallCandidates;

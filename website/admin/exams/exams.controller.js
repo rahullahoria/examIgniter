@@ -16,8 +16,8 @@
         vm.loadUser = loadUser;
 
         $scope.models = [
-            {listName: "A", items: [], dragging: false},
-            {listName: "B", items: [], dragging: false}
+            {listName: "Topics Inside", items: [], dragging: false},
+            {listName: "Topics Not Inside", items: [], dragging: false}
         ];
 
         /**
@@ -66,12 +66,7 @@
             list.items = list.items.filter(function(item) { return !item.selected; });
         };
 
-        // Generate the initial model
-        angular.forEach($scope.models, function(list) {
-            for (var i = 1; i <= 4; ++i) {
-                list.items.push({label: "Item " + list.listName + i});
-            }
-        });
+
 
         // Model to JSON for demo purpose
         $scope.$watch('models', function(model) {
@@ -138,7 +133,9 @@
                 )
                 .then(function (response) {
                     vm.topics = response.topics;
-                    //vm.topics.topics_in_exams
+                    console.log(vm.topics.topics_in_exams);
+                    $scope.models[0].items = vm.topics.topics_in_exams;
+                    $scope.models[1].items = vm.topics.topics_not_in_exams;
 
 
                 });

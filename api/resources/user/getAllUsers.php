@@ -13,7 +13,7 @@ function getAllUsers(){
                     FROM  `users` as a left join
                     bank_accounts as b on a.id = b.user_id left join
                     tests as c on a.id = c.user_id
-                    WHERE 1";
+                    WHERE 1 ORDER BY `users`.`creation` DESC limit 0,50 ";
 
     try {
 

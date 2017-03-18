@@ -36,14 +36,11 @@
                     <li>
                         <a href="#/member" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                     </li>
+                    <li>
+                        <a href="#/exams" class="active"><i class="fa fa-dashboard fa-fw"></i> Exams</a>
+                    </li>
 
-                    <!--<li>
-                        <a href="#/employee/{{ vm.inUser.md5_id }}"><i class="fa fa-table fa-fw"></i> My Performance</a>
-                    </li>-->
 
-                    <!--<li>
-                        <a href="#"><i class="glyphicon glyphicon-cog fa-fw"></i> Settings</a>
-                    </li>-->
                     <li>
                         <a ng-click="vm.logout()"><i class="glyphicon glyphicon-off fa-fw"></i> Logout</a>
                     </li>
@@ -126,14 +123,15 @@
                             <thead>
                             <tr>
                                 <th>Username <i class="fa fa-anchor fa-fw"></i></th>
-                                <th>Mobile <i class="fa fa-bicycle fa-fw"></i></th></th>
+                                <th>Mobile <i class="fa fa-bicycle fa-fw"></i></th>
                                 <th>Ref_id <i class="fa fa-question-circle fa-fw"></i></th>
-                                <th>Exam Id <i class="fa fa-university fa-fw"></i></th></th>
+                                <th>Exam Id <i class="fa fa-university fa-fw"></i></th>
 
-                                <th>Account Holder Name <i class="fa fa-coffee  fa-fw"></i></th></th>
-                                <th>Account No <i class="fa fa-coffee  fa-fw"></i></th></th>
-                                <th>IFSC <i class="fa fa-coffee  fa-fw"></i></th></th>
-                                <th>Amount Made <i class="fa fa-coffee  fa-fw"></i></th></th>
+                                <th>Account Holder Name <i class="fa fa-coffee  fa-fw"></i></th>
+                                <th>Account No <i class="fa fa-coffee  fa-fw"></i></th>
+                                <th>IFSC <i class="fa fa-coffee  fa-fw"></i></th>
+                                <th>Amount Made <i class="fa fa-coffee  fa-fw"></i></th>
+                                <th>Creation <i class="fa fa-coffee  fa-fw"></i></th>
 
                             </tr>
                             </thead>
@@ -142,7 +140,7 @@
                             <tr ng-repeat="user in vm.users"  class="{{ (topic.amount_made==null)?'warning':'success' }}">
 
                                 <td>
-                                    <a >{{ user.username }}</a>
+                                    <a ng-click="vm.userDetails($index)">{{ user.username }}</a>
                                 </td>
                                 <td>
                                     {{ user.mobile}}
@@ -165,6 +163,10 @@
                                 </td>
                                 <td>
                                     {{ user.amount_made}}
+                                </td>
+
+                                <td>
+                                    {{ user.creation}}
                                 </td>
 
                             </tr>
@@ -190,3 +192,45 @@
 
 </div>
 <!-- /#wrapper -->
+
+<div id="userModel" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">{{ vm.users[vm.loadUserId].username }}</h4>
+                <h5 class="modal-title">Mobile:{{ vm.users[vm.loadUserId].mobile }}<br>
+                    AHN:{{ vm.users[vm.loadUserId].account_holder_name }},
+                    AN:{{ vm.users[vm.loadUserId].account_number }},
+                    IFSC:{{ vm.users[vm.loadUserId].ifsc_code }},
+                    AM:{{ vm.users[vm.loadUserId].amount_made }}Rs
+                </h5>
+            </div>
+            <div class="modal-body">
+                <div style="height: 250px; overflow-y: scroll;">
+                <div ng-repeat="comment in vm.comments" >
+                {{ comment.creation }}<br>
+                <b>{{ comment.feedback }}</b>
+                    <hr>
+
+                </div>
+                </div>
+
+                <textarea ng-model="vm.user.feedback" style="min-width: 100%">
+
+                </textarea>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger pull-left" ng-click="vm.writeAboutUser(vm.users[vm.loadUserId])" data-dismiss="modal">Write</button>
+
+
+            </div>
+        </div>
+
+    </div>
+</div>

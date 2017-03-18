@@ -269,8 +269,12 @@
 
                 <div class="row">
                     <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">SSC News</h2>
-                        <h3 class="section-subheading text-muted">find out more</h3>
+                        <h2 class="section-heading ">
+                            <button class="btn btn-warning btn-xl" ng-click="news = 'ssc exam';getNews();"> SSC News</button>
+                            <button class="btn btn-warning btn-xl" ng-click="news = 'bank po exam';getNews();"> Bank PO News</button>
+                            <button class="btn btn-warning btn-xl" ng-click="news = 'gre exam';getNews();"> GRE News</button>
+                        </h2>
+                        <h3 class="section-subheading text-muted">{{ news }}</h3>
                     </div>
                 </div>
 
@@ -294,103 +298,23 @@
             </div>
 
 
-            <!--<div class="row">
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="http://www.hindustantimes.com/education/ssc-junior-engineer-je-exam-2016-commission-issues-instructions-for-candidates/story-hovLQmagonCVQmf2hciNkK.html" class="portfolio-link" target="_blank" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/02/24/Pictures/pretty-student-doing-homework_9abe83d6-fa6e-11e6-aa44-d0b605bc50f5.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>SSC JE Exam 2016: Commission issues instructions for candidates</h4>
-                        <p class="text-muted">The Staff Selection Commission (SSC) has issued instructions for candidates appearing in the junior engineer (JE) examination 2016 (Paper I) regarding the question paper, items...</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="http://www.hindustantimes.com/education/ssc-junior-engineer-je-exam-2016-commission-issues-instructions-for-candidates/story-hovLQmagonCVQmf2hciNkK.html" class="portfolio-link" target="_blank" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://www.hindustantimes.com/rf/image_size_960x540/HT/p2/2017/02/20/Pictures/together-teen-happy-girl-students-studying-book_8ac6a482-f766-11e6-aa44-d0b605bc50f5.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>SSC MTS exam 2017: Detailed strategy to clear paper 1 section-wise analysis</h4>
-                        <p class="text-muted">More than 6 million candidates have applied for 8,300 Multi-Tasking (Non-Technical) Staff (MTS) posts in the country advertised by the Staff Selection Commission (SSC).</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="http://www.india.com/education/ssc-je-paper-i-exam-2017-update-instructions-released-by-ssc-on-ssc-nic-in-1870606/" class="portfolio-link" target="_blank" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="http://www.india.com/wp-content/uploads/2017/02/Students_B_31815.jpg" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>SSC JE Paper I Exam 2017 Update: Instructions released by SSC on ssc.nic.in</h4>
-                        <p class="text-muted">SSC has released important updates for the upcoming Paper I of SSC JE Exam 2016 on official website ssc.nic.in</p>
-                    </div>
-                </div>
-                <!--<div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/golden.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Golden</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/escape.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Escape</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>
-                <div class="col-md-4 col-sm-6 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/dreams.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Dreams</h4>
-                        <p class="text-muted">Website Design</p>
-                    </div>
-                </div>-->
-            </div>-->
+            </div>
         </div>
     </section>
 
     <script>
         var app = angular.module('myApp', []);
         app.controller('myCtrl', function($scope, $http) {
-            $http.get("https://api.ragnar.shatkonlabs.com/search_keyword/ssc exam")
-                .then(function(response) {
-                    $scope.urls = response.data.urls;
-                    console.log(response);
-                });
+            $scope.news = "ssc exam";
+            $scope.getNews = getNews;
+            getNews();
+            function getNews() {
+                $http.get("https://api.ragnar.shatkonlabs.com/search_keyword/" + $scope.news)
+                    .then(function (response) {
+                        $scope.urls = response.data.urls;
+                        console.log(response);
+                    });
+            }
         });
     </script>
 
