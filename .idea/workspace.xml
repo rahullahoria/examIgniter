@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney Technical Integration Document.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/Paytm_Web_Sample_Kit_PHP-master/PaytmKit/lib/config_paytm.php" afterPath="$PROJECT_DIR$/website/payment/Paytm_Web_Sample_Kit_PHP-master/PaytmKit/lib/config_paytm.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/index.php" afterPath="$PROJECT_DIR$/website/payment/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.php" afterPath="$PROJECT_DIR$/website/main-web/index.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -28,10 +32,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7556391">
+              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+              <folding>
+                <element signature="e#28608#37810#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/payment/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.18716578">
-              <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+            <state vertical-scroll-proportion="-11.25">
+              <caret line="36" column="32" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -92,16 +108,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.490566">
               <caret line="30" column="39" selection-start-line="0" selection-start-column="0" selection-end-line="61" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.view.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/result/result.view.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="174" column="113" selection-start-line="174" selection-start-column="113" selection-end-line="174" selection-end-column="113" />
               <folding />
             </state>
           </provider>
@@ -190,11 +196,11 @@
         <option value="$PROJECT_DIR$/website/admin/member/member.controller.js" />
         <option value="$PROJECT_DIR$/website/admin/result/result.view.html" />
         <option value="$PROJECT_DIR$/website/members/result/result.view.html" />
-        <option value="$PROJECT_DIR$/website/main-web/index.php" />
         <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
         <option value="$PROJECT_DIR$/api/resources/user/getAllUsers.php" />
         <option value="$PROJECT_DIR$/website/payment/Paytm_Web_Sample_Kit_PHP-master/PaytmKit/lib/config_paytm.php" />
         <option value="$PROJECT_DIR$/website/payment/index.php" />
+        <option value="$PROJECT_DIR$/website/main-web/index.php" />
       </list>
     </option>
   </component>
@@ -260,10 +266,6 @@
               <option name="myItemId" value="website" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="payment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -279,81 +281,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="payment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Paytm_Web_Sample_Kit_PHP-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="payment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Paytm_Web_Sample_Kit_PHP-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PaytmKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="payment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Paytm_Web_Sample_Kit_PHP-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PaytmKit" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="website" />
+              <option name="myItemId" value="main-web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -426,12 +354,6 @@
       <created>1487582015062</created>
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
-    </task>
-    <task id="LOCAL-00120" summary="auth">
-      <created>1488862126403</created>
-      <option name="number" value="00120" />
-      <option name="project" value="LOCAL" />
-      <updated>1488862126403</updated>
     </task>
     <task id="LOCAL-00121" summary="auth">
       <created>1488867228670</created>
@@ -721,7 +643,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490009849185</updated>
     </task>
-    <option name="localTasksCounter" value="169" />
+    <task id="LOCAL-00169" summary="favicons">
+      <created>1490012923996</created>
+      <option name="number" value="00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1490012923996</updated>
+    </task>
+    <option name="localTasksCounter" value="170" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1010,14 +938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="274" column="105" selection-start-line="274" selection-start-column="105" selection-end-line="274" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1148,9 +1068,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/payment/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.18716578">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        <state vertical-scroll-proportion="-11.25">
+          <caret line="36" column="32" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7556391">
+          <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+          <folding>
+            <element signature="e#28608#37810#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

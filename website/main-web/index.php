@@ -221,7 +221,20 @@
                         <p>Earn<b> 3 Rs </b>per Questions</p>
                         <p>Earn Back <b>1.2k Rs</b></p>
                         <p class="text-muted">Cost <b>1k Rs</b></p>
-                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
+
+
+
+                        <div class="pm-button">
+                            <a href="https://www.payumoney.com/paybypayumoney/#/B5FAACCF798CCC4DFB87F4BF4B7C05AE">
+                                <img src="https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png" />
+                            </a>
+                        </div>
+
+
+
+
+
+                        <!--<a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>-->
                     </div>
                 </div>
                 <div class="col-sm-4">
