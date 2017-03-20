@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney Technical Integration Document.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_logo.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.php" afterPath="$PROJECT_DIR$/website/main-web/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -31,14 +28,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7556391">
+            <state vertical-scroll-proportion="-7.5849056">
               <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
               <folding>
                 <element signature="e#28608#37810#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PayUMoney_form.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-22.125">
+              <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="success.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.49197862">
+              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="failure.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.375">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,16 +95,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="4.3962264">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TxnStatus.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/payment/Paytm_Web_Sample_Kit_PHP-master/PaytmKit/TxnStatus.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.8301888">
-              <caret line="19" column="45" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -113,28 +130,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="result.controller.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/members/result/result.controller.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="64" column="35" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="postUserAuth.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/api/resources/auth/postUserAuth.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <marker date="1488608054512" expanded="true" signature="232:499" placeholder="SELECT a.`us... users" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -150,9 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/scripts/scrapTopicVideos.php" />
-        <option value="$PROJECT_DIR$/website/members/dist/css/sb-admin-2.css" />
-        <option value="$PROJECT_DIR$/website/members/app-content/app.css" />
         <option value="$PROJECT_DIR$/website/members/app.js" />
         <option value="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
@@ -201,6 +193,9 @@
         <option value="$PROJECT_DIR$/website/payment/Paytm_Web_Sample_Kit_PHP-master/PaytmKit/lib/config_paytm.php" />
         <option value="$PROJECT_DIR$/website/payment/index.php" />
         <option value="$PROJECT_DIR$/website/main-web/index.php" />
+        <option value="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php" />
+        <option value="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" />
+        <option value="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php" />
       </list>
     </option>
   </component>
@@ -251,6 +246,50 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="examIgniter" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="payment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="payment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PayUMoney_PHP_Module-master" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PayUMoney_PHP_Module" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -354,12 +393,6 @@
       <created>1487582015062</created>
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
-    </task>
-    <task id="LOCAL-00121" summary="auth">
-      <created>1488867228670</created>
-      <option name="number" value="00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1488867228670</updated>
     </task>
     <task id="LOCAL-00122" summary="auth">
       <created>1488872598384</created>
@@ -649,7 +682,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490012923996</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="favicons">
+      <created>1490016770065</created>
+      <option name="number" value="00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1490016770065</updated>
+    </task>
+    <option name="localTasksCounter" value="171" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -700,27 +739,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/website/members/app-services/user.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6206896">
-          <caret line="7" column="33" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="185" column="92" selection-start-line="185" selection-start-column="92" selection-end-line="185" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/scrapTopicVideos.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-17.833334">
@@ -1076,11 +1094,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/main-web/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7556391">
+        <state vertical-scroll-proportion="-7.5849056">
           <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
           <folding>
             <element signature="e#28608#37810#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.125">
+          <caret line="179" column="0" selection-start-line="179" selection-start-column="0" selection-end-line="179" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.375">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49197862">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
