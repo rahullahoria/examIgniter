@@ -36,10 +36,15 @@
 
 
         function GetMoney(payment){
+            var form_data = new FormData();
+
+            for ( var key in payment ) {
+                form_data.append(key, item[key]);
+            }
             return $http({
                 method  : 'POST',
                 url     : 'https://examhans.com/payment/index.php',
-                data    : payment, //forms user object
+                data    : form_data, //forms user object
                 headers : {'Content-Type': 'application/x-www-form-urlencoded'}
             });
         }
