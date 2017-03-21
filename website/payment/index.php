@@ -48,6 +48,12 @@ if(!empty($_GET)) {
     }
 }
 
+$dbHandle = mysqli_connect("localhost","root","redhat@11111p","rocket_payments");
+$sql = "INSERT INTO `payments`(`txnid`, `name`, `mobile`, `email`, `product`)
+              VALUES
+              ('".$posted['txnid']."','".$posted['firstname']."','".$posted['phone']."','".$posted['email']."','".$posted['productinfo']."')";mysqli_query($dbHandle,$sql);
+mysqli_close($dbHandle);
+
 
 
 $formError = 0;

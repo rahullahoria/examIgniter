@@ -8,7 +8,16 @@ $posted_hash=$_POST["hash"];
 $key=$_POST["key"];
 $productinfo=$_POST["productinfo"];
 $email=$_POST["email"];
+$mobile=$_POST["phone"];
 $salt="3Xr7ygpTpo";
+
+header('Location: '."https://examhans.com/payment/index.php?amount=".
+    $amount. '&firstname=' .
+    $firstname . '&email=' .
+    $email . '&phone=' .
+    $mobile . '&productinfo=examhans try1' .
+      "&surl=https://examhans.com/payment/success.php&furl=https://examhans.com/payment/failure.php"
+);
 
 If (isset($_POST["additionalCharges"])) {
        $additionalCharges=$_POST["additionalCharges"];

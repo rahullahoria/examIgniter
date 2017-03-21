@@ -3,8 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" afterPath="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/failure.php" afterPath="$PROJECT_DIR$/website/payment/failure.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/index.php" afterPath="$PROJECT_DIR$/website/payment/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/success.php" afterPath="$PROJECT_DIR$/website/payment/success.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -52,19 +54,15 @@
       <file leaf-file-name="success.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="failure.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-21.5">
-              <caret line="35" column="68" selection-start-line="35" selection-start-column="68" selection-end-line="35" selection-end-column="68" />
-              <folding />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="15" selection-end-column="24" />
+              <folding>
+                <marker date="1490102575856" expanded="true" signature="356:402" placeholder="UPDATE `exam... " />
+                <marker date="1490102575856" expanded="true" signature="356:439" placeholder="UPDATE `exam... " />
+                <marker date="1490102575856" expanded="true" signature="356:450" placeholder="UPDATE `exam... " />
+                <marker date="1490102575856" expanded="true" signature="356:471" placeholder="UPDATE `exam... " />
+                <marker date="1490102575856" expanded="true" signature="356:483" placeholder="UPDATE `exam... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,8 +90,8 @@
       <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.2413793">
-              <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
+            <state vertical-scroll-proportion="-5.172414">
+              <caret line="110" column="50" selection-start-line="110" selection-start-column="50" selection-end-line="116" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -112,22 +110,35 @@
       <file leaf-file-name="success.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/payment/success.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-10.0">
+              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="52" />
+              <folding>
+                <marker date="1490102935488" expanded="true" signature="356:483" placeholder="UPDATE `exam... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="failure.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/website/payment/failure.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.26737967">
+              <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/payment/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.4943609">
-              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.943396">
+              <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
               <folding>
-                <marker date="1490101724172" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
-                <marker date="1490101724172" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
-                <marker date="1490101724172" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
+                <marker date="1490102810320" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
+                <marker date="1490102810320" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
+                <marker date="1490102810320" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
+                <marker date="1490102810320" expanded="true" signature="1222:1453" placeholder="INSERT INTO `payments`... " />
               </folding>
             </state>
           </provider>
@@ -148,8 +159,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/website/members/app.js" />
-        <option value="$PROJECT_DIR$/api/resources/user/test/saveTestQuestionAnswer.php" />
         <option value="$PROJECT_DIR$/api/resources/user/test/getTestResult.php" />
         <option value="$PROJECT_DIR$/api/includes/error.php" />
         <option value="$PROJECT_DIR$/api/resources/auth/postUserAuth.php" />
@@ -191,14 +200,16 @@
         <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
         <option value="$PROJECT_DIR$/api/resources/user/getAllUsers.php" />
         <option value="$PROJECT_DIR$/website/payment/Paytm_Web_Sample_Kit_PHP-master/PaytmKit/lib/config_paytm.php" />
-        <option value="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" />
         <option value="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php" />
         <option value="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/PayUMoney_form.php" />
         <option value="$PROJECT_DIR$/website/main-web/index.php" />
         <option value="$PROJECT_DIR$/website/members/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
+        <option value="$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php" />
         <option value="$PROJECT_DIR$/website/payment/index.php" />
+        <option value="$PROJECT_DIR$/website/payment/success.php" />
+        <option value="$PROJECT_DIR$/website/payment/failure.php" />
       </list>
     </option>
   </component>
@@ -266,32 +277,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="payment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="examIgniter" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="website" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="payment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PayUMoney_PHP_Module-master" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PayUMoney_PHP_Module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -458,12 +443,6 @@
       <created>1487582015062</created>
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
-    </task>
-    <task id="LOCAL-00130" summary="favicons">
-      <created>1488902734762</created>
-      <option name="number" value="00130" />
-      <option name="project" value="LOCAL" />
-      <updated>1488902734762</updated>
     </task>
     <task id="LOCAL-00131" summary="favicons">
       <created>1488949643815</created>
@@ -753,7 +732,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490100738251</updated>
     </task>
-    <option name="localTasksCounter" value="179" />
+    <task id="LOCAL-00179" summary="favicons">
+      <created>1490101759885</created>
+      <option name="number" value="00179" />
+      <option name="project" value="LOCAL" />
+      <updated>1490101759885</updated>
+    </task>
+    <option name="localTasksCounter" value="180" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -804,13 +789,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/website/main-web/story.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/member/member.view.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1114,14 +1092,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/failure.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-21.5">
@@ -1156,14 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/payment/success.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/members/app-services/candidate.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1180,23 +1142,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+    <entry file="file://$PROJECT_DIR$/website/payment/PayUMoney_PHP_Module-master/PayUMoney_PHP_Module/success.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.2413793">
-          <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
-          <folding />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <marker date="1490102575856" expanded="true" signature="356:402" placeholder="UPDATE `exam... " />
+            <marker date="1490102575856" expanded="true" signature="356:439" placeholder="UPDATE `exam... " />
+            <marker date="1490102575856" expanded="true" signature="356:450" placeholder="UPDATE `exam... " />
+            <marker date="1490102575856" expanded="true" signature="356:471" placeholder="UPDATE `exam... " />
+            <marker date="1490102575856" expanded="true" signature="356:483" placeholder="UPDATE `exam... " />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/payment/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4943609">
-          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
+        <state vertical-scroll-proportion="-5.943396">
+          <caret line="54" column="24" selection-start-line="54" selection-start-column="24" selection-end-line="54" selection-end-column="24" />
           <folding>
-            <marker date="1490101724172" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
-            <marker date="1490101724172" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
-            <marker date="1490101724172" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
+            <marker date="1490102810320" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
+            <marker date="1490102810320" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
+            <marker date="1490102810320" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
+            <marker date="1490102810320" expanded="true" signature="1222:1453" placeholder="INSERT INTO `payments`... " />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/payment/success.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="52" />
+          <folding>
+            <marker date="1490102935488" expanded="true" signature="356:483" placeholder="UPDATE `exam... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.172414">
+          <caret line="110" column="50" selection-start-line="110" selection-start-column="50" selection-end-line="116" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/payment/failure.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26737967">
+          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

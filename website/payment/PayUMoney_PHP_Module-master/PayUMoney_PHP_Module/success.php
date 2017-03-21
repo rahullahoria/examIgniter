@@ -7,7 +7,13 @@ $posted_hash=$_POST["hash"];
 $key=$_POST["key"];
 $productinfo=$_POST["productinfo"];
 $email=$_POST["email"];
+$mobile=$_POST["phone"];
 $salt="3Xr7ygpTpo";
+
+$dbHandle = mysqli_connect("localhost","root","redhat@11111p","exam_igniter");
+$sql = "UPDATE `exam_igniter`.`users` SET `amount` = '".$amount."' WHERE `users`.`email` ='".$email."' and users.mobile = '".$mobile."';";
+mysqli_query($dbHandle,$sql);
+mysqli_close($dbHandle);
 
 If (isset($_POST["additionalCharges"])) {
        $additionalCharges=$_POST["additionalCharges"];
