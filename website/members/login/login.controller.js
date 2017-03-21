@@ -11,11 +11,19 @@
 
         vm.login = login;
         vm.user = {};
+        vm.plans = {s:{name:'Silver',price:1000},g:{name:'Gold',price:2000},p:{name:'Platinum',price:5000}};
         vm.user.username = "";
         vm.user.password = "";
         vm.inUser = null;
         vm.regR = ($location.search().rt != undefined)?true:false;
         vm.user.ref_username = ($location.search().ref_user != undefined)?$location.search().ref_user:'';
+        vm.user.enable_buy_plan = ($location.search().bp != undefined)?true:false;
+        vm.user.buy_plan = ($location.search().bp != undefined)?$location.search().bp:'';
+        if(vm.user.ref_username){
+            vm.user.enable_ref_username = false;
+        }
+        else
+        vm.user.enable_ref_username = true;
         console.log('rt', $location.search().rt);
 
         (function initController() {
@@ -97,14 +105,18 @@
 
                   if (response.auth == "true") {
                       alert('Verified Successfully');
-                      vm.user[type+'_verified'] = true;
-                      $("#instructionsModel").modal("show");
-                      if(vm.user.sms_verified == true && vm.user.email_verified == true ){
-                          //show model
+                      if(vm.user.enable_buy_plan){
+
+
+                      }else {
+                          vm.user[type + '_verified'] = true;
                           $("#instructionsModel").modal("show");
+                          if (vm.user.sms_verified == true && vm.user.email_verified == true) {
+                              //show model
+                              $("#instructionsModel").modal("show");
 
 
-
+                          }
                       }
                   } else {
                       alert('Don\'t Match Please Try Again!');

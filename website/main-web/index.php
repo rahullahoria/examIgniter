@@ -222,19 +222,7 @@
                         <p>Earn Back <b>1.2k Rs</b></p>
                         <p class="text-muted">Cost <b>1k Rs</b></p>
 
-
-
-                        <div class="pm-button">
-                            <a href="https://www.payumoney.com/paybypayumoney/#/B5FAACCF798CCC4DFB87F4BF4B7C05AE">
-                                <img src="https://www.payumoney.com/media/images/payby_payumoney/new_buttons/21.png" />
-                            </a>
-                        </div>
-
-
-
-
-
-                        <!--<a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>-->
+                        <a href="members/#/?rt=buy&bp=s" class="page-scroll btn btn-xl"> Buy Now </a>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -247,7 +235,7 @@
                         <p>Earn Back <b>3.2k Rs</b></p>
                         <p class="text-muted">Cost <b>2k Rs</b></p>
 
-                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
+                        <a href="members/#/?rt=buy&bp=g" class="page-scroll btn btn-xl"> Buy Now </a>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -260,7 +248,7 @@
                         <p>Earn Back <b>10k Rs</b></p>
                         <p class="text-muted">Cost <b>5k Rs</b></p>
 
-                        <a href="members/" class="page-scroll btn btn-xl"> Buy Now </a>
+                        <a href="members/#/?rt=buy&bp=p" class="page-scroll btn btn-xl"> Buy Now </a>
 
                     </div>
                 </div>
