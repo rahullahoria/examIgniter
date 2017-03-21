@@ -11,7 +11,7 @@
 
         vm.login = login;
         vm.user = {};
-        vm.plans = {s:{name:'Silver',price:1000},g:{name:'Gold',price:2000},p:{name:'Platinum',price:5000}};
+        vm.plans = {s:{name:'Silver',price:1000},g:{name:'Gold',price:2000},p:{name:'Platinum',price:5}};
         vm.user.username = "";
         vm.user.password = "";
         vm.inUser = null;
