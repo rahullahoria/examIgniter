@@ -5,8 +5,8 @@
         .module('app')
         .controller('LoginController', LoginController);
 
-    LoginController.$inject = ['$location', 'UserService', '$cookieStore','CandidateService', 'AuthenticationService', 'FlashService'];
-    function LoginController($location, UserService, $cookieStore,CandidateService, AuthenticationService, FlashService) {
+    LoginController.$inject = ['$window','$location', 'UserService', '$cookieStore','CandidateService', 'AuthenticationService', 'FlashService'];
+    function LoginController($window, $location, UserService, $cookieStore,CandidateService, AuthenticationService, FlashService) {
         var vm = this;
 
         vm.login = login;
@@ -112,7 +112,7 @@
                               vm.user.username + '&email=' +
                               vm.user.email + '&phone=' +
                               vm.user.mobile + '&productinfo=' +
-                              vm.payment.productinfo + "&surl=https://examhans.com/payment/success.php&furl=https://examhans.com/payment/failure.php";
+                              vm.plans[vm.user.buy_plan] + "&surl=https://examhans.com/payment/success.php&furl=https://examhans.com/payment/failure.php";
 
 
 

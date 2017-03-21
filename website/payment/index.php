@@ -113,7 +113,6 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
 <br/>
 <?php if($formError) { ?>
 
-    <span style="color:red">Please fill all mandatory fields.</span>
     <br/>
     <br/>
 <?php } ?>
@@ -126,27 +125,21 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
             <td><b>Wait Processing .......</b></td>
         </tr>
         <tr>
-            <td>Amount: </td>
+
             <td><input name="amount" type="hidden" value="<?php echo (empty($posted['amount'])) ? '' : $posted['amount'] ?>" /></td>
-            <td>First Name: </td>
             <td><input name="firstname" type="hidden" id="firstname" value="<?php echo (empty($posted['firstname'])) ? '' : $posted['firstname']; ?>" /></td>
         </tr>
         <tr>
-            <td>Email: </td>
             <td><input name="email" type="hidden" id="email" value="<?php echo (empty($posted['email'])) ? '' : $posted['email']; ?>" /></td>
-            <td>Phone: </td>
             <td><input name="phone" type="hidden" value="<?php echo (empty($posted['phone'])) ? '' : $posted['phone']; ?>" /></td>
         </tr>
         <tr>
-            <td>Product Info: </td>
             <td colspan="3"><textarea type="hidden" name="productinfo"><?php echo (empty($posted['productinfo'])) ? '' : $posted['productinfo'] ?></textarea></td>
         </tr>
         <tr>
-            <td>Success URI: </td>
             <td colspan="3"><input type="hidden" name="surl" value="<?php echo (empty($posted['surl'])) ? '' : $posted['surl'] ?>" size="64" /></td>
         </tr>
         <tr>
-            <td>Failure URI: </td>
             <td colspan="3"><input type="hidden" name="furl" value="<?php echo (empty($posted['furl'])) ? '' : $posted['furl'] ?>" size="64" /></td>
         </tr>
 
