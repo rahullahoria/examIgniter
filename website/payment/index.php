@@ -40,9 +40,9 @@ $posted['txnid'] = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
 
 
 
-if(!empty($_POST)) {
+if(!empty($_GET)) {
     //print_r($_POST);
-    foreach($_POST as $key => $value) {
+    foreach($_GET as $key => $value) {
         $posted[$key] = $value;
 
     }
