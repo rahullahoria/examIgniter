@@ -109,7 +109,7 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
     </script>
 </head>
 <body onload="submitPayuForm()">
-<h2>PayU Form</h2>
+
 <br/>
 <?php if($formError) { ?>
 

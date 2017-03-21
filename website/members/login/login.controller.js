@@ -106,10 +106,11 @@
                   if (response.auth == "true") {
                       alert('Verified Successfully');
                       if(vm.user.enable_buy_plan){
+                         // console.log(response.user.username );
 
                           $window.location.href = "https://examhans.com/payment/index.php?amount="+
                               vm.plans[vm.user.buy_plan].price + '&firstname=' +
-                              vm.user.username + '&email=' +
+                              response.user.username + '&email=' +
                               vm.user.email + '&phone=' +
                               vm.user.mobile + '&productinfo=' +
                               vm.plans[vm.user.buy_plan] + "&surl=https://examhans.com/payment/success.php&furl=https://examhans.com/payment/failure.php";

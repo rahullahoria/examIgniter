@@ -4,7 +4,6 @@
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.view.html" afterPath="$PROJECT_DIR$/website/members/login/login.view.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/payment/index.php" afterPath="$PROJECT_DIR$/website/payment/index.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
@@ -93,8 +92,8 @@
       <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.413794">
-              <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+            <state vertical-scroll-proportion="-7.2413793">
+              <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -123,12 +122,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/payment/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28195488">
-              <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+            <state vertical-scroll-proportion="-0.4943609">
+              <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
               <folding>
-                <marker date="1490100726636" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
-                <marker date="1490100726636" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
-                <marker date="1490100726636" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
+                <marker date="1490101724172" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
+                <marker date="1490101724172" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
+                <marker date="1490101724172" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
               </folding>
             </state>
           </provider>
@@ -460,12 +459,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00129" summary="favicons">
-      <created>1488902492646</created>
-      <option name="number" value="00129" />
-      <option name="project" value="LOCAL" />
-      <updated>1488902492646</updated>
-    </task>
     <task id="LOCAL-00130" summary="favicons">
       <created>1488902734762</created>
       <option name="number" value="00130" />
@@ -754,7 +747,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490099931476</updated>
     </task>
-    <option name="localTasksCounter" value="178" />
+    <task id="LOCAL-00178" summary="favicons">
+      <created>1490100738251</created>
+      <option name="number" value="00178" />
+      <option name="project" value="LOCAL" />
+      <updated>1490100738251</updated>
+    </task>
+    <option name="localTasksCounter" value="179" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1183,20 +1182,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.413794">
-          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
+        <state vertical-scroll-proportion="-7.2413793">
+          <caret line="114" column="35" selection-start-line="114" selection-start-column="35" selection-end-line="114" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/payment/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28195488">
-          <caret line="115" column="4" selection-start-line="115" selection-start-column="4" selection-end-line="115" selection-end-column="4" />
+        <state vertical-scroll-proportion="-0.4943609">
+          <caret line="111" column="0" selection-start-line="111" selection-start-column="0" selection-end-line="111" selection-end-column="0" />
           <folding>
-            <marker date="1490100726636" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
-            <marker date="1490100726636" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
-            <marker date="1490100726636" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
+            <marker date="1490101724172" expanded="true" signature="767:873" placeholder="INSERT INTO `payments`... " />
+            <marker date="1490101724172" expanded="true" signature="767:970" placeholder="INSERT INTO `payments`... " />
+            <marker date="1490101724172" expanded="true" signature="767:998" placeholder="INSERT INTO `payments`... " />
           </folding>
         </state>
       </provider>
