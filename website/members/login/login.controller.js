@@ -106,6 +106,18 @@
                   if (response.auth == "true") {
                       alert('Verified Successfully');
                       if(vm.user.enable_buy_plan){
+                          vm.payment = {};
+                          vm.payment.amount = vm.plans[vm.user.buy_plan].price;
+                          vm.payment.firstname = vm.user.username;
+                          vm.payment.email = vm.user.email;
+                          vm.payment.phone = vm.user.mobile;
+                          vm.payment.productinfo = vm.plans[vm.user.buy_plan];
+                          vm.payment.surl = "https://examhans.com/payment/success.php";
+                          vm.payment.furl = "https://examhans.com/payment/failure.php";
+
+                          CandidateService.GetMoney(vm.payment);
+
+
 
 
                       }else {

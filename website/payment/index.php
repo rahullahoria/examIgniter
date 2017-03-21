@@ -1,21 +1,5 @@
 <?php
 
-function postOn($url,$arr){
-    $ch = curl_init();
-
-    curl_setopt($ch, CURLOPT_URL,$url);
-    curl_setopt($ch, CURLOPT_POST, 1);
-    curl_setopt($ch, CURLOPT_POSTFIELDS,
-        http_build_query($arr));
-
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-
-    $server_output = curl_exec ($ch);
-
-    curl_close ($ch);
-
-    return $server_output;
-}
 
 // Merchant key here as provided by Payu
 $MERCHANT_KEY = "itLYa9GO";
@@ -33,29 +17,30 @@ $posted = array();
 $posted['service_provider'] = "payu_paisa";
 $posted['key'] = $MERCHANT_KEY;
 $posted['txnid'] = substr(hash('sha256', mt_rand() . microtime()), 0, 20);
-$posted['amount'] = 10;
-$posted['firstname'] = "rahul";
-$posted['email'] = "test@test.com";
-$posted['phone'] = "9599075955";
-$posted['productinfo'] = "test";
-$posted['surl'] = "http://examhans.com/#s";
-$posted['furl'] = "http://examhans.com/#f";
 
-$hashSequence = "key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5|udf6|udf7|udf8|udf9|udf10";
-$hashVarsSeq = explode('|', $hashSequence);
-$hash_string = '';
-foreach($hashVarsSeq as $hash_var) {
-    $hash_string .= isset($posted[$hash_var]) ? $posted[$hash_var] : '';
-    $hash_string .= '|';
-}
-
-$hash_string .= $SALT;
-$hash = $posted['hash'] = strtolower(hash('sha512', $hash_string));
-
-//var_dump(postOn($PAYU_BASE_URL,$posted));
+/*
+ *
+ * if($input) {
 
 
-/*if(!empty($_POST)) {
+
+    $posted['amount'] = $input->amount;
+    $posted['firstname'] = $input->name;
+    $posted['email'] = $input->email;
+    $posted['phone'] = $input->mobile;
+    $posted['productinfo'] = $input->product;
+
+    $posted['surl'] = $input->surl;
+    $posted['furl'] = $input0>furl;
+
+    $sql = "INSERT INTO `payments`(`txnid`, `name`, `mobile`, `email`, `product`)
+              VALUES
+              ('".$posted['txnid']."','".$posted['firstname']."','".$posted['phone']."','".$posted['email']."','".$posted['productinfo']."')";
+}*/
+
+
+
+if(!empty($_POST)) {
     //print_r($_POST);
     foreach($_POST as $key => $value) {
         $posted[$key] = $value;
@@ -103,12 +88,12 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
 
 
         $hash = strtolower(hash('sha512', $hash_string));
-        $action = $PAYU_BASE_URL . '';
+       // $action = $PAYU_BASE_URL . '';
     }
 } elseif(!empty($posted['hash'])) {
     $hash = $posted['hash'];
-    $action = $PAYU_BASE_URL . '/_payment';
-}*/
+    //$action = $PAYU_BASE_URL . '/_payment';
+}
 ?>
 <html>
 <head>
@@ -138,31 +123,31 @@ if(empty($posted['hash']) && sizeof($posted) > 0) {
     <input type="hidden" name="txnid" value="<?php echo $txnid ?>" />
     <table>
         <tr>
-            <td><b>Mandatory Parameters</b></td>
+            <td><b>Wait Processing .......</b></td>
         </tr>
         <tr>
             <td>Amount: </td>
-            <td><input name="amount" value="<?php echo (empty($posted['amount'])) ? '' : $posted['amount'] ?>" /></td>
+            <td><input name="amount" type="hidden" value="<?php echo (empty($posted['amount'])) ? '' : $posted['amount'] ?>" /></td>
             <td>First Name: </td>
-            <td><input name="firstname" id="firstname" value="<?php echo (empty($posted['firstname'])) ? '' : $posted['firstname']; ?>" /></td>
+            <td><input name="firstname" type="hidden" id="firstname" value="<?php echo (empty($posted['firstname'])) ? '' : $posted['firstname']; ?>" /></td>
         </tr>
         <tr>
             <td>Email: </td>
-            <td><input name="email" id="email" value="<?php echo (empty($posted['email'])) ? '' : $posted['email']; ?>" /></td>
+            <td><input name="email" type="hidden" id="email" value="<?php echo (empty($posted['email'])) ? '' : $posted['email']; ?>" /></td>
             <td>Phone: </td>
-            <td><input name="phone" value="<?php echo (empty($posted['phone'])) ? '' : $posted['phone']; ?>" /></td>
+            <td><input name="phone" type="hidden" value="<?php echo (empty($posted['phone'])) ? '' : $posted['phone']; ?>" /></td>
         </tr>
         <tr>
             <td>Product Info: </td>
-            <td colspan="3"><textarea name="productinfo"><?php echo (empty($posted['productinfo'])) ? '' : $posted['productinfo'] ?></textarea></td>
+            <td colspan="3"><textarea type="hidden" name="productinfo"><?php echo (empty($posted['productinfo'])) ? '' : $posted['productinfo'] ?></textarea></td>
         </tr>
         <tr>
             <td>Success URI: </td>
-            <td colspan="3"><input name="surl" value="<?php echo (empty($posted['surl'])) ? '' : $posted['surl'] ?>" size="64" /></td>
+            <td colspan="3"><input type="hidden" name="surl" value="<?php echo (empty($posted['surl'])) ? '' : $posted['surl'] ?>" size="64" /></td>
         </tr>
         <tr>
             <td>Failure URI: </td>
-            <td colspan="3"><input name="furl" value="<?php echo (empty($posted['furl'])) ? '' : $posted['furl'] ?>" size="64" /></td>
+            <td colspan="3"><input type="hidden" name="furl" value="<?php echo (empty($posted['furl'])) ? '' : $posted['furl'] ?>" size="64" /></td>
         </tr>
 
         <tr>

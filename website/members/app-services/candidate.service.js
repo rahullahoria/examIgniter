@@ -28,11 +28,21 @@
         service.CheckOTP = CheckOTP;
         service.StartDemoTest = StartDemoTest;
         service.postAccount = postAccount;
+        service.GetMoney = GetMoney;
 
 
         return service;
 
 
+
+        function GetMoney(payment){
+            return $http({
+                method  : 'POST',
+                url     : 'https://examhans.com/payment/index.php',
+                data    : payment, //forms user object
+                headers : {'Content-Type': 'application/x-www-form-urlencoded'}
+            });
+        }
 
         function GetStatus(userMD5) {
             return $http
