@@ -39,7 +39,7 @@
             var form_data = new FormData();
 
             for ( var key in payment ) {
-                form_data.append(key, item[key]);
+                form_data.append(key, payment[key]);
             }
             return $http({
                 method  : 'POST',
