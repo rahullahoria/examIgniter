@@ -118,12 +118,12 @@
         }
 
         function AddRemark(userMd5, instance) {
-            return $http.post('http://api.wazir.shatkonlabs.com/feedbacks/1/examhans-'+userMd5, instance).then(handleSuccess, handleError('Error updating user'));
+            return $http.post('https://api.wazir.shatkonlabs.com/feedbacks/1/examhans-'+userMd5, instance).then(handleSuccess, handleError('Error updating user'));
         }
 
         function GetRemarks(userMd5) {
             return $http
-                .get('http://api.wazir.shatkonlabs.com/feedbacks/1/examhans-'+userMd5)
+                .get('https://api.wazir.shatkonlabs.com/feedbacks/1/examhans-'+userMd5)
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 
