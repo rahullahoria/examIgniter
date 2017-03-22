@@ -158,23 +158,23 @@
                         <form role="form" ng-submit="vm.reg()" role="form">
                             <fieldset>
                                 <div class="form-group" ng-show="vm.user.enable_buy_plan" ng-class="{ 'has-error': form.username.$dirty && form.username.$error.required }">
-                                    <input class="form-control" placeholder="Full Name" type="text" name="username" id="reg_username" ng-model="vm.user.reg_username" required autofocus>
+                                    <input class="form-control" placeholder="Full Name" type="text" name="username" id="reg_username" ng-model="vm.user.reg_username"  >
                                     <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Username Name is required</span>
                                 </div>
                                 <div class="form-group" ng-show="vm.user.enable_buy_plan" ng-class="{ 'has-error': form.email_reg.$dirty && form.email_reg.$error.required }">
-                                    <input class="form-control" placeholder="E-mail" type="text" name="email" id="email_reg" ng-model="vm.user.email" required >
+                                    <input class="form-control" placeholder="E-mail" type="text" name="email" id="email_reg" ng-model="vm.user.email"  >
                                     <span ng-show="form.username.$dirty && form.username.$error.required" class="help-block">Email is required</span>
                                 </div>
 
                                 <div class="form-group" ng-class="{ 'has-error': form.mobile.$dirty && form.mobile.$error.required }">
-                                    <input class="form-control" placeholder="Mobile" type="text" name="mobile" id="mobile" ng-model="vm.user.mobile" required autofocus>
+                                    <input class="form-control" placeholder="Mobile" type="text" name="mobile" id="mobile" ng-model="vm.user.mobile" required >
                                     <span ng-show="form.mobile.$dirty && form.mobile.$error.required" class="help-block">Mobile No. Name is required</span>
                                 </div>
 
 
 
                                 <div class="form-group" ng-show="vm.user.enable_buy_plan" ng-class="{ 'has-error': form.password_reg.$dirty && form.password.$error.required }">
-                                    <input type="password" name="password" placeholder="Password" id="password_reg" class="form-control" ng-model="vm.user.reg_password" required />
+                                    <input type="password" name="password" placeholder="Password" id="password_reg" class="form-control" ng-model="vm.user.reg_password"  />
                                     <span ng-show="form.password.$dirty && form.password.$error.required" class="help-block">Password is required</span>
                                 </div>
                                 <div class="form-group" ng-class="{ 'has-error': form.exam_id.$dirty && form.exam_id.$error.required }">
@@ -191,7 +191,7 @@
                                 </div>
 
                                 <div class="form-group" ng-show="vm.user.enable_buy_plan" ng-class="{ 'has-error': form.exam_id.$dirty && form.exam_id.$error.required }">
-                                    <select name="plan_id"  id="plan_id" class="form-control" ng-model="vm.user.buy_plan" required>
+                                    <select name="plan_id"  id="plan_id" class="form-control" ng-model="vm.user.buy_plan" >
                                         <option value="" selected>Select Plan</option>
                                         <option value="s" >Silver Plan</option>
                                         <option value="g" >Gold Plan</option>
