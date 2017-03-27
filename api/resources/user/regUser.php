@@ -176,6 +176,8 @@ function regUser(){
                 //var_dump($response1);die();
 
                 $requestJson->md5 = md5($requestJson->reg_username);
+
+                var_dump($requestJson);die();
                 $stmt = $db->prepare($sql);
 
                 $stmt->bindParam("username", $requestJson->reg_username);
