@@ -67,9 +67,9 @@ function regUser(){
 
             //demo done, tyring to by.
 
-            var_dump($userObjs);die();
+            //var_dump($userObjs);die();
 
-            if(count($userObjs) > 0){
+            if(count($userObjs) >= 1){
 
                 if(!$demo){
                     $stmt = $db->prepare($getUserId);
