@@ -29,17 +29,17 @@
       <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.08377896">
-              <caret line="71" column="30" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="30" />
+            <state vertical-scroll-proportion="0.2976827">
+              <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
               <folding>
-                <element signature="e#2262#8255#0#PHP" expanded="false" />
-                <marker date="1490611509704" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
-                <marker date="1490611509704" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
-                <marker date="1490611509704" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
-                <marker date="1490611509704" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
-                <marker date="1490611509704" expanded="true" signature="823:897" placeholder="update users... " />
-                <marker date="1490611509704" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
-                <marker date="1490611509704" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
+                <element signature="e#2262#8256#0#PHP" expanded="false" />
+                <marker date="1490611589628" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
+                <marker date="1490611589628" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
+                <marker date="1490611589628" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
+                <marker date="1490611589628" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
+                <marker date="1490611589628" expanded="true" signature="823:897" placeholder="update users... " />
+                <marker date="1490611589628" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
+                <marker date="1490611589628" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
               </folding>
             </state>
           </provider>
@@ -421,12 +421,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00139" summary="favicons">
-      <created>1488972634684</created>
-      <option name="number" value="00139" />
-      <option name="project" value="LOCAL" />
-      <updated>1488972634684</updated>
-    </task>
     <task id="LOCAL-00140" summary="favicons">
       <created>1488972881159</created>
       <option name="number" value="00140" />
@@ -715,7 +709,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490611419079</updated>
     </task>
-    <option name="localTasksCounter" value="188" />
+    <task id="LOCAL-00188" summary="favicons">
+      <created>1490611518201</created>
+      <option name="number" value="00188" />
+      <option name="project" value="LOCAL" />
+      <updated>1490611518201</updated>
+    </task>
+    <option name="localTasksCounter" value="189" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1165,17 +1165,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.08377896">
-          <caret line="71" column="30" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="30" />
+        <state vertical-scroll-proportion="0.2976827">
+          <caret line="162" column="45" selection-start-line="162" selection-start-column="45" selection-end-line="162" selection-end-column="45" />
           <folding>
-            <element signature="e#2262#8255#0#PHP" expanded="false" />
-            <marker date="1490611509704" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
-            <marker date="1490611509704" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
-            <marker date="1490611509704" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
-            <marker date="1490611509704" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
-            <marker date="1490611509704" expanded="true" signature="823:897" placeholder="update users... " />
-            <marker date="1490611509704" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
-            <marker date="1490611509704" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
+            <element signature="e#2262#8256#0#PHP" expanded="false" />
+            <marker date="1490611589628" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
+            <marker date="1490611589628" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
+            <marker date="1490611589628" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
+            <marker date="1490611589628" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
+            <marker date="1490611589628" expanded="true" signature="823:897" placeholder="update users... " />
+            <marker date="1490611589628" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
+            <marker date="1490611589628" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
           </folding>
         </state>
       </provider>
