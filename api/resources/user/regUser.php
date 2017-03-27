@@ -67,7 +67,7 @@ function regUser(){
 
             //demo done, tyring to by.
 
-            var_dump($demo);die();
+            var_dump($demo,count($userObjs));die();
 
             if(count($userObjs) >= 1){
 
