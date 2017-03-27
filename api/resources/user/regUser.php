@@ -72,7 +72,7 @@ function regUser(){
             if(count($userObjs) >= 1){
 
                 if(!$demo){
-                    var_dump($demo,count($userObjs));die();
+
                     $stmt = $db->prepare($getUserId);
 
                     $stmt->bindParam("mobile", $requestJson->ref_username);
@@ -88,7 +88,7 @@ function regUser(){
 
                     } else
                         $refUserID = $refIdArr[0]->id;
-
+                    var_dump($requestJson,$refUserID);die();
                     $stmt = $db->prepare($sqlUpdate);
 
                     $stmt->bindParam("username", $requestJson->reg_username);
