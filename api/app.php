@@ -38,7 +38,7 @@ $app->get('/user/:userMd5/test/:testId/result', 'getTestResult');
 $app->post('/user/:userMd5/bank_account', 'addBankAccount');
 
 $app->post('/auth', 'userAuth');
-$app->post('/auth', 'userAuth');
+
 $app->post('/user', 'regUser');
 
 $app->get('/users', 'getAllUsers');

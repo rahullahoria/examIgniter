@@ -18,7 +18,7 @@ function userAuth(){
                 FROM users as a
                 inner join exams as b
                  WHERE a.exam_id = b.id
-                 and a.username =:username
+                 and a.mobile =:mobile
                  and a.password=:password
                   and a.amount != 0;";
 
@@ -27,7 +27,7 @@ function userAuth(){
         $db = getDB();
         $stmt = $db->prepare($sql);
 
-        $stmt->bindParam("username", $user->username);
+        $stmt->bindParam("mobile", $user->mobile);
         $stmt->bindParam("password", $user->password);
 
        // var_dump($user);die();
