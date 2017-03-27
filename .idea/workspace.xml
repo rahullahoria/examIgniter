@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/members/login/login.controller.js" afterPath="$PROJECT_DIR$/website/members/login/login.controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/regUser.php" afterPath="$PROJECT_DIR$/api/resources/user/regUser.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -26,20 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="regUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.416667">
-              <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
+            <state vertical-scroll-proportion="0.42959002">
+              <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
               <folding>
-                <element signature="e#2306#5989#0#PHP" expanded="false" />
-                <marker date="1490611983292" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
-                <marker date="1490611983292" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
-                <marker date="1490611983292" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
-                <marker date="1490611983292" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
-                <marker date="1490611983292" expanded="true" signature="823:897" placeholder="update users... " />
-                <marker date="1490611983292" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
-                <marker date="1490611983292" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
+                <marker date="1490612410456" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
+                <marker date="1490612410456" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
+                <marker date="1490612410456" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
+                <marker date="1490612410456" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
+                <marker date="1490612410456" expanded="true" signature="823:897" placeholder="update users... " />
+                <marker date="1490612410456" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
+                <marker date="1490612410456" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
               </folding>
             </state>
           </provider>
@@ -70,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="login.controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.33333334">
+            <state vertical-scroll-proportion="0.0">
               <caret line="13" column="102" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
               <folding />
             </state>
@@ -216,8 +215,8 @@
         <option value="$PROJECT_DIR$/website/members/login/login.view.html" />
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/api/resources/auth/postUserAuth.php" />
-        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/website/members/login/login.controller.js" />
+        <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
       </list>
     </option>
   </component>
@@ -332,6 +331,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="examIgniter" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -393,12 +446,6 @@
       <created>1487582015062</created>
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
-    </task>
-    <task id="LOCAL-00143" summary="favicons">
-      <created>1488976389054</created>
-      <option name="number" value="00143" />
-      <option name="project" value="LOCAL" />
-      <updated>1488976389054</updated>
     </task>
     <task id="LOCAL-00144" summary="favicons">
       <created>1488976524721</created>
@@ -688,7 +735,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490611992179</updated>
     </task>
-    <option name="localTasksCounter" value="192" />
+    <task id="LOCAL-00192" summary="favicons">
+      <created>1490612229693</created>
+      <option name="number" value="00192" />
+      <option name="project" value="LOCAL" />
+      <updated>1490612229693</updated>
+    </task>
+    <option name="localTasksCounter" value="193" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1128,28 +1181,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
+    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.416667">
-          <caret line="134" column="49" selection-start-line="134" selection-start-column="49" selection-end-line="134" selection-end-column="49" />
-          <folding>
-            <element signature="e#2306#5989#0#PHP" expanded="false" />
-            <marker date="1490611983292" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
-            <marker date="1490611983292" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
-            <marker date="1490611983292" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
-            <marker date="1490611983292" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
-            <marker date="1490611983292" expanded="true" signature="823:897" placeholder="update users... " />
-            <marker date="1490611983292" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
-            <marker date="1490611983292" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
-          </folding>
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="102" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/members/login/login.controller.js">
+    <entry file="file://$PROJECT_DIR$/api/resources/user/regUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="13" column="102" selection-start-line="13" selection-start-column="102" selection-end-line="13" selection-end-column="102" />
-          <folding />
+        <state vertical-scroll-proportion="0.42959002">
+          <caret line="69" column="26" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
+          <folding>
+            <marker date="1490612410456" expanded="true" signature="240:278" placeholder="SELECT id FR... users" />
+            <marker date="1490612410456" expanded="true" signature="240:284" placeholder="SELECT id FR... users" />
+            <marker date="1490612410456" expanded="true" signature="300:497" placeholder="INSERT INTO `users`... " />
+            <marker date="1490612410456" expanded="true" signature="519:800" placeholder="UPDATE `user... " />
+            <marker date="1490612410456" expanded="true" signature="823:897" placeholder="update users... " />
+            <marker date="1490612410456" expanded="true" signature="927:1355" placeholder="SELECT a.`id... users" />
+            <marker date="1490612410456" expanded="true" signature="927:1374" placeholder="SELECT a.`id... users" />
+          </folding>
         </state>
       </provider>
     </entry>
