@@ -22,7 +22,7 @@ function regUser(){
                       `email`=:email,
                       `ref_user_id`=:ref_user_id,
                       `password`=:password,
-                      `exam_id`=:exam_id,
+                      `exam_id`=:exam_id
                       WHERE mobile = :mobile";
 
 
