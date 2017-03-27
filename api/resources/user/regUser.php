@@ -130,7 +130,9 @@ function regUser(){
                     echo '{"error":{"text":"You have already done demo test"}}';
                 }else
                 //sms_verified
-                if($userObjs[0]->sms_verified == 'no' || ($userObjs[0]->amount_made > 0 || $userObjs[0]->amount_made != null) ){
+                if(
+                    $userObjs[0]->sms_verified == 'no' ||
+                    ($userObjs[0]->amount_made == 0 || $userObjs[0]->amount_made == null) ){
                     $requestJson->id = $userObjs[0]->id;
                     $requestJson->md5 = $userObjs[0]->md5;
 
