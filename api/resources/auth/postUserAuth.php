@@ -27,7 +27,7 @@ function userAuth(){
         $db = getDB();
         $stmt = $db->prepare($sql);
 
-        $stmt->bindParam("mobile", $user->mobile);
+        $stmt->bindParam("mobile", $user->username);
         $stmt->bindParam("password", $user->password);
 
        // var_dump($user);die();
