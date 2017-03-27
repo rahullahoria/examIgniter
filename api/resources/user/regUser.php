@@ -160,10 +160,10 @@ function regUser(){
 
             }else {
 
-                var_dump($requestJson);die();
+                //var_dump($requestJson);die();
                 $stmt = $db->prepare($getUserId);
 
-                $stmt->bindParam("username", $requestJson->ref_username);
+                $stmt->bindParam("mobile", $requestJson->ref_username);
 
                 $stmt->execute();
                 $refIdArr = $stmt->fetchAll(PDO::FETCH_OBJ);
