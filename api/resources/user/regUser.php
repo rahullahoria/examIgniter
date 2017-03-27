@@ -232,7 +232,7 @@ function regUser(){
         $flag = false;
         foreach($errors as $error){
             if (strpos($e->getMessage(), $error) !== false) {
-                echo '{"error":{"text":"' . $error.$errorMessage . '"}}';
+                echo '{"error":{"text":"' . $error.$errorMessage.'\nDetail: '.$e->getMessage() . '"}}';
                 $flag = true;
             }
 
