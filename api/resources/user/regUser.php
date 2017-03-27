@@ -88,7 +88,7 @@ function regUser(){
 
                     } else
                         $refUserID = $refIdArr[0]->id;
-                    var_dump($requestJson,$refUserID);die();
+                    //var_dump($requestJson,$refUserID);die();
                     $stmt = $db->prepare($sqlUpdate);
 
                     $stmt->bindParam("username", $requestJson->reg_username);
