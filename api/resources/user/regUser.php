@@ -67,11 +67,12 @@ function regUser(){
 
             //demo done, tyring to by.
 
-            var_dump($demo,count($userObjs));die();
+
 
             if(count($userObjs) >= 1){
 
                 if(!$demo){
+                    var_dump($demo,count($userObjs));die();
                     $stmt = $db->prepare($getUserId);
 
                     $stmt->bindParam("mobile", $requestJson->ref_username);
