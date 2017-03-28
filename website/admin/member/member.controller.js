@@ -136,7 +136,7 @@
         }
 
         vm.askForRef = function(mobile){
-            var text = "Hi!\n Share Demo Link bellow with you friends\nGet Free Silver Membership Plan\n";
+            var text = "Hi!\nShare Demo Link bellow with your friends\nGet Free Silver Membership Plan\n";
             text += "https://examhans.com/members/#/?rt=demo&ref_user="+mobile;
 
             CandidateService.SendSMS(mobile,text).then(function (response) {
