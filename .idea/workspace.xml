@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/api/resources/channels/sendSMS.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app.php" afterPath="$PROJECT_DIR$/api/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/index.php" afterPath="$PROJECT_DIR$/api/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/user/getAllUsers.php" afterPath="$PROJECT_DIR$/api/resources/user/getAllUsers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.controller.js" afterPath="$PROJECT_DIR$/website/admin/member/member.controller.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.view.html" afterPath="$PROJECT_DIR$/website/admin/member/member.view.html" />
     </list>
@@ -73,10 +68,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="candidate.service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="candidate.service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.30769232">
+            <state vertical-scroll-proportion="0.0">
               <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
               <folding />
             </state>
@@ -100,7 +95,7 @@
         <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-19.625">
-              <caret line="172" column="97" selection-start-line="172" selection-start-column="97" selection-end-line="172" selection-end-column="97" />
+              <caret line="172" column="104" selection-start-line="172" selection-start-column="104" selection-end-line="172" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -119,11 +114,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="member.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="member.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="36" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.18884893">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -210,13 +205,13 @@
         <option value="$PROJECT_DIR$/api/resources/auth/postUserAuth.php" />
         <option value="$PROJECT_DIR$/api/resources/user/regUser.php" />
         <option value="$PROJECT_DIR$/api/resources/user/getUserStatus.php" />
-        <option value="$PROJECT_DIR$/website/admin/member/member.controller.js" />
         <option value="$PROJECT_DIR$/api/resources/user/getAllUsers.php" />
-        <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
         <option value="$PROJECT_DIR$/api/resources/channels/sendSMS.php" />
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/api/index.php" />
         <option value="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
+        <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
+        <option value="$PROJECT_DIR$/website/admin/member/member.controller.js" />
       </list>
     </option>
   </component>
@@ -513,12 +508,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00159" summary="favicons">
-      <created>1489749559327</created>
-      <option name="number" value="00159" />
-      <option name="project" value="LOCAL" />
-      <updated>1489749559328</updated>
-    </task>
     <task id="LOCAL-00160" summary="favicons">
       <created>1489749834116</created>
       <option name="number" value="00160" />
@@ -807,7 +796,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490697755242</updated>
     </task>
-    <option name="localTasksCounter" value="208" />
+    <task id="LOCAL-00208" summary="favicons">
+      <created>1490699285068</created>
+      <option name="number" value="00208" />
+      <option name="project" value="LOCAL" />
+      <updated>1490699285069</updated>
+    </task>
+    <option name="localTasksCounter" value="209" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1187,14 +1182,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.625">
-          <caret line="172" column="97" selection-start-line="172" selection-start-column="97" selection-end-line="172" selection-end-column="97" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/checkOtp.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1259,18 +1246,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
+    <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="36" selection-start-line="137" selection-start-column="29" selection-end-line="137" selection-end-column="36" />
+          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin/app-services/candidate.service.js">
+    <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.30769232">
-          <caret line="34" column="33" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
+        <state vertical-scroll-proportion="-19.625">
+          <caret line="172" column="104" selection-start-line="172" selection-start-column="104" selection-end-line="172" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18884893">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
           <folding />
         </state>
       </provider>
