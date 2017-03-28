@@ -14,16 +14,16 @@ function getAllUsers(){
 
     switch($type){
         case 'nd':
-            $con = "c.amount_made = null AND a.amount = 0";
+            $con = "c.amount_made is null AND a.amount = 0";
             break;
         case 'd':
-            $con = "c.amount_made != null AND a.amount = 0";
+            $con = "c.amount_made is not null AND a.amount = 0";
             break;
         case 'p':
             $con = " a.amount != 0";
             break;
         default:
-            $con = "c.amount_made = null AND a.amount = 0";
+            $con = "c.amount_made is null AND a.amount = 0";
     }
     $sql = "SELECT
                 a.`id`, a.`username`, a.`mobile`, a.`ref_user_id`, a.`md5`, a.`creation`, a.`amount`, a.`exam_id`,

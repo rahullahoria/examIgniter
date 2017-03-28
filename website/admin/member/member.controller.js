@@ -105,6 +105,8 @@
 
             CandidateService.SendSMS(mobile,text).then(function (response) {
                 alert("SMS sent: "+text);
+                vm.user.feedback = 'SMS sent as : ' + text;
+                vm.writeAboutUser({username:mobile});
             });
 
         }
