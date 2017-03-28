@@ -9,7 +9,7 @@
     function MemberController(UserService, $cookieStore, CandidateService,  $rootScope, FlashService,$location) {
         var vm = this;
 
-        vm.user = null;
+        vm.user = {};
         vm.inUser = null;
         vm.allUsers = [];
         vm.deleteUser = deleteUser;
@@ -110,6 +110,19 @@
             });
 
         }
+
+        vm.inviteForTest = function(mobile){
+            var text = "Hi! You have not completed your demo test.\n Earn You 150Rs Now.\n Follow Link\n";
+            text += "https://examhans.com/members/#/?rt=demo";
+
+            CandidateService.SendSMS(mobile,text).then(function (response) {
+                alert("SMS sent: "+text);
+                vm.user.feedback = 'SMS sent as : ' + text;
+                vm.writeAboutUser({username:mobile});
+            });
+
+        }
+
 
 
 
