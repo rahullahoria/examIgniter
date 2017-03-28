@@ -112,7 +112,7 @@
         }
 
         vm.inviteForTest = function(mobile){
-            var text = "Hi! You have not completed your demo test.\n Earn You 150Rs Now.\n Follow Link\n";
+            var text = "Hi! You have not completed your demo test.\n Earn Your 150Rs Now.\n Follow Link\n";
             text += "https://examhans.com/members/#/?rt=demo";
 
             CandidateService.SendSMS(mobile,text).then(function (response) {
