@@ -218,9 +218,9 @@
                         <h4>Silver Plan</h4><br>
 
                         <p>400<b> special Questions</b> </p>
-                        <p>Earn<b> 3 Rs </b>per Questions</p>
-                        <p>Earn Back <b>1.2k Rs</b></p>
-                        <p class="text-muted">Cost <b>1k Rs</b></p>
+                        <p>Earn<b> 5 Rs </b>per Questions</p>
+                        <p>Earn Back <b>2K Rs</b></p>
+                        <p class="text-muted">Cost <b>1K Rs</b></p>
 
                         <a href="members/#/?rt=buy&bp=s" class="page-scroll btn btn-xl"> Buy Now </a>
                     </div>
@@ -231,9 +231,9 @@
                         <h4>Gold Plan</h4><br>
 
                         <p>800<b> special Questions</b> </p>
-                        <p>Earn<b> 4 Rs </b>per Questions</p>
-                        <p>Earn Back <b>3.2k Rs</b></p>
-                        <p class="text-muted">Cost <b>2k Rs</b></p>
+                        <p>Earn<b> 5 &#8377; </b>per Questions</p>
+                        <p>Earn Back <b>4K &#8377;</b></p>
+                        <p class="text-muted">Cost <b>2K &#8377;</b></p>
 
                         <a href="members/#/?rt=buy&bp=g" class="page-scroll btn btn-xl"> Buy Now </a>
                     </div>
@@ -244,9 +244,9 @@
 
                         <h4>Platinum Plan</h4><br>
                         <p>2000<b> special Questions</b> </p>
-                        <p>Earn<b> 5 Rs </b>per Questions</p>
-                        <p>Earn Back <b>10k Rs</b></p>
-                        <p class="text-muted">Cost <b>5k Rs</b></p>
+                        <p>Earn<b> 5 &#8377; </b>per Questions</p>
+                        <p>Earn Back <b>10K &#8377;</b></p>
+                        <p class="text-muted">Cost <b>5K &#8377;</b></p>
 
                         <a href="members/#/?rt=buy&bp=p" class="page-scroll btn btn-xl"> Buy Now </a>
 

@@ -123,6 +123,18 @@
 
         }
 
+        vm.inviteForTest = function(mobile){
+            var text = "Congratulation for Earning X\n Keep learning and earning\n Buy Our Premium Plans\nCheck @\n";
+            text += "https://examhans.com/#plans";
+
+            CandidateService.SendSMS(mobile,text).then(function (response) {
+                alert("SMS sent: "+text);
+                vm.user.feedback = 'SMS sent as : ' + text;
+                vm.writeAboutUser({username:mobile});
+            });
+
+        }
+
 
 
 

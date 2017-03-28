@@ -136,7 +136,7 @@
                                 <th>IFSC <i class="fa fa-coffee  fa-fw"></i></th>
                                 <th>Amount Made <i class="fa fa-coffee  fa-fw"></i></th>
                                 <th>Creation <i class="fa fa-coffee  fa-fw"></i></th>
-                                <th>FB SMS <i class="fa fa-coffee  fa-fw"></i></th>
+                                <th>OP<i class="fa fa-coffee  fa-fw"></i></th>
 
                             </tr>
                             </thead>
@@ -174,8 +174,10 @@
                                     {{ user.creation}}
                                 </td>
                                 <td>
-                                    <button ng-click="vm.inviteForTest(user.mobile)" ng-show="vm.loadType == 'nd'">Invite Again</button>
-                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" ng-show="vm.loadType == 'd' || vm.loadType == 'p'">Send</button>
+                                    <!--ng-show="vm.loadType == 'nd'" ng-show="vm.loadType == 'd' || vm.loadType == 'p'" -->
+                                    <button ng-click="vm.inviteForTest(user.mobile)" >Invite Again</button>
+                                    <button ng-click="vm.askToBuy(user.mobile)" >Ask To Buy</button>
+                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" >Send</button>
 
                                 </td>
 
