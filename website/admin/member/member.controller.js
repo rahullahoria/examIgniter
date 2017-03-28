@@ -73,7 +73,7 @@
 
         vm.userDetails = function(index){
             vm.loadUserId = index;
-            CandidateService.GetRemarks(vm.users[vm.loadUserId].username)
+            CandidateService.GetRemarks(vm.users[vm.loadUserId].mobile)
                 .then(function (response) {
                     vm.comments = response.feedbacks;
 

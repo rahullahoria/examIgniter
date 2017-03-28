@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.view.html" afterPath="$PROJECT_DIR$/website/admin/member/member.view.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.controller.js" afterPath="$PROJECT_DIR$/website/admin/member/member.controller.js" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -121,21 +121,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="member.controller.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="member.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.965517">
-              <caret line="114" column="102" selection-start-line="114" selection-start-column="102" selection-end-line="114" selection-end-column="102" />
+            <state vertical-scroll-proportion="0.38669065">
+              <caret line="75" column="70" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="member.view.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="member.view.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.4438503">
-              <caret line="177" column="149" selection-start-line="177" selection-start-column="149" selection-end-line="177" selection-end-column="149" />
+            <state vertical-scroll-proportion="-5.625">
+              <caret line="147" column="63" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -205,8 +205,8 @@
         <option value="$PROJECT_DIR$/api/app.php" />
         <option value="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
         <option value="$PROJECT_DIR$/api/resources/user/getAllUsers.php" />
-        <option value="$PROJECT_DIR$/website/admin/member/member.controller.js" />
         <option value="$PROJECT_DIR$/website/admin/member/member.view.html" />
+        <option value="$PROJECT_DIR$/website/admin/member/member.controller.js" />
       </list>
     </option>
   </component>
@@ -587,12 +587,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00167" summary="favicons">
-      <created>1489844377808</created>
-      <option name="number" value="00167" />
-      <option name="project" value="LOCAL" />
-      <updated>1489844377808</updated>
-    </task>
     <task id="LOCAL-00168" summary="favicons">
       <created>1490009849184</created>
       <option name="number" value="00168" />
@@ -881,7 +875,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490704566218</updated>
     </task>
-    <option name="localTasksCounter" value="216" />
+    <task id="LOCAL-00216" summary="favicons">
+      <created>1490704667280</created>
+      <option name="number" value="00216" />
+      <option name="project" value="LOCAL" />
+      <updated>1490704667281</updated>
+    </task>
+    <option name="localTasksCounter" value="217" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1338,18 +1338,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
+    <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.965517">
-          <caret line="114" column="102" selection-start-line="114" selection-start-column="102" selection-end-line="114" selection-end-column="102" />
+        <state vertical-scroll-proportion="-5.625">
+          <caret line="147" column="63" selection-start-line="147" selection-start-column="52" selection-end-line="147" selection-end-column="63" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin/member/member.view.html">
+    <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.4438503">
-          <caret line="177" column="149" selection-start-line="177" selection-start-column="149" selection-end-line="177" selection-end-column="149" />
+        <state vertical-scroll-proportion="0.38669065">
+          <caret line="75" column="70" selection-start-line="75" selection-start-column="70" selection-end-line="75" selection-end-column="70" />
           <folding />
         </state>
       </provider>
