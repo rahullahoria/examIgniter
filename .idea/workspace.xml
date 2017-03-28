@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.controller.js" afterPath="$PROJECT_DIR$/website/admin/member/member.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.view.html" afterPath="$PROJECT_DIR$/website/admin/member/member.view.html" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -123,7 +121,7 @@
       <file leaf-file-name="member.controller.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3794964">
+            <state vertical-scroll-proportion="-0.2679856">
               <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
               <folding />
             </state>
@@ -604,12 +602,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00174" summary="favicons">
-      <created>1490097879233</created>
-      <option name="number" value="00174" />
-      <option name="project" value="LOCAL" />
-      <updated>1490097879233</updated>
-    </task>
     <task id="LOCAL-00175" summary="favicons">
       <created>1490098794765</created>
       <option name="number" value="00175" />
@@ -898,7 +890,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490706480696</updated>
     </task>
-    <option name="localTasksCounter" value="223" />
+    <task id="LOCAL-00223" summary="favicons">
+      <created>1490708141430</created>
+      <option name="number" value="00223" />
+      <option name="project" value="LOCAL" />
+      <updated>1490708141431</updated>
+    </task>
+    <option name="localTasksCounter" value="224" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1365,7 +1363,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/admin/member/member.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3794964">
+        <state vertical-scroll-proportion="-0.2679856">
           <caret line="102" column="72" selection-start-line="102" selection-start-column="72" selection-end-line="102" selection-end-column="72" />
           <folding />
         </state>
