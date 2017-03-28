@@ -87,8 +87,8 @@ function getUserStatus($userMd5){
             $stmt->execute();
             $topics = $stmt->fetchAll(PDO::FETCH_OBJ);
             //var_dump($topics);die();
-            $no_of_questions = ceil(($perSubjectAmount/2.5));
-            var_dump($no_of_questions);
+            $no_of_questions = ceil((($perSubjectAmount/count($topics))/2.5));
+            //var_dump($no_of_questions);
             foreach($topics as $topic){
                 $topic->topic_name = htmlspecialchars($topic->topic_name);
                 $topic->no_of_question = $no_of_questions;
