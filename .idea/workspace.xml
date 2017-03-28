@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.controller.js" afterPath="$PROJECT_DIR$/website/admin/member/member.controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.view.html" afterPath="$PROJECT_DIR$/website/admin/member/member.view.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/main-web/index.php" afterPath="$PROJECT_DIR$/website/main-web/index.php" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -605,12 +602,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00170" summary="favicons">
-      <created>1490016770065</created>
-      <option name="number" value="00170" />
-      <option name="project" value="LOCAL" />
-      <updated>1490016770065</updated>
-    </task>
     <task id="LOCAL-00171" summary="favicons">
       <created>1490017049741</created>
       <option name="number" value="00171" />
@@ -899,7 +890,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490705725222</updated>
     </task>
-    <option name="localTasksCounter" value="219" />
+    <task id="LOCAL-00219" summary="favicons">
+      <created>1490706122206</created>
+      <option name="number" value="00219" />
+      <option name="project" value="LOCAL" />
+      <updated>1490706122206</updated>
+    </task>
+    <option name="localTasksCounter" value="220" />
     <servers />
   </component>
   <component name="ToolWindowManager">
