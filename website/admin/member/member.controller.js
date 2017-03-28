@@ -34,6 +34,9 @@
 
         vm.currentShow = 0;
 
+        //nd/d/p
+        vm.loadType = ($location.search().t != undefined)?$location.search().t:'nd';
+
         initController();
 
         function initController() {
@@ -46,15 +49,7 @@
 
         }
 
-        vm.setCurrentMon = function(){
-            //console.log("i am in setCurrentMonth",vm.currentMonthIndex);
 
-            vm.whichMonth.name = vm.threeMonths[vm.currentMonthIndex].name;
-            vm.whichMonth.num = vm.threeMonths[vm.currentMonthIndex].num;
-            console.log("i am in setCurrentMonth",vm.whichMonth);
-            loadToCallCandidates();
-
-        }
 
 
 
@@ -74,34 +69,7 @@
         }
 
 
-        vm.startTest = function(topicId,noOfQuestion,testId,topicName,subjectName,atomic){
-            console.log(topicId);
-            if(testId)
-                $location.path('/test/'+testId+'/result');
-            else
-                CandidateService.StartTest(vm.inUser.md5,
-                        {
-                        "topic_id":topicId,
-                        "no_of_question":noOfQuestion,
-                            "atomic":atomic
-                         }
-                    )
-                    .then(function (response) {
-                        vm.subjects = response.response;
 
-                        console.log('member',vm.subjects);
-
-                        $cookieStore.put('tests', JSON.stringify(vm.subjects));
-                        $cookieStore.put('topic_name', topicName);
-                        $cookieStore.put('subject_name', subjectName);
-
-                        $location.path('/test');
-                    });
-
-
-
-
-        }
 
         vm.userDetails = function(index){
             vm.loadUserId = index;
@@ -155,7 +123,7 @@
         function loadToCallCandidates(){
             vm.dataLoading = true;
 
-            CandidateService.GetStatus()
+            CandidateService.GetStatus(vm.loadType)
                 .then(function (response) {
                     vm.users = response.users;
 

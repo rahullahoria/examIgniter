@@ -39,9 +39,9 @@
 
         ///channel/sms/:mobile/text/:text
 
-        function GetStatus() {
+        function GetStatus(type) {
             return $http
-                .get('https://api.examhans.com/users')
+                .get('https://api.examhans.com/users?type='+type)
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

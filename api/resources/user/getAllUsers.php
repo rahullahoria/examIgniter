@@ -7,13 +7,35 @@
  */
 
 function getAllUsers(){
+
+    global $app;
+
+    $type = $app->request()->get('type');
+
+    switch($type){
+        case 'nd':
+            $con = "c.amount_made = null AND a.amount = 0";
+            break;
+        case 'd':
+            $con = "c.amount_made != null AND a.amount = 0";
+            break;
+        case 'p':
+            $con = " a.amount != 0";
+            break;
+        default:
+            $con = "c.amount_made = null AND a.amount = 0";
+    }
     $sql = "SELECT
                 a.`id`, a.`username`, a.`mobile`, a.`ref_user_id`, a.`md5`, a.`creation`, a.`amount`, a.`exam_id`,
                     a.`sms_verified`, b.`account_holder_name`, b.`account_number`, b.`ifsc_code`, c.amount_made, c.id as test_id
                     FROM  `users` as a left join
                     bank_accounts as b on a.id = b.user_id left join
                     tests as c on a.id = c.user_id
-                    WHERE 1 ORDER BY a.`creation` DESC limit 0,50 ";
+                    WHERE  ".$con;
+
+    //not complete c.amount_made = null
+    //compled c.amount_made != null
+    //payed a.amount != 0
 
     try {
 
