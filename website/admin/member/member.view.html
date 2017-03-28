@@ -174,10 +174,10 @@
                                     {{ user.creation}}
                                 </td>
                                 <td>
-                                    <!--ng-show="vm.loadType == 'nd'" ng-show="vm.loadType == 'd' || vm.loadType == 'p'" -->
-                                    <button ng-click="vm.inviteForTest(user.mobile)" >Invite Again</button>
-                                    <button ng-click="vm.askToBuy(user.mobile,$index)" >Ask To Buy</button>
-                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" >Send</button>
+                                    <!--  -->
+                                    <button ng-click="vm.inviteForTest(user.mobile)"  >Invite Again</button>
+                                    <button ng-click="vm.askToBuy(user.mobile,$index)" ng-show="vm.loadType == 'd'">Ask To Buy</button>
+                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" ng-show="vm.loadType == 'd' || vm.loadType == 'p'">Send</button>
 
                                 </td>
 
