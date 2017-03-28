@@ -9,7 +9,7 @@
 function getAllUsers(){
     $sql = "SELECT
                 a.`id`, a.`username`, a.`mobile`, a.`ref_user_id`, a.`md5`, a.`creation`, a.`amount`, a.`exam_id`,
-                    a.`sms_verified`, b.`account_holder_name`, b.`account_number`, b.`ifsc_code`, c.amount_made
+                    a.`sms_verified`, b.`account_holder_name`, b.`account_number`, b.`ifsc_code`, c.amount_made, c.id as test_id
                     FROM  `users` as a left join
                     bank_accounts as b on a.id = b.user_id left join
                     tests as c on a.id = c.user_id

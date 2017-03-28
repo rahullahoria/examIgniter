@@ -53,6 +53,8 @@ $app->get('/exams/:examId/subjects/:subjectId/topics', 'getExamSubjectTopics');
 //topic
 $app->get('/topics/:topicId/videos', 'getTopicVideo');
 
+$app->get('/channel/sms/:mobile/text/:text', 'sendSMSApi');
+
 $app->post('/topics/:topicId/videos', 'insertTopicVideo');
 
 /* Ending Routes */

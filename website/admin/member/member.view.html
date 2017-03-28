@@ -132,6 +132,7 @@
                                 <th>IFSC <i class="fa fa-coffee  fa-fw"></i></th>
                                 <th>Amount Made <i class="fa fa-coffee  fa-fw"></i></th>
                                 <th>Creation <i class="fa fa-coffee  fa-fw"></i></th>
+                                <th>FB SMS <i class="fa fa-coffee  fa-fw"></i></th>
 
                             </tr>
                             </thead>
@@ -167,6 +168,9 @@
 
                                 <td>
                                     {{ user.creation}}
+                                </td>
+                                <td>
+                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)"></button>
                                 </td>
 
                             </tr>

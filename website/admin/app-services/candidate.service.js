@@ -32,15 +32,22 @@
         service.GetExamSubjectTopics = GetExamSubjectTopics;
         service.AddRemark = AddRemark;
         service.GetRemarks = GetRemarks;
+        service.SendSMS = SendSMS;
 
 
         return service;
 
-
+        ///channel/sms/:mobile/text/:text
 
         function GetStatus() {
             return $http
                 .get('https://api.examhans.com/users')
+                .then(handleSuccess, handleError('Error getting all users'));
+        }
+
+        function SendSMS(mobile,text) {
+            return $http
+                .get('https://api.examhans.com/channel/sms/'+mobile+'/text/'+text)
                 .then(handleSuccess, handleError('Error getting all users'));
         }
 

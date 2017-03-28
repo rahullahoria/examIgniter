@@ -26,6 +26,7 @@ require_once "resources/user/test/getTestResult.php";
 require_once "resources/user/test/startDemoTest.php";
 
 require_once "resources/user/regUser.php";
+require_once "resources/channels/sendSMS.php";
 
 require_once "resources/user/bankAccount/addBankAccount.php";
 
