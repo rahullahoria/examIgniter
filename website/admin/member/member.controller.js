@@ -100,7 +100,7 @@
         };
 
         vm.sendFBShareLink = function(mobile,id){
-            var text = "To get amount transferred inside your account.\n Please share us on Facebook.\n Follow URL\n";
+            var text = "To get amount transferred inside your account.\nPlease Share Us\n";
             text += "http://www.facebook.com/sharer.php?u=http://examhans.com/story.php?t="+id;
 
             CandidateService.SendSMS(mobile,text).then(function (response) {
@@ -112,7 +112,7 @@
         }
 
         vm.inviteForTest = function(mobile){
-            var text = "Hi! You have not completed your demo test.\n Earn Your 150Rs Now.\n Follow Link\n";
+            var text = "Hi! You have not completed your demo test.\nEarn Your 150Rs Now.\n";
             text += "https://examhans.com/members/#/?rt=demo";
 
             CandidateService.SendSMS(mobile,text).then(function (response) {
@@ -124,8 +124,20 @@
         }
 
         vm.askToBuy = function(mobile,index){
-            var text = "Congratulation!\n For Earning Rs."+vm.users[index].amount_made+" on Examhans.com\n Keep learning and earning\n Buy Our Premium Plans\nCheck @\n";
+            var text = "Congratulation!\nFor Earning Rs."+vm.users[index].amount_made+" on Examhans.com\nKeep learning and earning\n Buy Our Premium Plans\nCheck @\n";
             text += "https://examhans.com/#plans";
+
+            CandidateService.SendSMS(mobile,text).then(function (response) {
+                alert("SMS sent: "+text);
+                vm.user.feedback = 'SMS sent as : ' + text;
+                vm.writeAboutUser({username:mobile});
+            });
+
+        }
+
+        vm.askForRef = function(mobile){
+            var text = "Hi!\n Share Demo Link bellow with you friends\nGet Free Silver Membership Plan\n";
+            text += "https://examhans.com/members/#/?rt=demo&ref_user="+mobile;
 
             CandidateService.SendSMS(mobile,text).then(function (response) {
                 alert("SMS sent: "+text);

@@ -175,7 +175,8 @@
                                 </td>
                                 <td>
                                     <!--  -->
-                                    <button ng-click="vm.inviteForTest(user.mobile)"  >Invite Again</button>
+                                    <button ng-click="vm.inviteForTest(user.mobile)" ng-show="vm.loadType == 'nd'" >Invite Again</button>
+                                    <button ng-click="vm.askForRef(user.mobile)"  >Ref Link</button>
                                     <button ng-click="vm.askToBuy(user.mobile,$index)" ng-show="vm.loadType == 'd'">Ask To Buy</button>
                                     <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" ng-show="vm.loadType == 'd' || vm.loadType == 'p'">Send</button>
 
