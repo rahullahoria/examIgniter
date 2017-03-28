@@ -174,8 +174,8 @@
                                     {{ user.creation}}
                                 </td>
                                 <td>
-                                    <button ng-click="vm.inviteForTest(user.mobile)" ng-show="vm.loadType == nd">Invite Again</button>
-                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" ng-show="vm.loadType == d || vm.loadType == p">Send</button>
+                                    <button ng-click="vm.inviteForTest(user.mobile)" ng-show="vm.loadType == 'nd'">Invite Again</button>
+                                    <button ng-click="vm.sendFBShareLink(user.mobile,user.test_id)" ng-show="vm.loadType == 'd' || vm.loadType == 'p'">Send</button>
 
                                 </td>
 
