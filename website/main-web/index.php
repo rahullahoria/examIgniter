@@ -218,9 +218,9 @@
                         <h4>Silver Plan</h4><br>
 
                         <p>400<b> special Questions</b> </p>
-                        <p>Earn<b> 5 Rs </b>per Questions</p>
-                        <p>Earn Back <b>2K Rs</b></p>
-                        <p class="text-muted">Cost <b>1K Rs</b></p>
+                        <p>Earn<b> 5 &#8377; </b>per Questions</p>
+                        <p>Earn Back <b>2K &#8377;</b></p>
+                        <p class="text-muted">Cost <b>1K &#8377;</b></p>
 
                         <a href="members/#/?rt=buy&bp=s" class="page-scroll btn btn-xl"> Buy Now </a>
                     </div>

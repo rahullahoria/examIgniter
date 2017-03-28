@@ -123,8 +123,8 @@
 
         }
 
-        vm.inviteForTest = function(mobile){
-            var text = "Congratulation for Earning X\n Keep learning and earning\n Buy Our Premium Plans\nCheck @\n";
+        vm.askToBuy = function(mobile,index){
+            var text = "Congratulation!\n For Earning Rs."+vm.users[index].amount+" on Examhans.com\n Keep learning and earning\n Buy Our Premium Plans\nCheck @\n";
             text += "https://examhans.com/#plans";
 
             CandidateService.SendSMS(mobile,text).then(function (response) {
