@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="favicons">
+    <list default="true" id="dc780342-8725-40a8-968e-d2c00841c7ce" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/app.php" afterPath="$PROJECT_DIR$/api/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/api/resources/channels/sendSMS.php" afterPath="$PROJECT_DIR$/api/resources/channels/sendSMS.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" afterPath="$PROJECT_DIR$/website/admin/app-services/candidate.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin/member/member.controller.js" afterPath="$PROJECT_DIR$/website/admin/member/member.controller.js" />
     </list>
     <list id="db7324e7-cc3b-48b7-9ab6-6ab5f26705dd" name="Failed commit: Default" comment="Merge branch 'master' of https://github.com/rahullahoria/examIgniter&#10;&#10;Conflicts:&#10;&#9;.idea/workspace.xml&#10;" />
     <ignored path="examIgniter.iws" />
@@ -510,12 +506,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00161" summary="favicons">
-      <created>1489750126206</created>
-      <option name="number" value="00161" />
-      <option name="project" value="LOCAL" />
-      <updated>1489750126206</updated>
-    </task>
     <task id="LOCAL-00162" summary="favicons">
       <created>1489750197555</created>
       <option name="number" value="00162" />
@@ -804,7 +794,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490699650559</updated>
     </task>
-    <option name="localTasksCounter" value="210" />
+    <task id="LOCAL-00210" summary="favicons">
+      <created>1490700006373</created>
+      <option name="number" value="00210" />
+      <option name="project" value="LOCAL" />
+      <updated>1490700006373</updated>
+    </task>
+    <option name="localTasksCounter" value="211" />
     <servers />
   </component>
   <component name="ToolWindowManager">
