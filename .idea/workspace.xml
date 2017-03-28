@@ -82,11 +82,11 @@
       <file leaf-file-name="getUserStatus.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4117647">
-              <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+            <state vertical-scroll-proportion="0.6791444">
+              <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
               <folding>
-                <marker date="1490697327108" expanded="true" signature="1061:1451" placeholder="SELECT disti... users" />
-                <marker date="1490697327108" expanded="true" signature="1477:2081" placeholder="SELECT b.id topic_exam_mappings" />
+                <marker date="1490697597940" expanded="true" signature="1061:1451" placeholder="SELECT disti... users" />
+                <marker date="1490697597940" expanded="true" signature="1477:2081" placeholder="SELECT b.id topic_exam_mappings" />
               </folding>
             </state>
           </provider>
@@ -469,12 +469,6 @@
       <option name="number" value="Default" />
       <updated>1487582015062</updated>
     </task>
-    <task id="LOCAL-00156" summary="favicons">
-      <created>1489734305186</created>
-      <option name="number" value="00156" />
-      <option name="project" value="LOCAL" />
-      <updated>1489734305186</updated>
-    </task>
     <task id="LOCAL-00157" summary="favicons">
       <created>1489748314115</created>
       <option name="number" value="00157" />
@@ -763,7 +757,13 @@
       <option name="project" value="LOCAL" />
       <updated>1490697272778</updated>
     </task>
-    <option name="localTasksCounter" value="205" />
+    <task id="LOCAL-00205" summary="favicons">
+      <created>1490697334424</created>
+      <option name="number" value="00205" />
+      <option name="project" value="LOCAL" />
+      <updated>1490697334424</updated>
+    </task>
+    <option name="localTasksCounter" value="206" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1218,11 +1218,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/api/resources/user/getUserStatus.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4117647">
-          <caret line="77" column="36" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.6791444">
+          <caret line="90" column="37" selection-start-line="90" selection-start-column="37" selection-end-line="90" selection-end-column="37" />
           <folding>
-            <marker date="1490697327108" expanded="true" signature="1061:1451" placeholder="SELECT disti... users" />
-            <marker date="1490697327108" expanded="true" signature="1477:2081" placeholder="SELECT b.id topic_exam_mappings" />
+            <marker date="1490697597940" expanded="true" signature="1061:1451" placeholder="SELECT disti... users" />
+            <marker date="1490697597940" expanded="true" signature="1477:2081" placeholder="SELECT b.id topic_exam_mappings" />
           </folding>
         </state>
       </provider>
