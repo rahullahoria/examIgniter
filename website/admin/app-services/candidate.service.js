@@ -46,9 +46,9 @@
         }
 
         function SendSMS(mobile,text) {
-            return $http
-                .get('https://api.examhans.com/channel/sms/'+mobile+'/text/'+text)
-                .then(handleSuccess, handleError('Error getting all users'));
+            return $http.post('https://api.examhans.com/channel/sms/'+mobile, {'text':text})
+                .then(handleSuccess, handleError('Error updating user'));
+;
         }
 
         function GetExamSubjects(id) {
@@ -125,6 +125,7 @@
         }
 
         function AddRemark(userMd5, instance) {
+
             return $http.post('https://api.wazir.shatkonlabs.com/feedbacks/1/examhans-'+userMd5, instance).then(handleSuccess, handleError('Error updating user'));
         }
 

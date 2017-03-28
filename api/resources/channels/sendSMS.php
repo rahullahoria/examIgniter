@@ -6,6 +6,8 @@
  * Time: 4:20 PM
  */
 
-function sendSMSApi($mobile,$text){
-    echo sendSMS($mobile, $text);
+function sendSMSApi($mobile){
+    $request = \Slim\Slim::getInstance()->request();
+    $requestJson = json_decode($request->getBody());
+    echo sendSMS($mobile, $requestJson->text);
 }

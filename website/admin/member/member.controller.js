@@ -135,7 +135,7 @@
             var text = "To get amount transferred inside your account.\n Please share us on Facebook.\n Follow URL";
             text += "http://www.facebook.com/sharer.php?u=http://examhans.com/story.php?t="+id;
 
-            CandidateService.SendSMS(mobile,window.encodeURIComponent(text)).then(function (response) {
+            CandidateService.SendSMS(mobile,text).then(function (response) {
                 alert("SMS sent: "+text);
             });
 
