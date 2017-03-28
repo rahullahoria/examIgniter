@@ -75,6 +75,7 @@ function getUserStatus($userMd5){
         //var_dump($subjects);die();
         $subjectCount = count($subjects);
         $perSubjectAmount = $subjects[0]->amount/$subjectCount;
+        var_dump($perSubjectAmount);
         foreach($subjects as $subject){
 
             $stmt = $db->prepare($sqlGetTopics);
