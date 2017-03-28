@@ -70,6 +70,9 @@ function regUser(){
 
 
             if(count($userObjs) >= 1){
+                if(!$demo && ($userObjs[0]->amount_made > 0 || $userObjs[0]->amount_made != null) ){
+                    echo '{"error":{"text":"You are already a premium user"}}';
+                }else
 
                 if(!$demo){
 
