@@ -36,7 +36,7 @@ function getUserStatus($userMd5){
      * 'Quantitative Aptitude','English','General Awareness','Computer Knowledge']
      *
      * */
-    $sql = "SELECT distinct d.id as subject_id, d.name as subject_name, a.exam_id, a.id as user_id
+    $sql = "SELECT distinct d.id as subject_id, d.name as subject_name, a.exam_id, a.amount, a.id as user_id
             FROM `users` as a
             inner join topic_exam_mappings as b
             inner join topics as c
@@ -73,7 +73,8 @@ function getUserStatus($userMd5){
         $stmt->execute();
         $subjects = $stmt->fetchAll(PDO::FETCH_OBJ);
         //var_dump($subjects);die();
-
+        $subjectCount = count($subjects);
+        $perSubjectAmount = $subjects[0]->amount/$subjectCount;
         foreach($subjects as $subject){
 
             $stmt = $db->prepare($sqlGetTopics);
@@ -85,9 +86,10 @@ function getUserStatus($userMd5){
             $stmt->execute();
             $topics = $stmt->fetchAll(PDO::FETCH_OBJ);
             //var_dump($topics);die();
-
+            $no_of_questions = ceil($perSubjectAmount/2.5);
             foreach($topics as $topic){
                 $topic->topic_name = htmlspecialchars($topic->topic_name);
+                $topic->no_of_question = $no_of_questions;
             }
 
             $response1[] = array(
